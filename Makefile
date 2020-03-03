@@ -6,7 +6,7 @@
 #    By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/21 11:31:41 by dcapers           #+#    #+#              #
-#    Updated: 2020/03/01 17:30:28 by dcapers          ###   ########.fr        #
+#    Updated: 2020/03/02 14:59:21 by dcapers          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ HEADER = includes
 
 HEADERS = includes/*.h
 
-SOURCES = main.c
+SOURCES = main.c create_state.c parsing.c
 
 SRCS = $(addprefix $(DIR_S)/,$(SOURCES))
 
