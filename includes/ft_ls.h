@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ls.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+        */
+/*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/02 19:26:19 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/04 17:56:05 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,19 @@
 # include <sys/ioctl.h>
 # include <errno.h>
 
+typedef struct				s_file
+{
+	char					*name;
+	char					type;
+	long long int			byte_size;
+	long long int			blocks;
+	char					*u_name;
+	char					*gr_name;				
+	int						mode;
+	struct tm				*last_d;
+	struct s_file			*next;
+	struct s_file			*prev;
+}							t_file;
 
 typedef struct				s_main
 {
@@ -36,23 +49,18 @@ typedef struct				s_main
 	int						error;
 }							t_main;
 
-typedef struct				s_file
-{
-	char					*name;
-	char					type;
-	size_t					byte_size;
-	size_t					blocks;
-	char					*u_name;
-	char					*gr_name;				
-	unsigned int			mode;
-	struct tm				last_d;
-	struct tm				create_d;
-}							t_file;
-
 char						*ft_strmode(unsigned int mode);
 void						parsing(t_main *st, char **av, int ac);
 t_main						*create_main(void);
 void						reset_main(t_main *st);
 void						print_main(t_main *st);
+void						push_file(t_file **file, char *name, char type);
+void						print_files(t_file *file, int rev);
+void						ft_strsort(char **args, int ac);
+void						add_file(t_file **file, t_file *new);
+t_file						*create_file(char *name, char type);
+void						read_dir(DIR *dir, char *path);
+void						fill_str(char *s1, char *s2, int i);
+void						fill_data_for(t_file *f, char *path);
 
 #endif
