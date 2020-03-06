@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
+/*   By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:04:54 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/04 17:50:22 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/06 22:44:08 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,48 +24,50 @@ void	fill_str(char *s1, char *s2, int i)
 
 }
 
-void	read_last(t_file *last, char *path)
+void	read_last(t_file *f, char *path, t_main *st)
 {
 	char	buff[2048];
 	DIR		*dir;
 
 	buff[0] = '\0';
-	while (last)
+	dir = NULL;
+	while (f)
 	{
-		fill_str(buff, path, 0);
-		fill_str(buff, last->name, -1);
-		if ((dir = opendir(last->name)) || (dir = opendir(buff)))
-			read_dir(dir, buff);
-		last = last->next;
+		dir = NULL;
+		if (f->type == 'd')
+		{
+			fill_str(buff, path, 0);
+			fill_str(buff, (char *)f->name, -1);
+			if ((dir = opendir(buff)))
+				read_dir(dir, buff, st);
+		}
+		f = f->next;
 	}
 }
 
-void	read_dir(DIR *dir, char *path)
+void	read_dir(DIR *dir, char *path, t_main *st)
 {
 	struct dirent	*buff;
 	t_file			*file;
-	t_file			*last;
 	t_file			*new;
 
-	last = NULL;
+	file = NULL;
+	buff = NULL;
 	ft_printf("%s:\n", path);
 	while ((buff = readdir(dir)))
-	{
 		if (buff->d_name[0] != '.')
 		{
 			new = create_file(buff->d_name, buff->d_type);
 			fill_data_for(new, path);
 			add_file(&file, new);
-			if (buff->d_type == 4)
-				add_file(&last, new);
 			buff = NULL;
 		}
-	}
-	print_files(file, 0);
+	handle_lsflags(st, &file);
+	long_format(file, 1, 0);
 	ft_putstr("\n");
-	if (last)
-		read_last(last, path);
 	closedir(dir);
+	if (st->flags['R'])
+		read_last(file, path, st);
 }
 
 void	file_list(t_main *st)
@@ -85,7 +87,7 @@ void	file_list(t_main *st)
 		else if (errno == ENOTDIR)
 			ft_printf("%s\n", st->args[i]);
 		else
-			read_dir(dir, st->args[i]);
+			read_dir(dir, st->args[i], st);
 		i++;
 	}
 }
@@ -99,5 +101,5 @@ int		main(int ac, char **av)
 	// print_files(st->f, 0);
 	ft_strsort(st->args, st->arg_cnt);
 	file_list(st);
-	return (0);
+	exit (0);
 }

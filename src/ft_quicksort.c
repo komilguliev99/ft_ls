@@ -3,52 +3,48 @@
 /*                                                        :::      ::::::::   */
 /*   ft_quicksort.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
+/*   By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/27 11:53:39 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/03 15:37:31 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/06 21:10:54 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-static void			iterate(int *numbers, int *left, int *right, int pivot)
+void				ft_filesort(t_file **f, int (*cmp)(t_file *f1, t_file *f2))
 {
-	while (*left < *right)
+	t_file		*sw;
+	t_file		*it;
+	int			flag;
+
+	flag = 1;
+	while (flag)
 	{
-		while ((numbers[*right] >= pivot) && (*left < *right))
-			(*right)--;
-		if (*left != *right)
+		flag = 0;
+		it = *f;
+		while (it && it->next)
 		{
-			numbers[*left] = numbers[*right];
-			(*left)++;
-		}
-		while ((numbers[*left] <= pivot) && (*left < *right))
-			(*left)++;
-		if (*left != *right)
-		{
-			numbers[*right] = numbers[*left];
-			(*right)--;
+			if (!cmp(it, it->next))
+			{
+				sw = it->next->next;
+				it->next->next = it;
+				if (it->prev != it->next)
+					it->next->prev = it->prev;
+				else
+					it->next->prev = it;
+				if (it->prev != (*f)->prev)
+					it->prev->next = it->next;	
+				it->prev = it->next;
+				if (it == *f)
+					*f = it->next;
+				it->next = sw;
+				if (sw)
+					sw->prev = it;
+				flag = 1;
+			}
+			else
+				it = it->next;
 		}
 	}
-}
-
-void				ft_quicksort(int *numbers, int left, int right)
-{
-	int		pivot;
-	int		l_hold;
-	int		r_hold;
-
-	pivot = numbers[left];
-	l_hold = left;
-	r_hold = right;
-	iterate(numbers, &left, &right, pivot);
-	numbers[right] = pivot;
-	pivot = left;
-	left = l_hold;
-	right = r_hold;
-	if (left < pivot)
-		ft_quicksort(numbers, left, pivot - 1);
-	if (right > pivot)
-		ft_quicksort(numbers, pivot + 1, right);
 }

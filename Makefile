@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+         #
+#    By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/21 11:31:41 by dcapers           #+#    #+#              #
-#    Updated: 2020/03/04 17:06:19 by dcapers          ###   ########.fr        #
+#    Updated: 2020/03/06 21:43:40 by dcapers          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,8 +26,9 @@ HEADER = includes
 
 HEADERS = includes/*.h
 
-SOURCES = main.c create_state.c parsing.c ft_quicksort.c create_file.c   \
-			ft_strsort.c fill_data_for.c
+SOURCES = main.c create_state.c parsing.c ft_quicksort.c create_file.c   	\
+			ft_strsort.c fill_data_for.c handle_lsflags.c sort_callbacks.c  \
+			time_cmp.c print_fresult.c ft_strmode.c
 
 SRCS = $(addprefix $(DIR_S)/,$(SOURCES))
 

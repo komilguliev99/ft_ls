@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   create_file.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
+/*   By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 15:41:10 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/04 17:56:50 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/06 21:44:33 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,21 +66,22 @@ void			push_file(t_file **file, char *name, char type)
 		*file = new;
 }
 
-void			print_ff(t_file *f)
+static void			print_ff(t_file *f, int size)
 {
-	ft_printf("%lld %lld ", f->blocks, f->byte_size);
-	ft_printf("%o %s %s ", f->mode, f->u_name, f->gr_name);
-	ft_printf("%s\n", f->name);
+	ft_printf("%-*lld %-*lld ", size, f->blocks, size, f->byte_size);
+	ft_printf("%-*o %-*s %-*s ", size, f->mode, size, f->u_name, size, f->gr_name);
+	ft_printf("%-*s  ==> ", size, f->name);
+	print_time(f->last_d);
 }
 
-void			print_files(t_file *file, int rev)
+void			print_files(t_file *file, int rev, int size)
 {
 	t_file		*first;
 
 	if (!rev)
 		while (file)
 		{
-			print_ff(file);
+			print_ff(file, size);
 			file = file->next;
 		}
 	else
@@ -88,10 +89,10 @@ void			print_files(t_file *file, int rev)
 		first = file;
 		while (file->prev != first)
 		{
-			print_ff(file);
+			print_ff(file, size);
 			file = file->prev;
 		}
-		print_ff(file);
+		print_ff(file, size);
 	}
 	ft_putchar('\n');
 }
