@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/07 15:48:15 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/07 16:25:41 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ typedef struct				s_file
 	long long int			blocks;
 	char					*u_name;
 	char					*gr_name;
-	char					*ctime;			
+	char					*ctime;
 	int						mode;
 	int						nlink;
 	long long int			last_d;
@@ -67,7 +67,8 @@ void						clear_files(t_file **f);
 void						read_dir(DIR *dir, char *path, t_main *st);
 void						fill_str(char *s1, char *s2, int i);
 void						fill_data_for(t_file *f, char *path);
-void						ft_filesort(t_file **f, int (*cmp)(t_file *f1, t_file *f2));
+void						ft_filesort(t_file **f,
+								int (*cmp)(t_file *f1, t_file *f2));
 int							time_cmp(struct tm *t1, struct tm *t2);
 struct tm					*time_cpy(struct tm *t);
 void						print_time(struct tm *t);
