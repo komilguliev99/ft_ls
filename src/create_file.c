@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   create_file.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+        */
+/*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 15:41:10 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/06 21:44:33 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/07 16:14:58 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_file			*create_file(char *name, char type)
 	t_file		*file;
 
 	if (!(file = (t_file *)malloc(sizeof(t_file))))
-		exit (0);
+		exit(0);
 	file->name = ft_strdup(name);
 	file->type = type;
 	file->next = NULL;
@@ -66,14 +66,6 @@ void			push_file(t_file **file, char *name, char type)
 		*file = new;
 }
 
-static void			print_ff(t_file *f, int size)
-{
-	ft_printf("%-*lld %-*lld ", size, f->blocks, size, f->byte_size);
-	ft_printf("%-*o %-*s %-*s ", size, f->mode, size, f->u_name, size, f->gr_name);
-	ft_printf("%-*s  ==> ", size, f->name);
-	print_time(f->last_d);
-}
-
 void			print_files(t_file *file, int rev, int size)
 {
 	t_file		*first;
@@ -81,7 +73,7 @@ void			print_files(t_file *file, int rev, int size)
 	if (!rev)
 		while (file)
 		{
-			print_ff(file, size);
+			ft_printf("%*s  ", size, file->name);
 			file = file->next;
 		}
 	else
@@ -89,10 +81,28 @@ void			print_files(t_file *file, int rev, int size)
 		first = file;
 		while (file->prev != first)
 		{
-			print_ff(file, size);
+			ft_printf("%*s  ", size, file->name);
 			file = file->prev;
 		}
-		print_ff(file, size);
+		ft_printf("%*s  ", size, file->name);
 	}
 	ft_putchar('\n');
+}
+
+void			clear_files(t_file **f)
+{
+	t_file		*del;
+
+	while (*f)
+	{
+		del = *f;
+		*f = (*f)->next;
+		if (del->name)
+			free(del->name);
+		if (del->u_name)
+			free(del->u_name);
+		if (del->gr_name)
+			free(del->gr_name);
+		free(del);
+	}
 }

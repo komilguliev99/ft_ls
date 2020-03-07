@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:41:55 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/03 17:15:28 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/07 16:19:42 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,11 @@ static void			set_flags(t_main *st, char *arg)
 		else
 		{
 			ft_printf("Wrong flag: -%c\n", *arg);
-			exit (0);
+			exit(0);
 		}
-		
 }
 
-void			parsing(t_main *st, char **av, int ac)
+void				parsing(t_main *st, char **av, int ac)
 {
 	int				i;
 	struct stat		buff;
@@ -44,7 +43,7 @@ void			parsing(t_main *st, char **av, int ac)
 		else
 			st->arg_cnt++;
 	if (!(st->args = (char **)malloc(sizeof(char *) * (st->arg_cnt + 1))))
-		exit (0);
+		exit(0);
 	i = 0;
 	while (st->arg_cnt && ac-- > 1)
 	{
@@ -58,5 +57,5 @@ void			parsing(t_main *st, char **av, int ac)
 	}
 	st->args[st->arg_cnt] = NULL;
 	if (st->error)
-		exit (0);
+		exit(0);
 }

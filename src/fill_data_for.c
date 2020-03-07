@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fill_data_for.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+        */
+/*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 16:40:35 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/06 22:43:31 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/07 15:59:24 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,30 @@ static void		settype(t_file *f)
 		f->type = '-';
 }
 
+static void		reset_name(t_file *f, char *path)
+{
+	char		name[1029];
+	char		*link;
+	int			bytes;
+
+	if ((bytes = readlink(path, name, 1024)) > 0)
+	{
+		name[bytes + 5] = '\0';
+		while (bytes >= 0)
+		{
+			name[bytes + 4] = name[bytes];
+			bytes--;
+		}
+		name[0] = ' ';
+		name[1] = '-';
+		name[2] = '>';
+		name[3] = ' ';
+		link = f->name;
+		f->name = ft_strjoin(f->name, name);
+		free(link);
+	}
+}
+
 void			fill_data_for(t_file *f, char *path)
 {
 	char			buff[1024];
@@ -38,9 +62,10 @@ void			fill_data_for(t_file *f, char *path)
 	fill_str(buff, path, 0);
 	fill_str(buff, f->name, -1);
 	errno = 0;
-	if (!stat(buff, &st) || !lstat(buff, &st))
+	if (!lstat(buff, &st))
 	{
-		f->last_d = time_cpy(gmtime((const time_t *)&st.st_ctime));
+		f->ctime = ctime((const time_t *)&st.st_ctime);
+		f->last_d = (long long int)st.st_ctime;
 		f->byte_size = (long long int)st.st_size;
 		f->blocks = (long long int)st.st_blocks;
 		f->mode = (int)st.st_mode;
@@ -48,6 +73,8 @@ void			fill_data_for(t_file *f, char *path)
 		f->u_name = ft_strdup(getpwuid(st.st_uid)->pw_name);
 		f->gr_name = ft_strdup(getgrgid(st.st_gid)->gr_name);
 		settype(f);
+		if (f->type == 'l')
+			reset_name(f, buff);
 	}
 	else
 		ft_printf("ERROR: %s\n", strerror(errno));

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   create_state.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+        */
+/*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:46:17 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/02 15:41:57 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/07 15:58:38 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ t_main			*create_main(void)
 	t_main		*state;
 
 	if (!(state = (t_main *)malloc(sizeof(t_main))))
-		exit (0);
+		exit(0);
 	reset_main(state);
 	return (state);
 }

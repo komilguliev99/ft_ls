@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ls.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+        */
+/*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/06 22:37:38 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/07 15:48:15 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,11 @@ typedef struct				s_file
 	long long int			byte_size;
 	long long int			blocks;
 	char					*u_name;
-	char					*gr_name;				
+	char					*gr_name;
+	char					*ctime;			
 	int						mode;
 	int						nlink;
-	struct tm				*last_d;
+	long long int			last_d;
 	struct s_file			*next;
 	struct s_file			*prev;
 }							t_file;
@@ -48,6 +49,7 @@ typedef struct				s_main
 	char					flags[128];
 	long long int			blocks;
 	int						error;
+	int						block_sz;
 }							t_main;
 
 char						*ft_strmode(unsigned int mode);
@@ -61,6 +63,7 @@ void						print_files(t_file *file, int rev, int size);
 void						ft_strsort(char **args, int ac);
 void						add_file(t_file **file, t_file *new);
 t_file						*create_file(char *name, char type);
+void						clear_files(t_file **f);
 void						read_dir(DIR *dir, char *path, t_main *st);
 void						fill_str(char *s1, char *s2, int i);
 void						fill_data_for(t_file *f, char *path);

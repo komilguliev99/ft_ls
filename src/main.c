@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+        */
+/*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:04:54 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/06 22:44:08 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/07 16:18:15 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ void	fill_str(char *s1, char *s2, int i)
 	while (*s2)
 		s1[i++] = *s2++;
 	s1[i] = '\0';
-
 }
 
 void	read_last(t_file *f, char *path, t_main *st)
@@ -50,24 +49,28 @@ void	read_dir(DIR *dir, char *path, t_main *st)
 	struct dirent	*buff;
 	t_file			*file;
 	t_file			*new;
+	int				block_size;
 
 	file = NULL;
 	buff = NULL;
+	st->block_sz = 1;
 	ft_printf("%s:\n", path);
 	while ((buff = readdir(dir)))
-		if (buff->d_name[0] != '.')
-		{
-			new = create_file(buff->d_name, buff->d_type);
-			fill_data_for(new, path);
-			add_file(&file, new);
-			buff = NULL;
-		}
+	{
+		if (buff->d_name[0] == '.' && !st->flags['a'])
+			continue ;
+		block_size = ft_strlen(buff->d_name) + 1;
+		st->block_sz = (st->block_sz < block_size ? block_size : st->block_sz);
+		new = create_file(buff->d_name, buff->d_type);
+		fill_data_for(new, path);
+		add_file(&file, new);
+	}
 	handle_lsflags(st, &file);
-	long_format(file, 1, 0);
-	ft_putstr("\n");
+	long_format(file, st->flags['l'], st->block_sz);
 	closedir(dir);
 	if (st->flags['R'])
 		read_last(file, path, st);
+	clear_files(&file);
 }
 
 void	file_list(t_main *st)
@@ -98,8 +101,7 @@ int		main(int ac, char **av)
 
 	st = create_main();
 	parsing(st, av, ac);
-	// print_files(st->f, 0);
 	ft_strsort(st->args, st->arg_cnt);
 	file_list(st);
-	exit (0);
+	exit(0);
 }

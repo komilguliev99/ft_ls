@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmode.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+        */
+/*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 21:29:10 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/06 21:54:47 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/07 16:16:32 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char		*ft_strmode(unsigned int mode)
 	int			i;
 
 	if (!(res = malloc(10)))
-		exit (0);
+		exit(0);
 	i = 3;
 	while (i)
 	{
