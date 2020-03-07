@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 21:20:20 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/07 16:21:26 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/07 19:42:50 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void				time_format(time_t t, char *s)
 
 	time(&rawt);
 	av = ft_strsplit(s, ' ');
-	ft_printf("%s  %s ", av[1], av[2]);
+	ft_printf("%s  %2s ", av[1], av[2]);
 	if (diff_time(rawt, t) >= 6)
 		ft_printf("%s ", av[4]);
 	else
@@ -54,22 +54,28 @@ static void			print_ff(t_file *f, int size)
 	char		*mode;
 
 	mode = ft_strmode(f->mode);
-	ft_printf("%c%-s  %d %-5s  %-5s ", f->type, mode,
-		f->nlink, f->u_name, f->gr_name);
+	ft_printf("%c%-.9s%c  ", f->type, mode, f->attr);
+	ft_printf("%5d %-5s  %-5s ", f->nlink, f->u_name, f->gr_name);
 	ft_printf("%6d ", f->byte_size);
 	time_format(f->last_d, f->ctime);
 	ft_printf("%-*s\n", size, f->name);
 	free(mode);
 }
 
-void				long_format(t_file *file, int lf, int size)
+void				long_format(int blocks, t_file *file, int lf, int size)
 {
+	if (lf)
+		ft_printf("total %lld\n", blocks);
 	while (file)
 	{
 		if (lf)
 			print_ff(file, size);
 		else
+		{
 			ft_printf("%-*s", size, file->name);
+			if (!file->next)
+				ft_putchar('\n');
+		}
 		file = file->next;
 	}
 }

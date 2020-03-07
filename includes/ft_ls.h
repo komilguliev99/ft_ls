@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/07 16:25:41 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/07 19:50:11 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@
 # include <limits.h>
 # include <sys/ioctl.h>
 # include <errno.h>
+# include <sys/acl.h>
 
 typedef struct				s_file
 {
@@ -37,6 +38,7 @@ typedef struct				s_file
 	char					*ctime;
 	int						mode;
 	int						nlink;
+	char					attr;
 	long long int			last_d;
 	struct s_file			*next;
 	struct s_file			*prev;
@@ -64,9 +66,10 @@ void						ft_strsort(char **args, int ac);
 void						add_file(t_file **file, t_file *new);
 t_file						*create_file(char *name, char type);
 void						clear_files(t_file **f);
-void						read_dir(DIR *dir, char *path, t_main *st);
+void						read_dir(DIR *dir, char *path,
+									t_main *st, int flag);
 void						fill_str(char *s1, char *s2, int i);
-void						fill_data_for(t_file *f, char *path);
+void						fill_data_for(t_file *f, char *path, t_main *st);
 void						ft_filesort(t_file **f,
 								int (*cmp)(t_file *f1, t_file *f2));
 int							time_cmp(struct tm *t1, struct tm *t2);
@@ -77,6 +80,7 @@ int							sort_asc_name(t_file *f1, t_file *f2);
 int							sort_desc_name(t_file *f1, t_file *f2);
 int							sort_ascn_time(t_file *f1, t_file *f2);
 int							sort_descn_time(t_file *f1, t_file *f2);
-void						long_format(t_file *file, int lf, int size);
+void						long_format(int blocks, t_file *file,
+									int lf, int size);
 
 #endif

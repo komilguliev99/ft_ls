@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 15:41:10 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/07 16:14:58 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/07 19:48:00 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ t_file			*create_file(char *name, char type)
 		exit(0);
 	file->name = ft_strdup(name);
 	file->type = type;
+	file->attr = 0;
 	file->next = NULL;
 	file->prev = NULL;
 	return (file);
@@ -103,6 +104,8 @@ void			clear_files(t_file **f)
 			free(del->u_name);
 		if (del->gr_name)
 			free(del->gr_name);
+		if (del->ctime)
+			free(del->ctime);
 		free(del);
 	}
 }

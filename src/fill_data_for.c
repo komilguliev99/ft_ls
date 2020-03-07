@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 16:40:35 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/07 15:59:24 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/07 19:56:21 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,17 +54,37 @@ static void		reset_name(t_file *f, char *path)
 	}
 }
 
-void			fill_data_for(t_file *f, char *path)
+void			set_attr(char *path, t_file *f)
+{
+	char	attr[512];
+	void	*tmp;
+
+	tmp = NULL;
+	settype(f);
+	if (listxattr(path, attr, 512, XATTR_NOFOLLOW) > 0)
+		f->attr = '@';
+	else if ((tmp = acl_get_link_np(path, ACL_TYPE_EXTENDED)))
+	{
+		acl_free(tmp);
+		f->attr = '+';
+	}
+	else
+		f->attr = ' ';
+}
+
+void			fill_data_for(t_file *f, char *path, t_main *sm)
 {
 	char			buff[1024];
 	struct stat		st;
 
-	fill_str(buff, path, 0);
+	buff[0] = '\0';
+	if (path)
+		fill_str(buff, path, 0);
 	fill_str(buff, f->name, -1);
 	errno = 0;
 	if (!lstat(buff, &st))
 	{
-		f->ctime = ctime((const time_t *)&st.st_ctime);
+		f->ctime = ft_strdup(ctime((const time_t *)&st.st_ctime));
 		f->last_d = (long long int)st.st_ctime;
 		f->byte_size = (long long int)st.st_size;
 		f->blocks = (long long int)st.st_blocks;
@@ -72,8 +92,9 @@ void			fill_data_for(t_file *f, char *path)
 		f->nlink = st.st_nlink;
 		f->u_name = ft_strdup(getpwuid(st.st_uid)->pw_name);
 		f->gr_name = ft_strdup(getgrgid(st.st_gid)->gr_name);
-		settype(f);
-		if (f->type == 'l')
+		sm->blocks += st.st_blocks;
+		set_attr(buff, f);
+		if (f->type == 'l' && sm->flags['l'])
 			reset_name(f, buff);
 	}
 	else
