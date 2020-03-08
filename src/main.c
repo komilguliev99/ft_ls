@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:04:54 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/07 19:56:40 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/08 14:33:39 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,10 @@ void	read_last(t_file *f, char *path, t_main *st)
 		}
 		f = f->next;
 	}
+	clear_files(&f);
 }
 
-void	read_dir(DIR *dir, char *path, t_main *st, int flag)
+int		read_dir(DIR *dir, char *path, t_main *st, int flag)
 {
 	struct dirent	*buff;
 	t_file			*file;
@@ -59,14 +60,14 @@ void	read_dir(DIR *dir, char *path, t_main *st, int flag)
 
 	file = NULL;
 	buff = NULL;
-	st->block_sz = 1;
+	st->block_sz = 3;
 	if (flag)
 		ft_printf("%s:\n", path);
 	while ((buff = readdir(dir)))
 	{
 		if (buff->d_name[0] == '.' && !st->flags['a'])
 			continue ;
-		block_size = ft_strlen(buff->d_name) + 1;
+		block_size = ft_strlen(buff->d_name) + 3;
 		st->block_sz = (st->block_sz < block_size ? block_size : st->block_sz);
 		new = create_file(buff->d_name, buff->d_type);
 		fill_data_for(new, path, st);
@@ -76,7 +77,7 @@ void	read_dir(DIR *dir, char *path, t_main *st, int flag)
 	closedir(dir);
 	if (st->flags['R'])
 		read_last(file, path, st);
-	clear_files(&file);
+	return (1);
 }
 
 void	file_list(t_main *st)
@@ -84,33 +85,37 @@ void	file_list(t_main *st)
 	DIR				*dir;
 	int				i;
 	int				len;
+	int				j;
 
-	i = 0;
-	len = st->arg_cnt;
-	while (i < st->arg_cnt || !len)
+	i = -1;
+	j = 0;
+	len = st->nreal;
+	while (++i < st->arg_cnt || !len)
 	{
 		errno = 0;
-		if ((st->arg_cnt && !(dir = opendir(st->args[i])) && errno == ENOENT) ||
-			(!st->arg_cnt && !(dir = opendir("./")) && errno == ENOENT))
-		{
-			write(1, "Can't open!\n", 12);
-			return ;
-		}
+		st->blocks = 0;
+		if ((st->nreal && !(dir = opendir(st->args[i])) && errno == ENOENT) ||
+			(!st->nreal && !(dir = opendir("./")) && errno == ENOENT))
+			continue ;
 		else if (errno == ENOTDIR)
-			ft_printf("%s\n", !len++ ? "./" : st->args[i], st->args[i]);
+			j += print_ff_format(st, !len++ ? "./" : st->args[i]);
 		else
-			read_dir(dir, !len++ ? NULL : st->args[i], st, st->arg_cnt > 1);
-		i++;
+			j += read_dir(dir, !len++ ? NULL : st->args[i], st, st->nreal > 1);
+		if (j < st->nreal)
+			ft_putchar('\n');
 	}
 }
 
 int		main(int ac, char **av)
 {
-	t_main		*st;
+	t_main			*st;
+	struct winsize	wins;
+	int				err;
 
 	st = create_main();
+	err = ioctl(1, TIOCGWINSZ, &wins);
+	st->width = wins.ws_col;
 	parsing(st, av, ac);
-	ft_strsort(st->args, st->arg_cnt);
 	file_list(st);
 	exit(0);
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   long_format.c                                      :+:      :+:    :+:   */
+/*   print_ls_format.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 21:20:20 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/07 19:42:50 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/08 14:22:03 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,20 +62,38 @@ static void			print_ff(t_file *f, int size)
 	free(mode);
 }
 
-void				long_format(int blocks, t_file *file, int lf, int size)
+void				print_hr_format(t_file *f, int width, int size)
 {
-	if (lf)
-		ft_printf("total %lld\n", blocks);
-	while (file)
+	int			col;
+	int			i;
+
+	col = width / size;
+	i = 0;
+	while (f)
 	{
-		if (lf)
-			print_ff(file, size);
-		else
+		i++;
+		ft_printf("%-*s", size, f->name);
+		if (i == col)
 		{
-			ft_printf("%-*s", size, file->name);
-			if (!file->next)
-				ft_putchar('\n');
+			ft_putchar('\n');
+			i = 0;
 		}
+		f = f->next;
+	}
+	if (i != col)
+		ft_putchar('\n');
+}
+
+void				print_ls_format(t_main *st, t_file *file,
+							int size, int flag)
+{
+	if (st->flags['l'] && !flag)
+		ft_printf("total %lld\n", st->blocks);
+	while (st->flags['l'] && file)
+	{
+		print_ff(file, size);
 		file = file->next;
 	}
+	if (!st->flags['l'])
+		print_hr_format(file, st->width, size);
 }

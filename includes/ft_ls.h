@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/07 19:50:11 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/08 14:25:03 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,11 @@ typedef struct				s_main
 {
 	char					**args;
 	int						arg_cnt;
+	int						nreal;
 	char					flags[128];
 	long long int			blocks;
 	int						error;
+	int						width;
 	int						block_sz;
 }							t_main;
 
@@ -66,7 +68,7 @@ void						ft_strsort(char **args, int ac);
 void						add_file(t_file **file, t_file *new);
 t_file						*create_file(char *name, char type);
 void						clear_files(t_file **f);
-void						read_dir(DIR *dir, char *path,
+int							read_dir(DIR *dir, char *path,
 									t_main *st, int flag);
 void						fill_str(char *s1, char *s2, int i);
 void						fill_data_for(t_file *f, char *path, t_main *st);
@@ -80,7 +82,8 @@ int							sort_asc_name(t_file *f1, t_file *f2);
 int							sort_desc_name(t_file *f1, t_file *f2);
 int							sort_ascn_time(t_file *f1, t_file *f2);
 int							sort_descn_time(t_file *f1, t_file *f2);
-void						long_format(int blocks, t_file *file,
-									int lf, int size);
+void						print_ls_format(t_main *st, t_file *file,
+									int size, int file_flag);
+int							print_ff_format(t_main *st, char *f);
 
 #endif

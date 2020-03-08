@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:41:55 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/07 16:19:42 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/08 14:21:12 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ static void			set_flags(t_main *st, char *arg)
 			st->flags[(int)*arg++] = 1;
 		else
 		{
-			ft_printf("Wrong flag: -%c\n", *arg);
+			ft_printf("./ft_ls: illegal option -- %c\n", *arg);
+			ft_printf("usage: ./ft_ls [-alRrt] [file ...]\n");
 			exit(0);
 		}
 }
@@ -34,28 +35,26 @@ static void			set_flags(t_main *st, char *arg)
 void				parsing(t_main *st, char **av, int ac)
 {
 	int				i;
+	int				j;
 	struct stat		buff;
 
-	i = 1;
-	while (i < ac)
-		if (av[i++][0] == '-')
-			set_flags(st, av[i - 1] + 1);
-		else
-			st->arg_cnt++;
+	j = 1;
+	while (j < ac && av[j][0] == '-')
+	{
+		set_flags(st, av[j] + 1);
+		j++;
+	}
+	st->arg_cnt = ac - j;
 	if (!(st->args = (char **)malloc(sizeof(char *) * (st->arg_cnt + 1))))
 		exit(0);
 	i = 0;
-	while (st->arg_cnt && ac-- > 1)
-	{
-		if (av[ac][0] != '-')
-			st->args[i] = av[ac];
-		if (av[ac][0] != '-' && stat(st->args[i++], &buff))
-		{
-			st->error = 1;
-			ft_printf("%s: %s: - %s", av[0], st->args[i - 1], strerror(errno));
-		}
-	}
+	while (st->arg_cnt && j < ac)
+		st->args[i++] = av[j++];
+	i = 0;
+	ft_strsort(st->args, st->arg_cnt);
+	st->nreal = st->arg_cnt;
+	while (i < st->arg_cnt)
+		if (stat(st->args[i++], &buff) && st->nreal--)
+			ft_printf("%s: %s: %s\n", av[0], st->args[i - 1], strerror(errno));
 	st->args[st->arg_cnt] = NULL;
-	if (st->error)
-		exit(0);
 }

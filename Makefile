@@ -6,7 +6,7 @@
 #    By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/21 11:31:41 by dcapers           #+#    #+#              #
-#    Updated: 2020/03/07 16:20:17 by dcapers          ###   ########.fr        #
+#    Updated: 2020/03/08 14:12:58 by dcapers          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ HEADERS = includes/*.h
 
 SOURCES = main.c create_state.c parsing.c ft_filesort.c create_file.c   	\
 			ft_strsort.c fill_data_for.c handle_lsflags.c sort_callbacks.c  \
-			time_cmp.c long_format.c ft_strmode.c
+			time_cmp.c print_ls_format.c ft_strmode.c print_ff_format.c
 
 SRCS = $(addprefix $(DIR_S)/,$(SOURCES))
 

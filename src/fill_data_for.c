@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 16:40:35 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/07 19:56:21 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/08 14:47:16 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,9 @@ static void		reset_name(t_file *f, char *path)
 
 	if ((bytes = readlink(path, name, 1024)) > 0)
 	{
-		name[bytes + 5] = '\0';
-		while (bytes >= 0)
-		{
-			name[bytes + 4] = name[bytes];
-			bytes--;
-		}
+		name[bytes + 2] = '\0';
+		while (--bytes >= 0)
+			name[bytes + 3] = name[bytes];
 		name[0] = ' ';
 		name[1] = '-';
 		name[2] = '>';
