@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 21:20:20 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/08 14:22:03 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/08 18:49:34 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,12 @@ void				print_ls_format(t_main *st, t_file *file,
 		print_ff(file, size);
 		file = file->next;
 	}
-	if (!st->flags['l'])
+	if (!st->flags['l'] && st->flags['1'])
+		while (file)
+		{
+			ft_printf("%s\n", file->name);
+			file = file->next;
+		}
+	else if (!st->flags['l'])
 		print_hr_format(file, st->width, size);
 }
