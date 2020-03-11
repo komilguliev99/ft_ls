@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dcapers <dcapers@student.21-school.ru>     +#+  +:+       +#+         #
+#    By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/08 15:33:43 by dcapers           #+#    #+#              #
-#    Updated: 2020/03/01 17:32:05 by dcapers          ###   ########.fr        #
+#    Updated: 2020/03/11 10:45:46 by dcapers          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,8 @@ SRC = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c     \
 	  ft_pow.c ft_ctos.c ft_putchar_cnt.c get_next_line.c ft_utils.c   \
 	  ft_printf.c handle_char.c handle_di.c handle_float.c handle_o.c  \
 	  handle_point.c handle_string.c handle_u.c handle_x.c set_float.c \
-	  set_argument.c set_arglen.c set_format.c initialize_state.c
+	  set_argument.c set_arglen.c set_format.c initialize_state.c      \
+	  ft_gmtime.c
 
 INCLUDES = ./includes
 

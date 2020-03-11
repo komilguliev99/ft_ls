@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 23:15:38 by kolya             #+#    #+#             */
-/*   Updated: 2020/02/27 13:23:47 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 10:32:47 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,17 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <fcntl.h>
+# include <time.h>
+# include <sys/types.h>
 # include "ft_printf.h"
 # define BUFF_SIZE 1024
+
+typedef struct		s_time
+{
+	int				time_zone;
+	long long int	timestemp;
+	struct tm		tm;
+}					t_time;
 
 typedef struct		s_list
 {
@@ -29,6 +38,7 @@ typedef struct		s_list
 	struct s_list	*prev;
 }					t_list;
 
+t_time				*ft_gmtime(time_t seconds, int zone);
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *sm, size_t n);
 void				*ft_memcpy(void *dest, const void *src, size_t n);
@@ -76,6 +86,7 @@ char				**ft_strsplit(char const *s, char c);
 int					ft_strissorted(const char **av, int ac);
 int					ft_strcntif(char **av, int (*f)(char *));
 char				*ft_itoa(int n);
+int					ft_numcount(int nb);
 void				ft_putchar(char c);
 void				ft_putstr(char const *s);
 void				ft_putendl(char const *s);

@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:46:17 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/07 15:58:38 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 10:35:13 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,23 @@ void			reset_main(t_main *st)
 	st->error = 0;
 	while (i < 125)
 		st->flags[i++] = 0;
+	st->flags['1'] = 1;
+}
+
+void			update_main(t_main *st, int blocks, int maxsz, int maxl)
+{
+	if (st->fm.blocks < blocks)
+		st->fm.blocks = blocks;
+	else if (blocks < 0)
+		st->fm.blocks = 0;
+	if (st->fm.max_size < maxsz)
+		st->fm.max_size = maxsz;
+	else if (maxsz < 0)
+		st->fm.max_size = 0;
+	if (st->fm.max_nlink < maxl)
+		st->fm.max_nlink = maxl;
+	else if (maxl < 0)
+		st->fm.max_nlink = 0;
 }
 
 t_main			*create_main(void)

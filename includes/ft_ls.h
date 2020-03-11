@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/08 14:25:03 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 10:32:39 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,14 @@
 # include <sys/ioctl.h>
 # include <errno.h>
 # include <sys/acl.h>
+
+typedef struct				s_ff_size
+{
+	int						blocks;
+	int						max_size;
+	int						max_nlink;
+
+}							t_ff_size;
 
 typedef struct				s_file
 {
@@ -53,7 +61,7 @@ typedef struct				s_main
 	long long int			blocks;
 	int						error;
 	int						width;
-	int						block_sz;
+	t_ff_size				fm;
 }							t_main;
 
 char						*ft_strmode(unsigned int mode);
@@ -61,6 +69,7 @@ void						parsing(t_main *st, char **av, int ac);
 t_main						*create_main(void);
 void						handle_lsflags(t_main *st, t_file **f);
 void						reset_main(t_main *st);
+void						update_main(t_main *st, int blocks, int maxsz, int maxl);
 void						print_main(t_main *st);
 void						push_file(t_file **file, char *name, char type);
 void						print_files(t_file *file, int rev, int size);
@@ -83,7 +92,7 @@ int							sort_desc_name(t_file *f1, t_file *f2);
 int							sort_ascn_time(t_file *f1, t_file *f2);
 int							sort_descn_time(t_file *f1, t_file *f2);
 void						print_ls_format(t_main *st, t_file *file,
-									int size, int file_flag);
+									int file_flag);
 int							print_ff_format(t_main *st, char *f);
 
 #endif

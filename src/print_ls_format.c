@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 21:20:20 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/08 18:49:34 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 10:48:15 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,30 @@
 
 int					diff_time(time_t t1, time_t t2)
 {
-	struct tm		*tm1;
-	struct tm		*tm2;
-	int				res;
+	t_time		*tm1;
+	t_time		*tm2;
+	int			res;
 
-	res = 0;
-	tm1 = gmtime(&t1);
-	tm2 = gmtime(&t2);
-	res = tm1->tm_mon - tm2->tm_mon;
-	return (res);
+	tm1 = ft_gmtime(t1, 3);
+	tm2 = ft_gmtime(t2, 3);
+	res = tm1->tm.tm_year - tm2->tm.tm_year;
+	if (res <= 1)
+		res = res == 1 ? (tm1->tm.tm_mon + 12 - tm2->tm.tm_mon) :
+			(tm1->tm.tm_mon - tm2->tm.tm_mon);
+	else
+		res = 12;
+	if (res > 6 || (res == 6 && ((tm1->tm.tm_mday - tm2->tm.tm_mday > 0) ||
+		(tm1->tm.tm_mday - tm2->tm.tm_mday == 0 && tm1->tm.tm_hour - tm2->tm.tm_hour > 0)
+		|| (tm1->tm.tm_mday - tm2->tm.tm_mday == 0 && tm1->tm.tm_hour - tm2->tm.tm_hour== 0 
+		&& tm1->tm.tm_min - tm2->tm.tm_min >= 0))))
+	{
+		free(tm1);
+		free(tm2);
+		return (res > 6 ? res : 7);
+	}
+	free(tm1);
+	free(tm2);
+	return (0);
 }
 
 void				time_format(time_t t, char *s)
@@ -33,9 +48,9 @@ void				time_format(time_t t, char *s)
 
 	time(&rawt);
 	av = ft_strsplit(s, ' ');
-	ft_printf("%s  %2s ", av[1], av[2]);
+	ft_printf("%s %2s ", av[1], av[2], diff_time(rawt, t));
 	if (diff_time(rawt, t) >= 6)
-		ft_printf("%s ", av[4]);
+		ft_printf("%5.4s ", av[4]);
 	else
 	{
 		i = 0;
@@ -49,16 +64,16 @@ void				time_format(time_t t, char *s)
 	free(av);
 }
 
-static void			print_ff(t_file *f, int size)
+static void			print_ff(t_file *f, t_ff_size *fm)
 {
 	char		*mode;
 
 	mode = ft_strmode(f->mode);
-	ft_printf("%c%-.9s%c  ", f->type, mode, f->attr);
-	ft_printf("%5d %-5s  %-5s ", f->nlink, f->u_name, f->gr_name);
-	ft_printf("%6d ", f->byte_size);
+	ft_printf("%c%-.9s%c ", f->type, mode, f->attr);
+	ft_printf("%*d %s  %s  ", fm->max_nlink, f->nlink, f->u_name, f->gr_name);
+	ft_printf("%*d ", fm->max_size, f->byte_size);
 	time_format(f->last_d, f->ctime);
-	ft_printf("%-*s\n", size, f->name);
+	ft_printf("%s\n", f->name);
 	free(mode);
 }
 
@@ -85,13 +100,15 @@ void				print_hr_format(t_file *f, int width, int size)
 }
 
 void				print_ls_format(t_main *st, t_file *file,
-							int size, int flag)
+							int flag)
 {
-	if (st->flags['l'] && !flag)
+	st->fm.max_size = ft_numcount(st->fm.max_size) - 1;
+	st->fm.max_nlink = ft_numcount(st->fm.max_nlink) - 1;
+	if (st->flags['l'] && !flag && file)
 		ft_printf("total %lld\n", st->blocks);
 	while (st->flags['l'] && file)
 	{
-		print_ff(file, size);
+		print_ff(file, &st->fm);
 		file = file->next;
 	}
 	if (!st->flags['l'] && st->flags['1'])
@@ -101,5 +118,5 @@ void				print_ls_format(t_main *st, t_file *file,
 			file = file->next;
 		}
 	else if (!st->flags['l'])
-		print_hr_format(file, st->width, size);
+		print_hr_format(file, st->width, st->fm.blocks);
 }

@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:04:54 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/08 14:33:39 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 10:44:29 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,21 +56,19 @@ int		read_dir(DIR *dir, char *path, t_main *st, int flag)
 	struct dirent	*buff;
 	t_file			*file;
 	t_file			*new;
-	int				block_size;
 
 	file = NULL;
 	buff = NULL;
-	st->block_sz = 3;
+	update_main(st, -1, -1, -1);
 	if (flag)
 		ft_printf("%s:\n", path);
 	while ((buff = readdir(dir)))
 	{
 		if (buff->d_name[0] == '.' && !st->flags['a'])
 			continue ;
-		block_size = ft_strlen(buff->d_name) + 3;
-		st->block_sz = (st->block_sz < block_size ? block_size : st->block_sz);
 		new = create_file(buff->d_name, buff->d_type);
 		fill_data_for(new, path, st);
+		update_main(st, ft_strlen(buff->d_name) + 3, new->byte_size, new->nlink);
 		add_file(&file, new);
 	}
 	handle_lsflags(st, &file);

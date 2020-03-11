@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcapers <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/10 15:36:16 by dcapers           #+#    #+#             */
-/*   Updated: 2019/09/14 15:47:00 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 10:41:06 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static void		ft_strrmove(char *s, int l, int from)
 		s[l + 1] = s[l];
 }
 
-static int		ft_numcount(int nb)
+int				ft_numcount(int nb)
 {
 	int		l;
 

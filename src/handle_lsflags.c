@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 11:46:47 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/08 14:16:32 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 10:47:34 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ void		handle_lsflags(t_main *st, t_file **f)
 	else
 		cmp = &sort_asc_name;
 	ft_filesort(f, cmp);
-	print_ls_format(st, *f, st->block_sz, 0);
+	print_ls_format(st, *f, 0);
 }

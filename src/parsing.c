@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:41:55 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/08 18:49:50 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 10:32:56 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,10 @@ static void			set_flags(t_main *st, char *arg)
 			st->flags[(int)*arg++] = 1;
 		else
 		{
-			ft_printf("./ft_ls: illegal option -- %c\n", *arg);
-			ft_printf("usage: ./ft_ls [-alRrt] [file ...]\n");
-			exit(0);
+			ft_putstr_fd("./ft_ls: illegal option -- ", 2);
+			ft_putchar_fd(*arg, 2);
+			ft_putstr_fd("\nusage: ./ft_ls [-alRrt] [file ...]\n", 2);
+			exit(EXIT_FAILURE);
 		}
 }
 
@@ -46,7 +47,7 @@ void				parsing(t_main *st, char **av, int ac)
 	}
 	st->arg_cnt = ac - j;
 	if (!(st->args = (char **)malloc(sizeof(char *) * (st->arg_cnt + 1))))
-		exit(0);
+		exit(EXIT_FAILURE);
 	i = 0;
 	while (st->arg_cnt && j < ac)
 		st->args[i++] = av[j++];
