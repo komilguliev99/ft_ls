@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:41:55 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/11 10:32:56 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 14:27:20 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 static int			is_lsflag(char c)
 {
-	if (c == 'l' || c == 'R' || c == 'a' || c == 'r' || c == 't' || c == '1')
+	if (c == 'l' || c == 'R' || c == 'a' || c == 'r' || c == 't' || c == '1'
+		|| c == '-')
 		return (1);
 	return (0);
 }
@@ -35,8 +36,8 @@ static void			set_flags(t_main *st, char *arg)
 
 void				parsing(t_main *st, char **av, int ac)
 {
-	int				i;
 	int				j;
+	t_lst			*lst;
 	struct stat		buff;
 
 	j = 1;
@@ -44,18 +45,29 @@ void				parsing(t_main *st, char **av, int ac)
 	{
 		set_flags(st, av[j] + 1);
 		j++;
+		if (av[j - 1][1] == '-')
+			break ;
 	}
-	st->arg_cnt = ac - j;
-	if (!(st->args = (char **)malloc(sizeof(char *) * (st->arg_cnt + 1))))
-		exit(EXIT_FAILURE);
-	i = 0;
-	while (st->arg_cnt && j < ac)
-		st->args[i++] = av[j++];
-	i = 0;
-	ft_strsort(st->args, st->arg_cnt);
-	st->nreal = st->arg_cnt;
-	while (i < st->arg_cnt)
-		if (stat(st->args[i++], &buff) && st->nreal--)
-			ft_printf("%s: %s: %s\n", av[0], st->args[i - 1], strerror(errno));
-	st->args[st->arg_cnt] = NULL;
+	st->arg_cnt = 0;
+	ft_strsort(av + j, ac - j);
+	while (j < ac)
+	{
+		if (!lstat(av[j], &buff))
+		{
+			if (S_ISDIR(buff.st_mode))
+				add_lst(&st->dirs, create_lst(av[j], 0));
+			else
+				add_lst(&st->files, create_lst(av[j], 0));
+			st->arg_cnt++;
+		}
+		else
+			add_lst(&st->not_exist, create_lst(av[j], 0));
+		j++;
+	}
+	lst = st->not_exist;
+	while (lst)
+	{
+		ft_printf("ls: %s: %s\n", lst->data, strerror(errno));
+		lst = lst->next;
+	}
 }

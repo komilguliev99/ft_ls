@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:04:54 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/11 10:44:29 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 15:15:14 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,19 +39,22 @@ void	read_last(t_file *f, char *path, t_main *st)
 			if (path)
 				fill_str(buff, path, 0);
 			fill_str(buff, (char *)f->name, path ? -1 : 0);
+			ft_putchar('\n');
+			print_fullpath(buff);
 			if ((dir = opendir(buff)))
 			{
-				ft_putchar('\n');
 				st->blocks = 0;
-				read_dir(dir, buff, st, 1);
+				read_dir(dir, buff, st);
 			}
+			else if (errno == EACCES)
+				ft_printf("ls: %s: %s\n", f->name, strerror(errno));
 		}
 		f = f->next;
 	}
 	clear_files(&f);
 }
 
-int		read_dir(DIR *dir, char *path, t_main *st, int flag)
+int		read_dir(DIR *dir, char *path, t_main *st)
 {
 	struct dirent	*buff;
 	t_file			*file;
@@ -60,8 +63,6 @@ int		read_dir(DIR *dir, char *path, t_main *st, int flag)
 	file = NULL;
 	buff = NULL;
 	update_main(st, -1, -1, -1);
-	if (flag)
-		ft_printf("%s:\n", path);
 	while ((buff = readdir(dir)))
 	{
 		if (buff->d_name[0] == '.' && !st->flags['a'])
@@ -81,27 +82,33 @@ int		read_dir(DIR *dir, char *path, t_main *st, int flag)
 void	file_list(t_main *st)
 {
 	DIR				*dir;
+	t_lst			*lst;
 	int				i;
-	int				len;
-	int				j;
 
-	i = -1;
-	j = 0;
-	len = st->nreal;
-	while (++i < st->arg_cnt || !len)
+	i = 0;
+	lst = st->files;
+	while (lst && ++i)
+	{
+		print_ff_format(st, lst->data);
+		lst = lst->next;
+	}
+	lst = st->dirs;
+	while (lst)
 	{
 		errno = 0;
-		st->blocks = 0;
-		if ((st->nreal && !(dir = opendir(st->args[i])) && errno == ENOENT) ||
-			(!st->nreal && !(dir = opendir("./")) && errno == ENOENT))
-			continue ;
-		else if (errno == ENOTDIR)
-			j += print_ff_format(st, !len++ ? "./" : st->args[i]);
-		else
-			j += read_dir(dir, !len++ ? NULL : st->args[i], st, st->nreal > 1);
-		if (j < st->nreal)
+		if (i)
 			ft_putchar('\n');
+		if (st->arg_cnt > 1)
+			ft_printf("%s:\n", lst->data);
+		if ((dir = opendir(lst->data)) && errno == 0)
+			read_dir(dir, lst->data, st);
+		else if (errno == EACCES)
+			ft_printf("ls: %s: %s", lst->data, strerror(errno));
+		lst = lst->next;
+		i++;
 	}
+	if (!st->arg_cnt && (dir = opendir("./")))
+		read_dir(dir, NULL, st);
 }
 
 int		main(int ac, char **av)

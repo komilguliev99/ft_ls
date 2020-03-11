@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/11 10:32:39 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 14:43:23 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,13 @@ typedef struct				s_ff_size
 
 }							t_ff_size;
 
+typedef struct				s_lst
+{
+	char					*data;
+	struct s_lst			*next;
+	struct s_lst			*prev;
+}							t_lst;
+
 typedef struct				s_file
 {
 	char					*name;
@@ -54,7 +61,9 @@ typedef struct				s_file
 
 typedef struct				s_main
 {
-	char					**args;
+	t_lst					*files;
+	t_lst					*dirs;
+	t_lst					*not_exist;
 	int						arg_cnt;
 	int						nreal;
 	char					flags[128];
@@ -78,7 +87,7 @@ void						add_file(t_file **file, t_file *new);
 t_file						*create_file(char *name, char type);
 void						clear_files(t_file **f);
 int							read_dir(DIR *dir, char *path,
-									t_main *st, int flag);
+									t_main *st);
 void						fill_str(char *s1, char *s2, int i);
 void						fill_data_for(t_file *f, char *path, t_main *st);
 void						ft_filesort(t_file **f,
@@ -94,5 +103,9 @@ int							sort_descn_time(t_file *f1, t_file *f2);
 void						print_ls_format(t_main *st, t_file *file,
 									int file_flag);
 int							print_ff_format(t_main *st, char *f);
+t_lst						*create_lst(char *content, int allocate);
+void						add_lst(t_lst **lst, t_lst *new);
+void						push_lst(t_lst **lst, char *data);
+void						print_fullpath(char *s);
 
 #endif

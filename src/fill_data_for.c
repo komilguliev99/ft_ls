@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 16:40:35 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/11 10:35:40 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 12:36:42 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,21 @@ void			set_attr(char *path, t_file *f)
 		f->attr = ' ';
 }
 
+void			set_user_group(t_file *f, uid_t uid, gid_t gid)
+{
+	struct passwd	*usr;
+	struct group	*gr;
+
+	if ((usr = getpwuid(uid)) && usr->pw_name)
+		f->u_name = ft_strdup(usr->pw_name);
+	else
+		f->u_name = ft_itoa((long long int)uid);
+	if ((gr = getgrgid(gid)) && gr->gr_name)
+		f->gr_name = ft_strdup(gr->gr_name);
+	else
+		f->gr_name = ft_itoa((long long int)gid);
+}
+
 void			fill_data_for(t_file *f, char *path, t_main *sm)
 {
 	char			buff[1024];
@@ -81,14 +96,13 @@ void			fill_data_for(t_file *f, char *path, t_main *sm)
 	errno = 0;
 	if (!lstat(buff, &st))
 	{
-		f->ctime = ft_strdup(ctime((const time_t *)&st.st_ctime));
-		f->last_d = (long long int)st.st_ctime;
+		f->ctime = ft_strdup(ctime((const time_t *)&st.st_mtime));
+		f->last_d = (long long int)st.st_mtime;
 		f->byte_size = (long long int)st.st_size;
 		f->blocks = (long long int)st.st_blocks;
 		f->mode = (int)st.st_mode;
 		f->nlink = st.st_nlink;
-		f->u_name = ft_strdup(getpwuid(st.st_uid)->pw_name);
-		f->gr_name = ft_strdup(getgrgid(st.st_gid)->gr_name);
+		set_user_group(f, st.st_uid, st.st_gid);
 		sm->blocks += st.st_blocks;
 		set_attr(buff, f);
 		if (f->type == 'l' && sm->flags['l'])
