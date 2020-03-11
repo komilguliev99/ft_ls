@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:41:55 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/11 14:27:20 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 16:06:16 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ void				parsing(t_main *st, char **av, int ac)
 {
 	int				j;
 	t_lst			*lst;
+	t_file			*file;
 	struct stat		buff;
 
 	j = 1;
@@ -54,16 +55,21 @@ void				parsing(t_main *st, char **av, int ac)
 	{
 		if (!lstat(av[j], &buff))
 		{
+			file = create_file(av[j], S_ISDIR(buff.st_mode) ? 'd' : '-');
+			file->name = av[j];
+			fill_data_for(file, NULL, st);
 			if (S_ISDIR(buff.st_mode))
-				add_lst(&st->dirs, create_lst(av[j], 0));
+				add_file(&st->dirs, file);
 			else
-				add_lst(&st->files, create_lst(av[j], 0));
+				add_file(&st->files, file);
 			st->arg_cnt++;
 		}
 		else
 			add_lst(&st->not_exist, create_lst(av[j], 0));
 		j++;
 	}
+	handle_lsflags(st, &st->dirs);
+	handle_lsflags(st, &st->files);
 	lst = st->not_exist;
 	while (lst)
 	{

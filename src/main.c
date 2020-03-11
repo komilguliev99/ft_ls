@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:04:54 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/11 15:15:14 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 16:06:54 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,7 @@ int		read_dir(DIR *dir, char *path, t_main *st)
 		add_file(&file, new);
 	}
 	handle_lsflags(st, &file);
+	print_ls_format(st, file, 0);
 	closedir(dir);
 	if (st->flags['R'])
 		read_last(file, path, st);
@@ -82,29 +83,25 @@ int		read_dir(DIR *dir, char *path, t_main *st)
 void	file_list(t_main *st)
 {
 	DIR				*dir;
-	t_lst			*lst;
+	t_file			*f;
 	int				i;
 
-	i = 0;
-	lst = st->files;
-	while (lst && ++i)
-	{
-		print_ff_format(st, lst->data);
-		lst = lst->next;
-	}
-	lst = st->dirs;
-	while (lst)
+	if (st->files)
+		i = 1;
+	print_ls_format(st, st->files, 1);
+	f = st->dirs;
+	while (f)
 	{
 		errno = 0;
 		if (i)
 			ft_putchar('\n');
 		if (st->arg_cnt > 1)
-			ft_printf("%s:\n", lst->data);
-		if ((dir = opendir(lst->data)) && errno == 0)
-			read_dir(dir, lst->data, st);
+			ft_printf("%s:\n", f->name);
+		if ((dir = opendir(f->name)) && errno == 0)
+			read_dir(dir, f->name, st);
 		else if (errno == EACCES)
-			ft_printf("ls: %s: %s", lst->data, strerror(errno));
-		lst = lst->next;
+			ft_printf("ls: %s: %s", f->name, strerror(errno));
+		f = f->next;
 		i++;
 	}
 	if (!st->arg_cnt && (dir = opendir("./")))

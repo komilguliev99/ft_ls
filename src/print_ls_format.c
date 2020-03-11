@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 21:20:20 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/11 13:35:29 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 16:14:03 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,12 @@
 
 int					diff_time(time_t t1, time_t t2)
 {
-	t_time		*tm1;
-	t_time		*tm2;
-	int			res;
+	long long int			res;
 
-	tm1 = ft_gmtime(t1, 3);
-	tm2 = ft_gmtime(t2, 3);
-	res = tm1->tm.tm_year - tm2->tm.tm_year;
-	if (res <= 1)
-		res = res == 1 ? (tm1->tm.tm_mon + 12 - tm2->tm.tm_mon) :
-			(tm1->tm.tm_mon - tm2->tm.tm_mon);
-	else
-		res = 12;
-	if (res > 6 || (res == 6 && ((tm1->tm.tm_mday - tm2->tm.tm_mday > 0) ||
-		(tm1->tm.tm_mday - tm2->tm.tm_mday == 0 && tm1->tm.tm_hour - tm2->tm.tm_hour > 0)
-		|| (tm1->tm.tm_mday - tm2->tm.tm_mday == 0 && tm1->tm.tm_hour - tm2->tm.tm_hour== 0 
-		&& tm1->tm.tm_min - tm2->tm.tm_min >= 0))))
-	{
-		free(tm1);
-		free(tm2);
-		return (res > 6 ? res : 7);
-	}
-	free(tm1);
-	free(tm2);
+	
+	res = (long long int)(t1 - t2);
+	if (res < 0 || res / 2629743 >= 6)
+		return (7);
 	return (0);
 }
 

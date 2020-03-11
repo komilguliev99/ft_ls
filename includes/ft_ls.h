@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/11 14:43:23 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/11 15:45:09 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,8 @@ typedef struct				s_file
 
 typedef struct				s_main
 {
-	t_lst					*files;
-	t_lst					*dirs;
+	t_file					*files;
+	t_file					*dirs;
 	t_lst					*not_exist;
 	int						arg_cnt;
 	int						nreal;
