@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:04:54 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/13 19:19:24 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/13 22:01:03 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,15 +62,15 @@ int		read_dir(DIR *dir, char *path, t_main *st)
 	t_file			*new;
 
 	file = NULL;
-	buff = NULL;
+	buff = NULL;	
 	update_main(st, -1, -1, -1);
+	update_main2(st, -1, -1);
 	while ((buff = readdir(dir)))
 	{
 		if (buff->d_name[0] == '.' && !st->flags['a'])
 			continue ;
 		new = create_file(buff->d_name, buff->d_type);
 		fill_data_for(new, path, st);
-		update_main(st, ft_strlen(buff->d_name) + 3, new->byte_size, new->nlink);
 		add_file(&file, new);
 	}
 	handle_lsflags(st, &file);

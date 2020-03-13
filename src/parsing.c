@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:41:55 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/13 19:14:07 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/13 23:30:55 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 static int			is_lsflag(char c)
 {
-	if (c == 'l' || c == 'R' || c == 'a' || c == 'r' || c == 't' || c == '1')
+	if (c == 'l' || c == 'R' || c == 'a' || c == 'r' || c == 't' || c == '1'
+	|| c == 'd')
 		return (1);
 	return (0);
 }
@@ -72,10 +73,11 @@ void				parsing(t_main *st, char **av, int ac)
 		{
 			file = create_file(av[j], S_ISDIR(buff.st_mode) ? 'd' : '-');
 			fill_data_for(file, NULL, st);
-			if (S_ISDIR(buff.st_mode))
-				add_file(&st->dirs, file);
-			else
+			if (st->flags['d'] || (file->type !='d' && !S_ISDIR(buff.st_mode)) ||
+				(file->type == 'l' && st->flags['l']))
 				add_file(&st->files, file);
+			else
+				add_file(&st->dirs, file);
 			st->arg_cnt++;
 		}
 		else

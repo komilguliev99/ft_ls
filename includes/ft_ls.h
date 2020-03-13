@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/13 19:04:34 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/13 21:41:01 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ typedef struct				s_ff_size
 	int						max_size;
 	int						max_nlink;
 	int						year_block;
+	int						u_blk;
+	int						g_blk;
 
 }							t_ff_size;
 
@@ -88,6 +90,7 @@ t_main						*create_main(void);
 void						handle_lsflags(t_main *st, t_file **f);
 void						reset_main(t_main *st);
 void						update_main(t_main *st, int blocks, int maxsz, int maxl);
+void						update_main2(t_main *st, int user, int group);
 void						print_main(t_main *st);
 void						push_file(t_file **file, char *name, char type);
 void						print_files(t_file *file, int rev, int size);

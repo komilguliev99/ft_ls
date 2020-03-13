@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 16:40:35 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/13 18:31:09 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/13 22:01:21 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -150,6 +150,8 @@ void			fill_data_for(t_file *f, char *path, t_main *sm)
 		set_attr(buff, f, st.st_mode);
 		if (f->type == 'l' && sm->flags['l'])
 			reset_name(f, buff);
+		update_main(sm, ft_strlen(f->name) + 3, f->byte_size, f->nlink);
+		update_main2(sm, ft_strlen(f->u_name) + 1, ft_strlen(f->gr_name) + 1);
 	}
 	else
 		ft_printf("ERROR: %s\n", strerror(errno));

@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:46:17 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/11 13:30:20 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/13 21:37:56 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,18 @@ void			update_main(t_main *st, int blocks, int maxsz, int maxl)
 		st->fm.max_nlink = maxl;
 	else if (maxl < 0)
 		st->fm.max_nlink = 0;
+}
+
+void			update_main2(t_main *st, int user, int group)
+{
+	if (st->fm.u_blk < user)
+		st->fm.u_blk = user;
+	else if (user < 0)
+		st->fm.u_blk = 0;
+	if (st->fm.g_blk < group)
+		st->fm.g_blk = group;
+	else if (group < 0)
+		st->fm.g_blk = 0;
 }
 
 t_main			*create_main(void)
