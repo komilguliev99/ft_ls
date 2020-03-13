@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/11 15:45:09 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/13 16:32:26 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ typedef struct				s_file
 	char					*u_name;
 	char					*gr_name;
 	char					*ctime;
-	int						mode;
+	char					mode[10];
 	int						nlink;
 	char					attr;
 	long long int			last_d;
@@ -65,7 +65,7 @@ typedef struct				s_main
 	t_file					*dirs;
 	t_lst					*not_exist;
 	int						arg_cnt;
-	int						nreal;
+	int						nall_arg;
 	char					flags[128];
 	long long int			blocks;
 	int						error;

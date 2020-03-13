@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 21:20:20 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/11 16:14:03 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/13 17:14:07 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,22 +42,21 @@ void				time_format(time_t t, char *s)
 		ft_putchar(' ');
 	}
 	i = 0;
-	while (i < 6)
-		free(av[i++]);
-	free(av);
+	if (av)
+	{
+		while (i < 6)
+			free(av[i++]);
+		free(av);
+	}
 }
 
 static void			print_ff(t_file *f, t_ff_size *fm)
 {
-	char		*mode;
-
-	mode = ft_strmode(f->mode);
-	ft_printf("%c%-.9s%c ", f->type, mode, f->attr);
+	ft_printf("%c%-.9s%c ", f->type, f->mode, f->attr);
 	ft_printf("%*d %s  %s  ", fm->max_nlink, f->nlink, f->u_name, f->gr_name);
 	ft_printf("%*d ", fm->max_size, f->byte_size);
 	time_format(f->last_d, f->ctime);
 	ft_printf("%s\n", f->name);
-	free(mode);
 }
 
 void				print_hr_format(t_file *f, int width, int size)

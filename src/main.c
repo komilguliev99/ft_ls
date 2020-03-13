@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:04:54 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/11 16:06:54 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/13 17:14:36 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,8 @@ void	read_last(t_file *f, char *path, t_main *st)
 		}
 		f = f->next;
 	}
-	clear_files(&f);
+	if (f)
+		clear_files(&f);
 }
 
 int		read_dir(DIR *dir, char *path, t_main *st)
@@ -100,11 +101,11 @@ void	file_list(t_main *st)
 		if ((dir = opendir(f->name)) && errno == 0)
 			read_dir(dir, f->name, st);
 		else if (errno == EACCES)
-			ft_printf("ls: %s: %s", f->name, strerror(errno));
+			ft_printf("ls: %s: %s\n", f->name, strerror(errno));
 		f = f->next;
 		i++;
 	}
-	if (!st->arg_cnt && (dir = opendir("./")))
+	if (!st->nall_arg && (dir = opendir("./")))
 		read_dir(dir, NULL, st);
 }
 
