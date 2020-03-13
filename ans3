@@ -1,0 +1,2146 @@
+2,166c2,166
+< -rwxr-xr-x   5 root   wheel       925 Feb  7  2017 2to3
+< -rwxr-xr-x   5 root   wheel       925 Feb  7  2017 2to3-
+< lrwxr-xr-x   1 root   wheel        74 Aug  4  2018 2to3-2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/2to3-2.7
+< lrwxr-xr-x   1 root   wheel        73 Aug  4  2018 2to32.6 -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/2to32.6
+< -rwxr-xr-x   1 root   wheel     28352 Jul 15  2017 AssetCacheActivatorUtil
+< -rwxr-xr-x   1 root   wheel     42560 Jul 15  2017 AssetCacheLocatorUtil
+< -rwxr-xr-x   1 root   wheel     35792 Jul 15  2017 AssetCacheTetheratorUtil
+< -rwxr-xr-x   1 root   wheel     18272 Jul 15  2017 BuildStrings
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 CpMac
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 DeRez
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 GetFileInfo
+< -rwxr-xr-x   1 root   wheel     78048 Jul 26  2019 IOAccelMemory
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 MergePef
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 MvMac
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 ResMerger
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 Rez
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 RezDet
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 RezWack
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 SetFile
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 SplitForks
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 UnRezWack
+< -rwxr-xr-x   1 root   wheel     66560 Jul 26  2019 a2p
+< -rwxr-xr-x   1 root   wheel    229920 Jul 26  2019 a2p5.16
+< -rwxr-xr-x   1 root   wheel    229920 Jul 26  2019 a2p5.18
+< -rwxr-xr-x   1 root   wheel     33760 Jul 15  2017 addftinfo
+< -rwxr-xr-x   1 root   wheel     46688 Jul 15  2017 afclip
+< -rwxr-xr-x   1 root   wheel    106608 Jul 15  2017 afconvert
+< -rwxr-xr-x   1 root   wheel     37008 Jul 15  2017 afhash
+< -rwxr-xr-x   1 root   wheel     75696 Jul 15  2017 afida
+< -rwxr-xr-x   1 root   wheel     83392 Jul 15  2017 afinfo
+< -rwxr-xr-x   1 root   wheel    162321 Oct 15  2016 afmtodit
+< -rwxr-xr-x   1 root   wheel     38304 Jul 15  2017 afplay
+< -rwxr-xr-x   1 root   wheel     41744 Jul 15  2017 afscexpand
+< -rwxr-xr-x   1 root   wheel     30048 Jul 15  2017 agentxtrap
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 agvtool
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 alias
+< -rwxr-xr-x   1 root   wheel     37040 Jul 15  2017 applesingle
+< lrwxr-xr-x   1 root   wheel        82 Aug  4  2018 appletviewer -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/appletviewer
+< -rwxr-xr-x   1 root   wheel     18912 Jul 15  2017 apply
+< -r-xr-xr-x   1 root   wheel      1808 Oct 15  2016 apropos
+< lrwxr-xr-x   1 root   wheel        73 Aug  4  2018 apt -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/apt
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 ar
+< -rwxr-xr-x   1 root   wheel     66752 Jul 26  2019 arch
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 as
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 asa
+< -rwxr-xr-x   1 root   wheel    144272 Jul 15  2017 asctl
+< -rwxr-xr-x   1 root   wheel    854336 Jul 26  2019 assetutil
+< -r-sr-xr-x   1 root   wheel     83584 Jul 26  2019 at
+< -rwxr-xr-x   1 root   wheel     66960 Jul 26  2019 atos
+< -r-sr-xr-x   1 root   wheel     83584 Jul 26  2019 atq
+< -r-sr-xr-x   1 root   wheel     83584 Jul 26  2019 atrm
+< -rwxr-xr-x   1 root   wheel     28880 Jul 26  2019 atsutil
+< -rwxr-xr-x   1 root   wheel     38656 Jul 15  2017 automator
+< -r-xr-xr-x   1 root   wheel       195 May 11  2017 auval
+< -rwxr-xr-x   1 root   wheel    273456 Jul 15  2017 auvaltool
+< -rwxr-xr-x   1 root   wheel     61088 Jul 26  2019 avbdiagnose
+< -rwxr-xr-x   1 root   wheel     50928 Jul 26  2019 avbutil
+< -rwxr-xr-x   1 root   wheel     95072 Jul 15  2017 avconvert
+< -rwxr-xr-x   1 root   wheel     33392 Jul 15  2017 avmetareadwrite
+< -rwxr-xr-x   1 root   wheel    112384 Jul 15  2017 awk
+< -rwxr-xr-x   1 root   wheel     31056 Jul 15  2017 banner
+< -rwxr-xr-x   1 root   wheel     23216 Jul 15  2017 base64
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 basename
+< -r-xr-xr-x   1 root   wheel      6574 Jan 24  2017 bashbug
+< -r-sr-xr-x   1 root   wheel     83584 Jul 26  2019 batch
+< -rwxr-xr-x   1 root   wheel     85280 Jul 15  2017 bc
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 bg
+< -rwxr-xr-x   1 root   wheel     18176 Jul 15  2017 biff
+< -rwxr-xr-x   1 root   wheel     45712 Jul 15  2017 binhex
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 binhex.pl
+< -r-xr-xr-x   1 root   wheel      3941 Oct 15  2016 binhex5.18.pl
+< -rwxr-xr-x   1 root   wheel    131104 Jul 26  2019 bioutil
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 bison
+< -rwxr-xr-x   1 root   wheel      1958 Feb  2  2017 bitesize.d
+< -rwxr-xr-x   1 root   wheel    197840 Jul 26  2019 brctl
+< -rwxr-xr-x   1 root   wheel     70960 Jul 26  2019 bsdtar
+< -rwxr-xr-x   1 root   wheel     18656 Jul 15  2017 bspatch
+< -rwxr-xr-x   1 root   wheel      8708 Oct 15  2016 btmmdiagnose
+< -rwxr-xr-x   1 root   wheel     41232 Jul 15  2017 bunzip2
+< -rwxr-xr-x   1 root   wheel     41232 Jul 15  2017 bzcat
+< lrwxr-xr-x   1 root   wheel         6 Aug  4  2018 bzcmp -> bzdiff
+< -rwxr-xr-x   1 root   wheel      2101 Apr  5  2017 bzdiff
+< -rwxr-xr-x   1 root   wheel     33888 Jul 15  2017 bzegrep
+< -rwxr-xr-x   1 root   wheel     33888 Jul 15  2017 bzfgrep
+< -rwxr-xr-x   1 root   wheel     33888 Jul 15  2017 bzgrep
+< -rwxr-xr-x   1 root   wheel     41232 Jul 15  2017 bzip2
+< -rwxr-xr-x   1 root   wheel     22800 Jul 15  2017 bzip2recover
+< lrwxr-xr-x   1 root   wheel         6 Aug  4  2018 bzless -> bzmore
+< -rwxr-xr-x   1 root   wheel      1259 Apr  5  2017 bzmore
+< lrwxr-xr-x   1 root   wheel         7 Aug  4  2018 c++ -> clang++
+< -rwxr-xr-x   1 root   wheel    447648 Jul 15  2017 c++filt
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 c2ph
+< -rwxr-xr-x   1 root   wheel     36642 Feb  7  2017 c2ph5.16
+< -rwxr-xr-x   1 root   wheel     36642 Feb  7  2017 c2ph5.18
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 c89
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 c99
+< -rwxr-xr-x   1 root   wheel      3697 Jan 24  2017 c_rehash
+< -rwxr-xr-x   1 root   wheel     24384 Jul 26  2019 caffeinate
+< -r-xr-xr-x   1 root   wheel     31824 Jul 15  2017 cal
+< -r-xr-xr-x   1 root   wheel     33600 Jul 15  2017 calendar
+< -r-xr-xr-x   1 root   wheel     23680 Jul 26  2019 cancel
+< -rwxr-xr-x   1 root   wheel     18656 Jul 15  2017 cap_mkdb
+< lrwxr-xr-x   1 root   wheel         3 Aug  4  2018 captoinfo -> tic
+< lrwxr-xr-x   1 root   wheel         5 Aug  4  2018 cc -> clang
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 cd
+< -rwxr-xr-x   1 root   wheel     96720 Jul 26  2019 certtool
+< -rwxr-xr-x   1 root   wheel     26864 Jul 15  2017 checknr
+< -rwxr-xr-x   1 root   wheel     18704 Jul 15  2017 chflags
+< -rwxr-xr-x   1 root   wheel     73728 Jul 26  2019 chfn
+< -rwxr-xr-x   1 root   wheel     23248 Jul 15  2017 chgrp
+< -rwxr-xr-x   1 root   wheel     73728 Jul 26  2019 chpass
+< -rwxr-xr-x   1 root   wheel     73728 Jul 26  2019 chsh
+< -rwxr-xr-x   1 root   wheel     22640 Jul 15  2017 cksum
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 clang
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 clang++
+< -rwxr-xr-x   1 root   wheel     17952 Jul 15  2017 clear
+< -rwxr-xr-x   1 root   wheel     32608 Jul 15  2017 cmp
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 cmpdylib
+< -rwxr-xr-x   1 root   wheel    103968 Jul 26  2019 codesign
+< -rwxr-xr-x   1 root   wheel     18288 Jul 15  2017 codesign_allocate
+< -rwxr-xr-x   1 root   wheel     22848 Jul 15  2017 col
+< -rwxr-xr-x   1 root   wheel     18528 Jul 15  2017 colcrt
+< -rwxr-xr-x   1 root   wheel     57488 Jul 15  2017 colldef
+< -rwxr-xr-x   1 root   wheel     18432 Jul 15  2017 colrm
+< -rwxr-xr-x   1 root   wheel     23408 Jul 15  2017 column
+< -rwxr-xr-x   1 root   wheel     18544 Jul 15  2017 comm
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 command
+< -rwxr-xr-x   1 root   wheel     27680 Jul 15  2017 compress
+< -rwxr-xr-x   1 root   wheel     22736 Jul 15  2017 compression_tool
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 config_data
+< -rwxr-xr-x   1 root   wheel      7266 Feb  7  2017 config_data5.16
+< -rwxr-xr-x   1 root   wheel      7265 Feb  7  2017 config_data5.18
+< -rwxr-xr-x   1 root   wheel     25008 Jul 26  2019 corebrightnessdiag
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 corelist
+< -rwxr-xr-x   1 root   wheel     10292 Feb  7  2017 corelist5.16
+< -rwxr-xr-x   1 root   wheel     12790 Feb  7  2017 corelist5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 cpan
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 cpan2dist
+< -rwxr-xr-x   1 root   wheel     21859 Feb  7  2017 cpan2dist5.16
+< -rwxr-xr-x   1 root   wheel     21859 Feb  7  2017 cpan2dist5.18
+< -rwxr-xr-x   1 root   wheel      5129 Feb  7  2017 cpan5.16
+< -rwxr-xr-x   1 root   wheel      5895 Feb  7  2017 cpan5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 cpanp
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 cpanp-run-perl
+< -rwxr-xr-x   1 root   wheel       580 Feb  7  2017 cpanp-run-perl5.16
+< -rwxr-xr-x   1 root   wheel       580 Feb  7  2017 cpanp-run-perl5.18
+< -rwxr-xr-x   1 root   wheel      3433 Feb  7  2017 cpanp5.16
+< -rwxr-xr-x   1 root   wheel      3433 Feb  7  2017 cpanp5.18
+< -rwxr-xr-x   1 root   wheel     42896 Jul 26  2019 cpio
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 cpp
+< -rwxr-xr-x   1 root   wheel      1402 Jun 16  2017 cpu_profiler.d
+< -rwxr-xr-x   1 root   wheel      1540 Feb  2  2017 cpuwalk.d
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 crc32
+< -r-xr-xr-x   1 root   wheel       798 Oct 15  2016 crc325.16
+< -r-xr-xr-x   1 root   wheel       871 Oct 15  2016 crc325.18
+< -rwxr-xr-x   1 root   wheel       342 Feb  2  2017 creatbyproc.d
+< -rwxr-xr-x   1 root   wheel     35376 Jul 26  2019 crlrefresh
+< -rwsr-xr-x   1 root   wheel     39152 Jul 15  2017 crontab
+< -rwxr-xr-x   1 root   wheel     14990 Apr 21  2017 csdiagnose
+< -rwxr-xr-x   1 root   wheel    567584 Jul 15  2017 csgather
+< -rwxr-xr-x   1 root   wheel     23968 Jul 15  2017 csplit
+< -rwxr-xr-x   1 root   wheel     42032 Jul 26  2019 csreq
+< -rwxr-xr-x   1 root   wheel     29600 Jul 15  2017 csrutil
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 ctags
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 ctf_insert
+---
+> -rwxr-xr-x   5 root  wheel       925 Feb  7  2017 2to3
+> -rwxr-xr-x   5 root  wheel       925 Feb  7  2017 2to3-
+> lrwxr-xr-x   1 root  wheel        74 Aug  4  2018 2to3-2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/2to3-2.7
+> lrwxr-xr-x   1 root  wheel        73 Aug  4  2018 2to32.6 -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/2to32.6
+> -rwxr-xr-x   1 root  wheel     28352 Jul 15  2017 AssetCacheActivatorUtil
+> -rwxr-xr-x   1 root  wheel     42560 Jul 15  2017 AssetCacheLocatorUtil
+> -rwxr-xr-x   1 root  wheel     35792 Jul 15  2017 AssetCacheTetheratorUtil
+> -rwxr-xr-x   1 root  wheel     18272 Jul 15  2017 BuildStrings
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 CpMac
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 DeRez
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 GetFileInfo
+> -rwxr-xr-x   1 root  wheel     78048 Jul 26  2019 IOAccelMemory
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 MergePef
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 MvMac
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 ResMerger
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 Rez
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 RezDet
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 RezWack
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 SetFile
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 SplitForks
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 UnRezWack
+> -rwxr-xr-x   1 root  wheel     66560 Jul 26  2019 a2p
+> -rwxr-xr-x   1 root  wheel    229920 Jul 26  2019 a2p5.16
+> -rwxr-xr-x   1 root  wheel    229920 Jul 26  2019 a2p5.18
+> -rwxr-xr-x   1 root  wheel     33760 Jul 15  2017 addftinfo
+> -rwxr-xr-x   1 root  wheel     46688 Jul 15  2017 afclip
+> -rwxr-xr-x   1 root  wheel    106608 Jul 15  2017 afconvert
+> -rwxr-xr-x   1 root  wheel     37008 Jul 15  2017 afhash
+> -rwxr-xr-x   1 root  wheel     75696 Jul 15  2017 afida
+> -rwxr-xr-x   1 root  wheel     83392 Jul 15  2017 afinfo
+> -rwxr-xr-x   1 root  wheel    162321 Oct 15  2016 afmtodit
+> -rwxr-xr-x   1 root  wheel     38304 Jul 15  2017 afplay
+> -rwxr-xr-x   1 root  wheel     41744 Jul 15  2017 afscexpand
+> -rwxr-xr-x   1 root  wheel     30048 Jul 15  2017 agentxtrap
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 agvtool
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 alias
+> -rwxr-xr-x   1 root  wheel     37040 Jul 15  2017 applesingle
+> lrwxr-xr-x   1 root  wheel        82 Aug  4  2018 appletviewer -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/appletviewer
+> -rwxr-xr-x   1 root  wheel     18912 Jul 15  2017 apply
+> -r-xr-xr-x   1 root  wheel      1808 Oct 15  2016 apropos
+> lrwxr-xr-x   1 root  wheel        73 Aug  4  2018 apt -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/apt
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 ar
+> -rwxr-xr-x   1 root  wheel     66752 Jul 26  2019 arch
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 as
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 asa
+> -rwxr-xr-x   1 root  wheel    144272 Jul 15  2017 asctl
+> -rwxr-xr-x   1 root  wheel    854336 Jul 26  2019 assetutil
+> -r-sr-xr-x   1 root  wheel     83584 Jul 26  2019 at
+> -rwxr-xr-x   1 root  wheel     66960 Jul 26  2019 atos
+> -r-sr-xr-x   1 root  wheel     83584 Jul 26  2019 atq
+> -r-sr-xr-x   1 root  wheel     83584 Jul 26  2019 atrm
+> -rwxr-xr-x   1 root  wheel     28880 Jul 26  2019 atsutil
+> -rwxr-xr-x   1 root  wheel     38656 Jul 15  2017 automator
+> -r-xr-xr-x   1 root  wheel       195 May 11  2017 auval
+> -rwxr-xr-x   1 root  wheel    273456 Jul 15  2017 auvaltool
+> -rwxr-xr-x   1 root  wheel     61088 Jul 26  2019 avbdiagnose
+> -rwxr-xr-x   1 root  wheel     50928 Jul 26  2019 avbutil
+> -rwxr-xr-x   1 root  wheel     95072 Jul 15  2017 avconvert
+> -rwxr-xr-x   1 root  wheel     33392 Jul 15  2017 avmetareadwrite
+> -rwxr-xr-x   1 root  wheel    112384 Jul 15  2017 awk
+> -rwxr-xr-x   1 root  wheel     31056 Jul 15  2017 banner
+> -rwxr-xr-x   1 root  wheel     23216 Jul 15  2017 base64
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 basename
+> -r-xr-xr-x   1 root  wheel      6574 Jan 24  2017 bashbug
+> -r-sr-xr-x   1 root  wheel     83584 Jul 26  2019 batch
+> -rwxr-xr-x   1 root  wheel     85280 Jul 15  2017 bc
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 bg
+> -rwxr-xr-x   1 root  wheel     18176 Jul 15  2017 biff
+> -rwxr-xr-x   1 root  wheel     45712 Jul 15  2017 binhex
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 binhex.pl
+> -r-xr-xr-x   1 root  wheel      3941 Oct 15  2016 binhex5.18.pl
+> -rwxr-xr-x   1 root  wheel    131104 Jul 26  2019 bioutil
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 bison
+> -rwxr-xr-x   1 root  wheel      1958 Feb  2  2017 bitesize.d
+> -rwxr-xr-x   1 root  wheel    197840 Jul 26  2019 brctl
+> -rwxr-xr-x   1 root  wheel     70960 Jul 26  2019 bsdtar
+> -rwxr-xr-x   1 root  wheel     18656 Jul 15  2017 bspatch
+> -rwxr-xr-x   1 root  wheel      8708 Oct 15  2016 btmmdiagnose
+> -rwxr-xr-x   1 root  wheel     41232 Jul 15  2017 bunzip2
+> -rwxr-xr-x   1 root  wheel     41232 Jul 15  2017 bzcat
+> lrwxr-xr-x   1 root  wheel         6 Aug  4  2018 bzcmp -> bzdiff
+> -rwxr-xr-x   1 root  wheel      2101 Apr  5  2017 bzdiff
+> -rwxr-xr-x   1 root  wheel     33888 Jul 15  2017 bzegrep
+> -rwxr-xr-x   1 root  wheel     33888 Jul 15  2017 bzfgrep
+> -rwxr-xr-x   1 root  wheel     33888 Jul 15  2017 bzgrep
+> -rwxr-xr-x   1 root  wheel     41232 Jul 15  2017 bzip2
+> -rwxr-xr-x   1 root  wheel     22800 Jul 15  2017 bzip2recover
+> lrwxr-xr-x   1 root  wheel         6 Aug  4  2018 bzless -> bzmore
+> -rwxr-xr-x   1 root  wheel      1259 Apr  5  2017 bzmore
+> lrwxr-xr-x   1 root  wheel         7 Aug  4  2018 c++ -> clang++
+> -rwxr-xr-x   1 root  wheel    447648 Jul 15  2017 c++filt
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 c2ph
+> -rwxr-xr-x   1 root  wheel     36642 Feb  7  2017 c2ph5.16
+> -rwxr-xr-x   1 root  wheel     36642 Feb  7  2017 c2ph5.18
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 c89
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 c99
+> -rwxr-xr-x   1 root  wheel      3697 Jan 24  2017 c_rehash
+> -rwxr-xr-x   1 root  wheel     24384 Jul 26  2019 caffeinate
+> -r-xr-xr-x   1 root  wheel     31824 Jul 15  2017 cal
+> -r-xr-xr-x   1 root  wheel     33600 Jul 15  2017 calendar
+> -r-xr-xr-x   1 root  wheel     23680 Jul 26  2019 cancel
+> -rwxr-xr-x   1 root  wheel     18656 Jul 15  2017 cap_mkdb
+> lrwxr-xr-x   1 root  wheel         3 Aug  4  2018 captoinfo -> tic
+> lrwxr-xr-x   1 root  wheel         5 Aug  4  2018 cc -> clang
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 cd
+> -rwxr-xr-x   1 root  wheel     96720 Jul 26  2019 certtool
+> -rwxr-xr-x   1 root  wheel     26864 Jul 15  2017 checknr
+> -rwxr-xr-x   1 root  wheel     18704 Jul 15  2017 chflags
+> -rwxr-xr-x   1 root  wheel     73728 Jul 26  2019 chfn
+> -rwxr-xr-x   1 root  wheel     23248 Jul 15  2017 chgrp
+> -rwxr-xr-x   1 root  wheel     73728 Jul 26  2019 chpass
+> -rwxr-xr-x   1 root  wheel     73728 Jul 26  2019 chsh
+> -rwxr-xr-x   1 root  wheel     22640 Jul 15  2017 cksum
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 clang
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 clang++
+> -rwxr-xr-x   1 root  wheel     17952 Jul 15  2017 clear
+> -rwxr-xr-x   1 root  wheel     32608 Jul 15  2017 cmp
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 cmpdylib
+> -rwxr-xr-x   1 root  wheel    103968 Jul 26  2019 codesign
+> -rwxr-xr-x   1 root  wheel     18288 Jul 15  2017 codesign_allocate
+> -rwxr-xr-x   1 root  wheel     22848 Jul 15  2017 col
+> -rwxr-xr-x   1 root  wheel     18528 Jul 15  2017 colcrt
+> -rwxr-xr-x   1 root  wheel     57488 Jul 15  2017 colldef
+> -rwxr-xr-x   1 root  wheel     18432 Jul 15  2017 colrm
+> -rwxr-xr-x   1 root  wheel     23408 Jul 15  2017 column
+> -rwxr-xr-x   1 root  wheel     18544 Jul 15  2017 comm
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 command
+> -rwxr-xr-x   1 root  wheel     27680 Jul 15  2017 compress
+> -rwxr-xr-x   1 root  wheel     22736 Jul 15  2017 compression_tool
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 config_data
+> -rwxr-xr-x   1 root  wheel      7266 Feb  7  2017 config_data5.16
+> -rwxr-xr-x   1 root  wheel      7265 Feb  7  2017 config_data5.18
+> -rwxr-xr-x   1 root  wheel     25008 Jul 26  2019 corebrightnessdiag
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 corelist
+> -rwxr-xr-x   1 root  wheel     10292 Feb  7  2017 corelist5.16
+> -rwxr-xr-x   1 root  wheel     12790 Feb  7  2017 corelist5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 cpan
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 cpan2dist
+> -rwxr-xr-x   1 root  wheel     21859 Feb  7  2017 cpan2dist5.16
+> -rwxr-xr-x   1 root  wheel     21859 Feb  7  2017 cpan2dist5.18
+> -rwxr-xr-x   1 root  wheel      5129 Feb  7  2017 cpan5.16
+> -rwxr-xr-x   1 root  wheel      5895 Feb  7  2017 cpan5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 cpanp
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 cpanp-run-perl
+> -rwxr-xr-x   1 root  wheel       580 Feb  7  2017 cpanp-run-perl5.16
+> -rwxr-xr-x   1 root  wheel       580 Feb  7  2017 cpanp-run-perl5.18
+> -rwxr-xr-x   1 root  wheel      3433 Feb  7  2017 cpanp5.16
+> -rwxr-xr-x   1 root  wheel      3433 Feb  7  2017 cpanp5.18
+> -rwxr-xr-x   1 root  wheel     42896 Jul 26  2019 cpio
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 cpp
+> -rwxr-xr-x   1 root  wheel      1402 Jun 16  2017 cpu_profiler.d
+> -rwxr-xr-x   1 root  wheel      1540 Feb  2  2017 cpuwalk.d
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 crc32
+> -r-xr-xr-x   1 root  wheel       798 Oct 15  2016 crc325.16
+> -r-xr-xr-x   1 root  wheel       871 Oct 15  2016 crc325.18
+> -rwxr-xr-x   1 root  wheel       342 Feb  2  2017 creatbyproc.d
+> -rwxr-xr-x   1 root  wheel     35376 Jul 26  2019 crlrefresh
+> -rwsr-xr-x   1 root  wheel     39152 Jul 15  2017 crontab
+> -rwxr-xr-x   1 root  wheel     14990 Apr 21  2017 csdiagnose
+> -rwxr-xr-x   1 root  wheel    567584 Jul 15  2017 csgather
+> -rwxr-xr-x   1 root  wheel     23968 Jul 15  2017 csplit
+> -rwxr-xr-x   1 root  wheel     42032 Jul 26  2019 csreq
+> -rwxr-xr-x   1 root  wheel     29600 Jul 15  2017 csrutil
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 ctags
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 ctf_insert
+168,980c168,980
+< -r-xr-xr-x   1 root   wheel      3040 Jun 27  2019 cups-config
+< -r-xr-xr-x   1 root   wheel     22976 Jul 26  2019 cupstestdsc
+< -r-xr-xr-x   1 root   wheel     63312 Jul 26  2019 cupstestppd
+< -rwxr-xr-x   1 root   wheel    189152 Jul 26  2019 curl
+< -rwxr-xr-x   1 root   wheel      4092 May 20  2017 curl-config
+< -rwxr-xr-x   1 root   wheel     23664 Jul 15  2017 cut
+< lrwxr-xr-x   1 root   wheel        59 Aug  4  2018 cvaffinity -> /System/Library/Filesystems/acfs.fs/Contents/bin/cvaffinity
+< lrwxr-xr-x   1 root   wheel        53 Aug  4  2018 cvcp -> /System/Library/Filesystems/acfs.fs/Contents/bin/cvcp
+< lrwxr-xr-x   1 root   wheel        56 Aug  4  2018 cvmkdir -> /System/Library/Filesystems/acfs.fs/Contents/bin/cvmkdir
+< lrwxr-xr-x   1 root   wheel        57 Aug  4  2018 cvmkfile -> /System/Library/Filesystems/acfs.fs/Contents/bin/cvmkfile
+< -rwxr-xr-x   1 root   wheel      7161 Feb  2  2017 dappprof
+< -rwxr-xr-x   1 root   wheel      7876 Feb  2  2017 dapptrace
+< -rwxr-xr-x   1 root   wheel    269520 Jul 15  2017 darwinup
+< -r-xr-xr-x   1 root   wheel   2067984 Jul 15  2017 db_archive
+< -r-xr-xr-x   1 root   wheel   2068048 Jul 15  2017 db_checkpoint
+< -r-xr-xr-x   1 root   wheel   2092608 Jul 15  2017 db_codegen
+< -r-xr-xr-x   1 root   wheel   2068048 Jul 15  2017 db_deadlock
+< -r-xr-xr-x   1 root   wheel   2068096 Jul 15  2017 db_dump
+< -r-xr-xr-x   1 root   wheel   2076416 Jul 15  2017 db_hotbackup
+< -r-xr-xr-x   1 root   wheel   2084976 Jul 15  2017 db_load
+< -r-xr-xr-x   1 root   wheel   2143584 Jul 15  2017 db_printlog
+< -r-xr-xr-x   1 root   wheel   2068128 Jul 15  2017 db_recover
+< -r-xr-xr-x   1 root   wheel   2067968 Jul 15  2017 db_stat
+< -r-xr-xr-x   1 root   wheel   2067984 Jul 15  2017 db_upgrade
+< -r-xr-xr-x   1 root   wheel   2068000 Jul 15  2017 db_verify
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 dbicadmin
+< -r-xr-xr-x   1 root   wheel      7078 Oct 15  2016 dbicadmin5.16
+< -r-xr-xr-x   1 root   wheel      7195 Oct 15  2016 dbicadmin5.18
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 dbilogstrip
+< -r-xr-xr-x   1 root   wheel      1469 Oct 15  2016 dbilogstrip5.16
+< -r-xr-xr-x   1 root   wheel      1469 Oct 15  2016 dbilogstrip5.18
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 dbiprof
+< -r-xr-xr-x   1 root   wheel      6305 Oct 15  2016 dbiprof5.16
+< -r-xr-xr-x   1 root   wheel      6295 Oct 15  2016 dbiprof5.18
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 dbiproxy
+< -r-xr-xr-x   1 root   wheel      5486 Oct 15  2016 dbiproxy5.16
+< -r-xr-xr-x   1 root   wheel      5479 Oct 15  2016 dbiproxy5.18
+< -rwxr-xr-x   1 root   wheel     46144 Jul 15  2017 dc
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 debinhex.pl
+< -r-xr-xr-x   1 root   wheel      5882 Oct 15  2016 debinhex5.18.pl
+< -rwxr-xr-x   1 root   wheel     39376 Jul 26  2019 defaults
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 desdp
+< -rwxr-xr-x   1 root   wheel    109600 Jul 15  2017 diff
+< -rwxr-xr-x   1 root   wheel     37024 Jul 15  2017 diff3
+< -rwxr-xr-x   1 root   wheel     41056 Jul 15  2017 diffstat
+< -rwxr-xr-x   1 root   wheel   1565152 Jul 15  2017 dig
+< -rwxr-xr-x   1 root   wheel     18080 Jul 15  2017 dirname
+< -rwxr-xr-x   1 root   wheel      2515 Feb  2  2017 diskhits
+< -rwxr-xr-x   1 root   wheel      1290 Feb  2  2017 dispqlen.d
+< -rwxr-xr-x   1 root   wheel     34496 Jul 15  2017 ditto
+< -rwxr-xr-x   1 root   wheel     57600 Jul 26  2019 dns-sd
+< -rwxr-xr-x   1 root   wheel    271920 Jul 15  2017 drutil
+< -rwxr-xr-x   1 root   wheel     34080 Jul 15  2017 dscacheutil
+< -rwxr-xr-x   1 root   wheel    202464 Jul 15  2017 dscl
+< -rwxr-xr-x   1 root   wheel     17968 Jul 15  2017 dserr
+< -rwxr-xr-x   1 root   wheel     33248 Jul 15  2017 dsexport
+< -rwxr-xr-x   1 root   wheel     83808 Jul 15  2017 dsimport
+< -rwxr-xr-x   1 root   wheel     27728 Jul 15  2017 dsmemberutil
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 dsymutil
+< -rwxr-xr-x   1 root   wheel     29431 Feb  2  2017 dtruss
+< -rwxr-xr-x   1 root   wheel     23552 Jul 15  2017 du
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 dwarfdump
+< -rwxr-xr-x   2 root   wheel       925 Oct 15  2016 easy_install
+< -rwxr-xr-x   1 root   wheel       454 Oct 15  2016 easy_install-2.6
+< -rwxr-xr-x   1 root   wheel       458 Oct 15  2016 easy_install-2.7
+< -rwxr-xr-x   1 root   wheel     33888 Jul 15  2017 egrep
+< -r-xr-xr-x   1 root   wheel  50925984 Jul 26  2019 emacs
+< -rwxr-xr-x   1 root   wheel   3193952 Jul 15  2017 emacs-undumped
+< -rwxr-xr-x   1 root   wheel     32912 Jul 15  2017 emacsclient
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 enc2xs
+< -rwxr-xr-x   1 root   wheel     39189 Feb  7  2017 enc2xs5.16
+< -rwxr-xr-x   1 root   wheel     39189 Feb  7  2017 enc2xs5.18
+< -rwxr-xr-x   1 root   wheel     28752 Jul 15  2017 encode_keychange
+< -rwxr-xr-x   1 root   wheel     23456 Jul 15  2017 env
+< -rwxr-xr-x   1 root   wheel    145024 Jul 15  2017 eqn
+< -r-xr-xr-x   1 root   wheel      4892 Aug  1  2018 erb
+< -rwxr-xr-x   1 root   wheel      4516 Feb  2  2017 errinfo
+< -rwxr-xr-x   1 root   wheel    107248 Jul 15  2017 etags
+< lrwxr-xr-x   1 root   wheel         3 Aug  4  2018 ex -> vim
+< lrwxr-xr-x   1 root   wheel        39 Aug 24  2018 examshell -> /usr/share/examshell/venv/bin/examshell
+< -rwxr-xr-x   1 root   wheel      5149 Feb  2  2017 execsnoop
+< -rwxr-xr-x   1 root   wheel     18544 Jul 15  2017 expand
+< -r-xr-xr-x   1 root   wheel     51616 Jul 15  2017 expect
+< lrwxr-xr-x   1 root   wheel        78 Aug  4  2018 extcheck -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/extcheck
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 eyapp
+< -r-xr-xr-x   1 root   wheel     12841 Oct 15  2016 eyapp5.16
+< -r-xr-xr-x   1 root   wheel     12841 Oct 15  2016 eyapp5.18
+< -rwxr-xr-x   1 root   wheel     17760 Jul 15  2017 false
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 fc
+< -rwxr-xr-x   1 root   wheel      2668 Feb  2  2017 fddist
+< -rwxr-xr-x   1 root   wheel    185904 Jul 15  2017 fdesetup
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 fg
+< -rwxr-xr-x   1 root   wheel     33888 Jul 15  2017 fgrep
+< -rwxr-xr-x   1 root   wheel    267024 Jul 26  2019 file
+< -rwxr-xr-x   1 root   wheel       272 Feb  2  2017 filebyproc.d
+< -rwxr-xr-x   1 root   wheel    123888 Jul 26  2019 filtercalltree
+< -rwxr-xr-x   1 root   wheel     51728 Jul 15  2017 find
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 find2perl
+< -rwxr-xr-x   1 root   wheel     23634 Feb  7  2017 find2perl5.16
+< -rwxr-xr-x   1 root   wheel     23634 Feb  7  2017 find2perl5.18
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 findrule
+< -r-xr-xr-x   1 root   wheel      3418 Oct 15  2016 findrule5.16
+< -r-xr-xr-x   1 root   wheel      3418 Oct 15  2016 findrule5.18
+< -rwxr-xr-x   1 root   wheel     33856 Jul 15  2017 finger
+< -rwxr-xr-x   1 root   wheel     15523 Oct 15  2016 fixproc
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 flex
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 flex++
+< -rwxr-xr-x   1 root   wheel     23152 Jul 15  2017 fmt
+< -rwxr-xr-x   1 root   wheel     18752 Jul 15  2017 fold
+< lrwxr-xr-x   1 root   wheel       126 Aug  4  2018 fontrestore -> ../../System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Support/fontmover
+< -rwxr-xr-x   1 root   wheel    115664 Jul 26  2019 footprint
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 format-sql
+< -r-xr-xr-x   1 root   wheel       448 Oct 15  2016 format-sql5.16
+< -r-xr-xr-x   1 root   wheel       448 Oct 15  2016 format-sql5.18
+< -rwxr-xr-x   1 root   wheel     18720 Jul 15  2017 from
+< -rwxr-xr-x   1 root   wheel     60112 Jul 15  2017 fs_usage
+< -r-xr-xr-x   1 root   wheel    161680 Jul 15  2017 ftp
+< -rwxr-xr-x   1 root   wheel     35424 Jul 15  2017 funzip
+< -r-xr-xr-x   1 root   wheel      2610 Oct 15  2016 fuser
+< -rwxr-xr-x   1 root   wheel     33856 Jul 15  2017 fwkdp
+< -rwxr-xr-x   1 root   wheel     42272 Jul 15  2017 fwkpfv
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 g++
+< -rwxr-xr-x   1 root   wheel     18288 Jul 15  2017 gatherheaderdoc
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 gcc
+< -rwxr-xr-x   1 root   wheel    117968 Jul 26  2019 gcore
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 gcov
+< -rwxr-xr-x   1 root   wheel      7198 Oct 15  2016 gdiffmk
+< -r-xr-xr-x   1 root   wheel       596 Aug  1  2018 gem
+< -r-xr-xr-x   1 root   wheel     80634 Oct 15  2016 gen_bridge_metadata
+< -rwxr-xr-x   1 root   wheel     27488 Jul 15  2017 gencat
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 genstrings
+< -rwxr-xr-x   1 root   wheel     63792 Jul 26  2019 getconf
+< -rwxr-xr-x   1 root   wheel     17952 Jul 15  2017 getopt
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 getopts
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 git
+< -rwxr-xr-x   1 root   wheel     18272 Jul 15  2017 git-cvsserver
+< -rwxr-xr-x   1 root   wheel     18288 Jul 15  2017 git-receive-pack
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 git-shell
+< -rwxr-xr-x   1 root   wheel     18288 Jul 15  2017 git-upload-archive
+< -rwxr-xr-x   1 root   wheel     18288 Jul 15  2017 git-upload-pack
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 gm4
+< -rwxr-xr-x   1 root   wheel       849 Oct 15  2016 gnuattach
+< -rwxr-xr-x   1 root   wheel     33088 Jul 15  2017 gnuclient
+< -rwxr-xr-x   1 root   wheel      1039 Oct 15  2016 gnudoit
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 gnumake
+< -rwxr-xr-x   1 root   wheel     28944 Jul 15  2017 gnuserv
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 gperf
+< -rwxr-xr-x   1 root   wheel     33888 Jul 15  2017 grep
+< -rwxr-xr-x   1 root   wheel     68112 Jul 15  2017 grn
+< -rwxr-xr-x   1 root   wheel     87296 Jul 15  2017 grodvi
+< -rwxr-xr-x   1 root   wheel     72352 Jul 15  2017 groff
+< -rwxr-xr-x   1 root   wheel      7074 Oct 15  2016 groffer
+< -rwxr-xr-x   1 root   wheel      2471 Oct 15  2016 grog
+< -rwxr-xr-x   1 root   wheel     90912 Jul 15  2017 grolbp
+< -rwxr-xr-x   1 root   wheel     82720 Jul 15  2017 grolj4
+< -rwxr-xr-x   1 root   wheel    120752 Jul 15  2017 grops
+< -rwxr-xr-x   1 root   wheel     82896 Jul 15  2017 grotty
+< -rwxr-xr-x   1 root   wheel     23216 Jul 15  2017 groups
+< -rwxr-xr-x   1 root   wheel     52960 Jul 15  2017 gunzip
+< -rwxr-xr-x   1 root   wheel     52960 Jul 15  2017 gzcat
+< -rwxr-xr-x   1 root   wheel      4085 Apr  5  2017 gzexe
+< -rwxr-xr-x   1 root   wheel     46992 Jul 15  2017 gzip
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 h2ph
+< -rwxr-xr-x   1 root   wheel     28167 Feb  7  2017 h2ph5.16
+< -rwxr-xr-x   1 root   wheel     28167 Feb  7  2017 h2ph5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 h2xs
+< -rwxr-xr-x   1 root   wheel     60600 Feb  7  2017 h2xs5.16
+< -rwxr-xr-x   1 root   wheel     60725 Feb  7  2017 h2xs5.18
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 hash
+< -rwxr-xr-x   1 root   wheel     17888 Jul 26  2019 hdid
+< -rwxr-xr-x   1 root   wheel    353280 Jul 26  2019 hdiutil
+< -rwxr-xr-x   1 root   wheel     18272 Jul 15  2017 hdxml2manxml
+< -rwxr-xr-x   1 root   wheel     18864 Jul 15  2017 head
+< -rwxr-xr-x   1 root   wheel     18288 Jul 15  2017 headerdoc2html
+< -rwxr-xr-x   1 root   wheel     70896 Jul 26  2019 heap
+< -rwxr-xr-x   1 root   wheel     84480 Jul 26  2019 heap32
+< -rwxr-xr-x   1 root   wheel     32800 Jul 15  2017 hexdump
+< -rwxr-xr-x   1 root   wheel     33776 Jul 26  2019 hidutil
+< -rwxr-xr-x   1 root   wheel     91120 Jul 15  2017 hiutil
+< -rwxr-xr-x   1 root   wheel   1548512 Jul 15  2017 host
+< -rwxr-xr-x   1 root   wheel     43040 Jul 26  2019 hostinfo
+< -rwxr-xr-x   1 root   wheel      1939 Feb  2  2017 hotspot.d
+< -rwxr-xr-x   1 root   wheel    126736 Jul 15  2017 hpftodit
+< -rwxr-xr-x   1 root   wheel     92208 Jul 26  2019 hpmdiagnose
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 htmltree
+< -r-xr-xr-x   1 root   wheel      1177 Oct 15  2016 htmltree5.16
+< -r-xr-xr-x   1 root   wheel      1177 Oct 15  2016 htmltree5.18
+< -rwxr-xr-x   1 root   wheel      2523 Feb  2  2017 httpdstat.d
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 ibtool
+< -rwxr-xr-x   1 root   wheel     28000 Jul 15  2017 iconutil
+< -rwxr-xr-x   1 root   wheel     32128 Jul 15  2017 iconv
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 ictool
+< -rwxr-xr-x   1 root   wheel     23216 Jul 15  2017 id
+< -rwxr-xr-x   5 root   wheel       925 Feb  7  2017 idle
+< lrwxr-xr-x   1 root   wheel        73 Aug  4  2018 idle2.6 -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/idle2.6
+< lrwxr-xr-x   1 root   wheel        73 Aug  4  2018 idle2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/idle2.7
+< lrwxr-xr-x   1 root   wheel        74 Aug  4  2018 idlj -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/idlj
+< -rwxr-xr-x   1 root   wheel      8556 Jun 16  2017 imptrace
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 indent
+< -rwxr-xr-x   1 root   wheel     44336 Jul 15  2017 indxbib
+< -rwxr-xr-x   1 root   wheel    175024 Jul 15  2017 info
+< -rwxr-xr-x   1 root   wheel     58688 Jul 15  2017 infocmp
+< -rwxr-xr-x   1 root   wheel     55296 Jul 15  2017 infokey
+< lrwxr-xr-x   1 root   wheel         3 Aug  4  2018 infotocap -> tic
+< -rwxr-xr-x   1 root   wheel     28528 Jul 15  2017 install
+< -rwxr-xr-x   1 root   wheel     59936 Jul 15  2017 install-info
+< -rwxr-xr-x   1 root   wheel     18288 Jul 15  2017 install_name_tool
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 instmodsh
+< -rwxr-xr-x   1 root   wheel      4288 Feb  7  2017 instmodsh5.16
+< -rwxr-xr-x   1 root   wheel      4288 Feb  7  2017 instmodsh5.18
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 instruments
+< -rwxr-xr-x   1 root   wheel      1976 Feb  2  2017 iofile.d
+< -rwxr-xr-x   1 root   wheel      1573 Feb  2  2017 iofileb.d
+< -rwxr-xr-x   1 root   wheel      6600 Feb  2  2017 iopattern
+< -rwxr-xr-x   1 root   wheel      5942 Feb  2  2017 iopending
+< -rwxr-xr-x   1 root   wheel     12135 Feb  2  2017 iosnoop
+< -rwxr-xr-x   1 root   wheel     11884 Feb  2  2017 iotop
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 ip2cc
+< -r-xr-xr-x   1 root   wheel      2116 Oct 15  2016 ip2cc5.16
+< -r-xr-xr-x   1 root   wheel      2116 Oct 15  2016 ip2cc5.18
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 ipcount
+< -r-xr-xr-x   1 root   wheel      3728 Oct 15  2016 ipcount5.16
+< -r-xr-xr-x   1 root   wheel      3728 Oct 15  2016 ipcount5.18
+< -rwxr-xr-x   1 root   wheel     18528 Jul 15  2017 ipcrm
+< -rwxr-xr-x   1 root   wheel     26832 Jul 15  2017 ipcs
+< -r-xr-xr-x   1 root   wheel     47152 Jul 26  2019 ippfind
+< -r-xr-xr-x   1 root   wheel     87776 Jul 26  2019 ipptool
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 iprofiler
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 iptab
+< -r-xr-xr-x   1 root   wheel       986 Oct 15  2016 iptab5.16
+< -r-xr-xr-x   1 root   wheel       986 Oct 15  2016 iptab5.18
+< -r-xr-xr-x   1 root   wheel       240 Aug  1  2018 irb
+< -rwxr-xr-x   1 root   wheel    107556 Aug  8  2018 iscsictl
+< lrwxr-xr-x   1 root   wheel        73 Aug  4  2018 jar -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jar
+< lrwxr-xr-x   1 root   wheel        79 Aug  4  2018 jarsigner -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jarsigner
+< lrwxr-xr-x   1 root   wheel        74 Aug  4  2018 java -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java
+< lrwxr-xr-x   1 root   wheel        75 Aug  4  2018 javac -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/javac
+< lrwxr-xr-x   1 root   wheel        77 Aug  4  2018 javadoc -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/javadoc
+< lrwxr-xr-x   1 root   wheel        75 Aug  4  2018 javah -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/javah
+< lrwxr-xr-x   1 root   wheel        75 Aug  4  2018 javap -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/javap
+< lrwxr-xr-x   1 root   wheel        82 Aug  4  2018 javapackager -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/javapackager
+< lrwxr-xr-x   1 root   wheel        76 Aug  4  2018 javaws -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/javaws
+< lrwxr-xr-x   1 root   wheel        74 Aug  4  2018 jcmd -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jcmd
+< lrwxr-xr-x   1 root   wheel        78 Aug  4  2018 jconsole -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jconsole
+< lrwxr-xr-x   1 root   wheel        78 Aug  4  2018 jcontrol -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jcontrol
+< lrwxr-xr-x   1 root   wheel        73 Aug  4  2018 jdb -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jdb
+< lrwxr-xr-x   1 root   wheel        75 Aug  4  2018 jdeps -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jdeps
+< lrwxr-xr-x   1 root   wheel        74 Aug  4  2018 jhat -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jhat
+< lrwxr-xr-x   1 root   wheel        75 Aug  4  2018 jhsdb -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jhsdb
+< lrwxr-xr-x   1 root   wheel        76 Aug  4  2018 jimage -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jimage
+< lrwxr-xr-x   1 root   wheel        75 Aug  4  2018 jinfo -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jinfo
+< lrwxr-xr-x   1 root   wheel        73 Aug  4  2018 jjs -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jjs
+< lrwxr-xr-x   1 root   wheel        74 Aug  4  2018 jmap -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jmap
+< lrwxr-xr-x   1 root   wheel        73 Aug  4  2018 jmc -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jmc
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 jobs
+< -rwxr-xr-x   1 root   wheel     23456 Jul 15  2017 join
+< -rwxr-xr-x   1 root   wheel     23040 Jul 15  2017 jot
+< lrwxr-xr-x   1 root   wheel        73 Aug  4  2018 jps -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jps
+< lrwxr-xr-x   1 root   wheel        80 Aug  4  2018 jrunscript -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jrunscript
+< lrwxr-xr-x   1 root   wheel        79 Aug  4  2018 jsadebugd -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jsadebugd
+< lrwxr-xr-x   1 root   wheel        76 Aug  4  2018 jshell -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jshell
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 json_pp
+< -rwxr-xr-x   1 root   wheel      3953 Feb  7  2017 json_pp5.16
+< -rwxr-xr-x   1 root   wheel      3953 Feb  7  2017 json_pp5.18
+< lrwxr-xr-x   1 root   wheel        76 Aug  4  2018 jstack -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jstack
+< lrwxr-xr-x   1 root   wheel        75 Aug  4  2018 jstat -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jstat
+< lrwxr-xr-x   1 root   wheel        76 Aug  4  2018 jstatd -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jstatd
+< lrwxr-xr-x   1 root   wheel        79 Aug  4  2018 jvisualvm -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jvisualvm
+< -rwxr-xr-x   1 root   wheel     51328 Jul 26  2019 kcc
+< -rwxr-xr-x   1 root   wheel     28992 Jul 26  2019 kdestroy
+< -rwxr-xr-x   1 root   wheel    159440 Jul 26  2019 kextutil
+< lrwxr-xr-x   1 root   wheel        77 Aug  4  2018 keytool -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/keytool
+< -rwxr-xr-x   1 root   wheel     29936 Jul 26  2019 kgetcred
+< -rwxr-xr-x   1 root   wheel      1621 Feb  2  2017 kill.d
+< -rwxr-xr-x   1 root   wheel     23952 Jul 15  2017 killall
+< -rwxr-xr-x   1 root   wheel     48288 Jul 26  2019 kinit
+< lrwxr-xr-x   1 root   wheel         3 Aug  4  2018 klist -> kcc
+< -rwxr-xr-x   1 root   wheel     30128 Jul 26  2019 kpasswd
+< -rwxr-xr-x   1 root   wheel      3252 Oct 15  2016 krb5-config
+< lrwxr-xr-x   1 root   wheel         3 Aug  4  2018 kswitch -> kcc
+< -rwxr-xr-x   1 root   wheel     18576 Jul 15  2017 lam
+< -rwxr-xr-x   1 root   wheel     23344 Jul 15  2017 last
+< -rwxr-xr-x   1 root   wheel     18896 Jul 15  2017 lastcomm
+< -rwxr-xr-x   1 root   wheel      2297 Feb  2  2017 lastwords
+< -rwxr-xr-x   1 root   wheel     98592 Jul 26  2019 latency
+< -rwxr-xr-x   1 root   wheel    604096 Jul 26  2019 layerutil
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 ld
+< lrwxr-xr-x   1 root   wheel        10 Aug  4  2018 ldapadd -> ldapmodify
+< -rwxr-xr-x   1 root   wheel    305120 Jul 15  2017 ldapcompare
+< -rwxr-xr-x   1 root   wheel    309200 Jul 15  2017 ldapdelete
+< -rwxr-xr-x   1 root   wheel    309264 Jul 15  2017 ldapexop
+< -rwxr-xr-x   1 root   wheel    317760 Jul 15  2017 ldapmodify
+< -rwxr-xr-x   1 root   wheel    305104 Jul 15  2017 ldapmodrdn
+< -rwxr-xr-x   1 root   wheel    304992 Jul 15  2017 ldappasswd
+< -rwxr-xr-x   1 root   wheel    337712 Jul 15  2017 ldapsearch
+< -rwxr-xr-x   1 root   wheel    255616 Jul 15  2017 ldapurl
+< -rwxr-xr-x   1 root   wheel    305088 Jul 15  2017 ldapwhoami
+< -rwxr-xr-x   1 root   wheel    120448 Jul 26  2019 leaks
+< -rwxr-xr-x   1 root   wheel    143008 Jul 26  2019 leaks32
+< -r-xr-xr-x   1 root   wheel     18352 Jul 15  2017 leave
+< -rwxr-xr-x   1 root   wheel    129536 Jul 15  2017 less
+< -rwxr-xr-x   1 root   wheel     18272 Jul 15  2017 lessecho
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 lex
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 libnetcfg
+< -rwxr-xr-x   1 root   wheel     15759 Feb  7  2017 libnetcfg5.16
+< -rwxr-xr-x   1 root   wheel     15754 Feb  7  2017 libnetcfg5.18
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 libtool
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 lipo
+< -rwxr-xr-x   1 root   wheel     50480 Jul 15  2017 lkbib
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 lldb
+< lrwxr-xr-x   1 root   wheel         7 Aug  4  2018 llvm-g++ -> clang++
+< lrwxr-xr-x   1 root   wheel         5 Aug  4  2018 llvm-gcc -> clang
+< -rwxr-xr-x   1 root   wheel      1936 Feb  2  2017 loads.d
+< -rwxr-xr-x   1 root   wheel     68528 Jul 15  2017 locale
+< -rwxr-xr-x   1 root   wheel     30650 Oct 15  2016 localedef
+< -rwxr-xr-x   1 root   wheel     23392 Jul 15  2017 locate
+< -rwxr-xr-x   1 root   wheel     57760 Jul 15  2017 lockstat
+< -rwxr-xr-x   1 root   wheel    150224 Jul 26  2019 log
+< -r-xr-xr-x   1 root   wheel     18784 Jul 15  2017 logger
+< -r-sr-xr-x   1 root   wheel     76208 Jul 26  2019 login
+< -rwxr-xr-x   1 root   wheel     18128 Jul 15  2017 logname
+< -rwxr-xr-x   1 root   wheel     18768 Jul 15  2017 look
+< -rwxr-xr-x   1 root   wheel     50752 Jul 15  2017 lookbib
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 lorder
+< -r-xr-xr-x   1 root   wheel     28352 Jul 26  2019 lp
+< -r-xr-xr-x   1 root   wheel     24176 Jul 26  2019 lpoptions
+< -r-xr-xr-x   1 root   wheel     24160 Jul 26  2019 lpq
+< -r-xr-xr-x   1 root   wheel     23888 Jul 26  2019 lpr
+< -r-xr-xr-x   1 root   wheel     18528 Jul 26  2019 lprm
+< -r-xr-xr-x   1 root   wheel     36944 Jul 26  2019 lpstat
+< -rwxr-xr-x   1 root   wheel    247824 Jul 26  2019 lsappinfo
+< -rwxr-xr-x   1 root   wheel     29168 Jul 15  2017 lsbom
+< -rwxr-xr-x   1 root   wheel     60064 Jul 26  2019 lskq
+< -rwxr-xr-x   1 root   wheel     52512 Jul 15  2017 lsm
+< -rwxr-xr-x   1 root   wheel     73968 Jul 26  2019 lsmp
+< -rwxr-xr-x   1 root   wheel     18288 Jul 15  2017 lsvfs
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 lwp-download
+< -r-xr-xr-x   1 root   wheel      8639 Oct 15  2016 lwp-download5.16
+< -r-xr-xr-x   1 root   wheel      8639 Oct 15  2016 lwp-download5.18
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 lwp-dump
+< -r-xr-xr-x   1 root   wheel      2802 Oct 15  2016 lwp-dump5.16
+< -r-xr-xr-x   1 root   wheel      2802 Oct 15  2016 lwp-dump5.18
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 lwp-mirror
+< -r-xr-xr-x   1 root   wheel      2481 Oct 15  2016 lwp-mirror5.16
+< -r-xr-xr-x   1 root   wheel      2482 Oct 15  2016 lwp-mirror5.18
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 lwp-request
+< -r-xr-xr-x   1 root   wheel     15063 Oct 15  2016 lwp-request5.16
+< -r-xr-xr-x   1 root   wheel     15063 Oct 15  2016 lwp-request5.18
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 m4
+< -rwxr-xr-x   1 root   wheel     42000 Jul 15  2017 macbinary
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 macerror
+< -r-xr-xr-x   1 root   wheel       728 Oct 15  2016 macerror5.16
+< -r-xr-xr-x   1 root   wheel       728 Oct 15  2016 macerror5.18
+< -rwxr-xr-x   1 root   wheel     66752 Jul 26  2019 machine
+< -rwx------   1 root   wheel  10793588 Jan  9 15:55 macreport
+< -rwxr-xr-x   1 root   wheel     89808 Jul 15  2017 mail
+< lrwxr-xr-x   1 root   wheel        16 Aug  4  2018 mailq -> ../sbin/sendmail
+< -rwxr-xr-x   1 root   wheel     89808 Jul 15  2017 mailx
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 make
+< -rwxr-xr-x   1 root   wheel    243056 Jul 15  2017 makeinfo
+< -rwxr-xr-x   1 root   wheel     85920 Jul 26  2019 malloc_history
+< -rwxr-xr-x   1 root   wheel    104064 Jul 26  2019 malloc_history32
+< -r-xr-xr-x   1 root   wheel     70128 Jul 15  2017 man
+< lrwxr-xr-x   1 root   wheel         3 Aug  4  2018 manpath -> man
+< -rwxr-xr-x   1 root   wheel     87232 Jul 15  2017 mcxquery
+< -rwxr-xr-x   1 root   wheel     23344 Jul 15  2017 mcxrefresh
+< -rwxr-xr-x   1 root   wheel    153696 Jul 26  2019 mddiagnose
+< -rwxr-xr-x   1 root   wheel     29248 Jul 26  2019 mdfind
+< -rwxr-xr-x   1 root   wheel    292048 Jul 26  2019 mdimport
+< -rwxr-xr-x   1 root   wheel    310832 Jul 26  2019 mdimport32
+< -rwxr-xr-x   1 root   wheel     23984 Jul 26  2019 mdls
+< -rwxr-xr-x   1 root   wheel     76512 Jul 26  2019 mdutil
+< -rwxr-xr-x   1 root   wheel     68592 Jul 26  2019 memory_pressure
+< -r-xr-xr-x   1 root   wheel     18160 Jul 15  2017 mesg
+< -rwxr-xr-x   1 root   wheel     43760 Oct 15  2016 mib2c
+< -rwxr-xr-x   1 root   wheel      8780 Oct 15  2016 mib2c-update
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 mig
+< -rwxr-xr-x   1 root   wheel     19856 Jul 15  2017 mkbom
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 mkdep
+< -rwxr-xr-x   1 root   wheel     18368 Jul 15  2017 mkfifo
+< -rwxr-xr-x   1 root   wheel     40288 Jul 15  2017 mklocale
+< -rwxr-xr-x   1 root   wheel     18752 Jul 15  2017 mktemp
+< -rwxr-xr-x   1 root   wheel      2975 Oct 15  2016 mmroff
+< -rwxr-xr-x   1 root   wheel     28688 Jul 15  2017 mnthome
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 moo-outdated
+< -r-xr-xr-x   1 root   wheel       448 Oct 15  2016 moo-outdated5.18
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 moose-outdated
+< -r-xr-xr-x   1 root   wheel       455 Oct 15  2016 moose-outdated5.16
+< -r-xr-xr-x   1 root   wheel       455 Oct 15  2016 moose-outdated5.18
+< -rwxr-xr-x   1 root   wheel    129536 Jul 15  2017 more
+< -r-xr-xr-x   1 root   wheel      1271 Oct 15  2016 mp2bug
+< -rwxr-xr-x   1 root   wheel     29440 Jul 15  2017 msgs
+< -rwxr-xr-x   1 root   wheel    145296 Jul 15  2017 nano
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 nasm
+< lrwxr-xr-x   1 root   wheel        82 Aug  4  2018 native2ascii -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/native2ascii
+< -rwxr-xr-x   1 root   wheel     25440 Jul 26  2019 nbdst
+< -r-xr-xr-x   1 root   wheel     46896 Jul 15  2017 nc
+< -r-xr-xr-x   1 root   wheel     31824 Jul 15  2017 ncal
+< -r-xr-xr-x   1 root   wheel     23888 Jul 15  2017 ncctl
+< -r-xr-xr-x   1 root   wheel     23888 Jul 15  2017 ncdestroy
+< -r-xr-xr-x   1 root   wheel     23888 Jul 15  2017 ncinit
+< -r-xr-xr-x   1 root   wheel     23888 Jul 15  2017 nclist
+< -rwxr-xr-x   1 root   wheel      4977 Oct 15  2016 ncurses5.4-config
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 ndisasm
+< -rwxr-xr-x   1 root   wheel       271 Oct 15  2016 neqn
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 net-server
+< -r-xr-xr-x   1 root   wheel      3429 Oct 15  2016 net-server5.16
+< -r-xr-xr-x   1 root   wheel      3429 Oct 15  2016 net-server5.18
+< -rwxr-xr-x   1 root   wheel     78699 Oct 15  2016 net-snmp-cert
+< -rwxr-xr-x   1 root   wheel     25356 Oct 15  2016 net-snmp-config
+< -rwxr-xr-x   1 root   wheel      3651 Oct 15  2016 net-snmp-create-v3-user
+< -rwxr-xr-x   1 root   wheel     71328 Jul 15  2017 nettop
+< lrwxr-xr-x   1 root   wheel        16 Aug  4  2018 newaliases -> ../sbin/sendmail
+< -r-sr-xr-x   1 root   wheel     52480 Jul 26  2019 newgrp
+< -rwxr-xr-x   1 root   wheel      4376 Feb  2  2017 newproc.d
+< -r-xr-xr-x   1 root   wheel     45136 Jul 15  2017 nfsstat
+< -rwxr-xr-x   1 root   wheel     18352 Jul 15  2017 nice
+< -rwxr-xr-x   1 root   wheel     23504 Jul 15  2017 nl
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 nm
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 nmedit
+< -rwxr-xr-x   1 root   wheel     18576 Jul 15  2017 nohup
+< lrwxr-xr-x   1 root   wheel        33 Aug 30  2019 norminette -> ../share/norminette/norminette.rb
+< -rwxr-xr-x   1 root   wheel     28992 Jul 15  2017 notifyutil
+< -rwxr-xr-x   1 root   wheel      2357 Oct 15  2016 nroff
+< -rwxr-xr-x   1 root   wheel     96560 Jul 26  2019 nscurl
+< -rwxr-xr-x   1 root   wheel   1552544 Jul 15  2017 nslookup
+< -rwxr-xr-x   1 root   wheel   1543296 Jul 15  2017 nsupdate
+< -rwxr-xr-x   1 root   wheel     70912 Jul 15  2017 ntp-keygen
+< -rwxr-xr-x   1 root   wheel    184880 Jul 15  2017 ntpq
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 objdump
+< -rwxr-xr-x   1 root   wheel     32800 Jul 15  2017 od
+< -rwxr-xr-x   1 root   wheel     61504 Jul 15  2017 odutil
+< -rwxr-xr-x   1 root   wheel    105888 Jul 15  2017 open
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 opendiff
+< -rwxr-xr-x   1 root   wheel      8034 Feb  2  2017 opensnoop
+< -rwxr-xr-x   1 root   wheel    923824 Jul 26  2019 openssl
+< lrwxr-xr-x   1 root   wheel        74 Aug  4  2018 orbd -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/orbd
+< -rwxr-xr-x   1 root   wheel     41744 Jul 26  2019 osacompile
+< -rwxr-xr-x   1 root   wheel     19904 Jul 26  2019 osadecompile
+< -rwxr-xr-x   1 root   wheel     18560 Jul 26  2019 osalang
+< -rwxr-xr-x   1 root   wheel     43104 Jul 26  2019 osascript
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 otool
+< lrwxr-xr-x   1 root   wheel        77 Aug  4  2018 pack200 -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/pack200
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 package-stash-conflicts
+< -r-xr-xr-x   1 root   wheel       491 Oct 15  2016 package-stash-conflicts5.16
+< -r-xr-xr-x   1 root   wheel       844 Oct 15  2016 package-stash-conflicts5.18
+< -rwxr-xr-x   1 root   wheel      2006 Jun 16  2017 pagesize
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 pagestuff
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 par.pl
+< -r-xr-xr-x   1 root   wheel     29540 Oct 15  2016 par5.16.pl
+< -r-xr-xr-x   1 root   wheel     29555 Oct 15  2016 par5.18.pl
+< -rwxr-xr-x   1 root   wheel     66576 Jul 26  2019 parl
+< -r-xr-xr-x   1 root   wheel   5303984 Jul 26  2019 parl5.16
+< -r-xr-xr-x   1 root   wheel   5472608 Jul 26  2019 parl5.18
+< -rwxr-xr-x   1 root   wheel     66576 Jul 26  2019 parldyn
+< -r-xr-xr-x   1 root   wheel    120608 Jul 26  2019 parldyn5.16
+< -r-xr-xr-x   1 root   wheel    128912 Jul 26  2019 parldyn5.18
+< -rwxr-xr-x   1 root   wheel     67952 Jul 26  2019 passwd
+< -rwxr-xr-x   1 root   wheel     18544 Jul 15  2017 paste
+< -rwxr-xr-x   1 root   wheel     95056 Jul 15  2017 patch
+< -rwxr-xr-x   1 root   wheel     18480 Jul 15  2017 pathchk
+< -rwxr-xr-x   1 root   wheel      2378 Feb  2  2017 pathopens.d
+< -rwxr-xr-x   1 root   wheel     23552 Jul 15  2017 pbcopy
+< -rwxr-xr-x   1 root   wheel     23552 Jul 15  2017 pbpaste
+< -rwxr-xr-x   1 root   wheel      1622 Mar 21  2017 pcap-config
+< -rwxr-xr-x   1 root   wheel     43296 Jul 15  2017 pcsctest
+< -rwxr-xr-x   1 root   wheel     66560 Jul 26  2019 perl
+< -rwxr-xr-x   1 root   wheel     52816 Jul 26  2019 perl5.16
+< -rwxr-xr-x   1 root   wheel     52816 Jul 26  2019 perl5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 perlbug
+< -rwxr-xr-x   1 root   wheel     41917 Feb 25  2019 perlbug5.16
+< -rwxr-xr-x   1 root   wheel     41944 Feb 25  2019 perlbug5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 perldoc
+< -rwxr-xr-x   1 root   wheel       259 Feb  7  2017 perldoc5.16
+< -rwxr-xr-x   1 root   wheel       259 Feb  7  2017 perldoc5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 perlivp
+< -rwxr-xr-x   1 root   wheel     10807 Feb  7  2017 perlivp5.16
+< -rwxr-xr-x   1 root   wheel     10807 Feb  7  2017 perlivp5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 perlthanks
+< -rwxr-xr-x   1 root   wheel     41917 Feb 25  2019 perlthanks5.16
+< -rwxr-xr-x   1 root   wheel     41944 Feb 25  2019 perlthanks5.18
+< -rwxr-xr-x   1 root   wheel     22880 Jul 15  2017 pfbtops
+< -rwxr-xr-x   1 root   wheel     30480 Jul 15  2017 pgrep
+< lrwxr-xr-x   1 root   wheel         9 Aug  4  2018 phar -> phar.phar
+< -rwxr-xr-x   1 root   wheel     14775 Oct 30  2017 phar.phar
+< -rwxr-xr-x   1 root   wheel  10898944 Jul 26  2019 php
+< -rwxr-xr-x   1 root   wheel      6809 Feb  8  2017 php-config
+< -rwxr-xr-x   1 root   wheel      4508 Feb  8  2017 phpize
+< -rwxr-xr-x   1 root   wheel    217280 Jul 15  2017 pic
+< lrwxr-xr-x   1 root   wheel         4 Aug  4  2018 pico -> nano
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 piconv
+< -rwxr-xr-x   1 root   wheel      7372 Feb  7  2017 piconv5.16
+< -rwxr-xr-x   1 root   wheel      7372 Feb  7  2017 piconv5.18
+< -rwxr-xr-x   1 root   wheel      1295 Feb  2  2017 pidpersec.d
+< -rwxr-xr-x   1 root   wheel     82736 Jul 26  2019 pkgbuild
+< -rwxr-xr-x   1 root   wheel     30480 Jul 15  2017 pkill
+< -rwxr-xr-x   1 root   wheel     22880 Jul 26  2019 pl
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 pl2pm
+< -rwxr-xr-x   1 root   wheel      4566 Feb  7  2017 pl2pm5.16
+< -rwxr-xr-x   1 root   wheel      4566 Feb  7  2017 pl2pm5.18
+< -rwxr-xr-x   1 root   wheel     33504 Jul 15  2017 plockstat
+< -rwxr-xr-x   1 root   wheel    184256 Jul 26  2019 pluginkit
+< -rwxr-xr-x   1 root   wheel     41040 Jul 26  2019 plutil
+< -rwxr-xr-x   1 root   wheel    173936 Jul 26  2019 pmset
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 pod2html
+< -rwxr-xr-x   1 root   wheel      2073 Feb  7  2017 pod2html5.16
+< -rwxr-xr-x   1 root   wheel      2073 Feb  7  2017 pod2html5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 pod2latex
+< -rwxr-xr-x   1 root   wheel     10374 Feb  7  2017 pod2latex5.16
+< -rwxr-xr-x   1 root   wheel     10374 Feb  7  2017 pod2latex5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 pod2man
+< -rwxr-xr-x   1 root   wheel     11611 Feb  7  2017 pod2man5.16
+< -rwxr-xr-x   1 root   wheel     13700 Feb  7  2017 pod2man5.18
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 pod2readme
+< -r-xr-xr-x   1 root   wheel      1603 Oct 15  2016 pod2readme5.16
+< -r-xr-xr-x   1 root   wheel      1603 Oct 15  2016 pod2readme5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 pod2text
+< -rwxr-xr-x   1 root   wheel      9154 Feb  7  2017 pod2text5.16
+< -rwxr-xr-x   1 root   wheel     11123 Feb  7  2017 pod2text5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 pod2usage
+< -rwxr-xr-x   1 root   wheel      3462 Feb  7  2017 pod2usage5.16
+< -rwxr-xr-x   1 root   wheel      3790 Feb  7  2017 pod2usage5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 podchecker
+< -rwxr-xr-x   1 root   wheel      3819 Feb  7  2017 podchecker5.16
+< -rwxr-xr-x   1 root   wheel      3819 Feb  7  2017 podchecker5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 podselect
+< -rwxr-xr-x   1 root   wheel      2647 Feb  7  2017 podselect5.16
+< -rwxr-xr-x   1 root   wheel      2647 Feb  7  2017 podselect5.18
+< lrwxr-xr-x   1 root   wheel        80 Aug  4  2018 policytool -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/policytool
+< -rwxr-xr-x   1 root   wheel    151504 Jul 15  2017 post-grohtml
+< -rwxr-xr-x   1 root   wheel       951 Jun 16  2017 power_report.sh
+< -rwxr-xr-x   1 root   wheel    157408 Jul 26  2019 powermetrics
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 pp
+< -r-xr-xr-x   1 root   wheel       152 Oct 15  2016 pp5.16
+< -r-xr-xr-x   1 root   wheel       152 Oct 15  2016 pp5.18
+< -r-xr-xr-x   1 root   wheel     25280 Jul 26  2019 ppdc
+< -r-xr-xr-x   1 root   wheel     23632 Jul 26  2019 ppdhtml
+< -r-xr-xr-x   1 root   wheel     18768 Jul 26  2019 ppdi
+< -r-xr-xr-x   1 root   wheel     24272 Jul 26  2019 ppdmerge
+< -r-xr-xr-x   1 root   wheel     23760 Jul 26  2019 ppdpo
+< -rwxr-xr-x   1 root   wheel     32176 Jul 15  2017 pr
+< -rwxr-xr-x   1 root   wheel     73856 Jul 15  2017 pre-grohtml
+< -rwxr-xr-x   1 root   wheel      1839 Feb  2  2017 priclass.d
+< -rwxr-xr-x   1 root   wheel      1836 Feb  2  2017 pridist.d
+< -rwxr-xr-x   1 root   wheel     18128 Jul 15  2017 printenv
+< -rwxr-xr-x   1 root   wheel     23184 Jul 15  2017 printf
+< -rwxr-xr-x   1 root   wheel      6344 Feb  2  2017 procsystime
+< -rwxr-xr-x   1 root   wheel    126752 Jul 26  2019 productbuild
+< -rwxr-xr-x   1 root   wheel     38480 Jul 26  2019 productsign
+< -rwxr-xr-x   1 root   wheel    118576 Jul 15  2017 profiles
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 prove
+< -rwxr-xr-x   1 root   wheel     11120 Feb  7  2017 prove5.16
+< -rwxr-xr-x   1 root   wheel     11120 Feb  7  2017 prove5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 psed
+< -rwxr-xr-x   1 root   wheel     53364 Feb  7  2017 psed5.16
+< -rwxr-xr-x   1 root   wheel     53364 Feb  7  2017 psed5.18
+< -rwxr-xr-x   1 root   wheel     23936 Jul 15  2017 pstopdf
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 pstruct
+< -rwxr-xr-x   1 root   wheel     36642 Feb  7  2017 pstruct5.16
+< -rwxr-xr-x   1 root   wheel     36642 Feb  7  2017 pstruct5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 ptar
+< -rwxr-xr-x   1 root   wheel      3015 Feb  7  2017 ptar5.16
+< -rwxr-xr-x   1 root   wheel      3559 Feb  7  2017 ptar5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 ptardiff
+< -rwxr-xr-x   1 root   wheel      2507 Feb  7  2017 ptardiff5.16
+< -rwxr-xr-x   1 root   wheel      2507 Feb  7  2017 ptardiff5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 ptargrep
+< -rwxr-xr-x   1 root   wheel      4274 Feb  7  2017 ptargrep5.16
+< -rwxr-xr-x   1 root   wheel      4274 Feb  7  2017 ptargrep5.18
+< -rwxr-xr-x   1 root   wheel    114384 Jul 15  2017 pubsub
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 pwhich
+< -r-xr-xr-x   1 root   wheel      3106 Oct 15  2016 pwhich5.16
+< -r-xr-xr-x   1 root   wheel      3106 Oct 15  2016 pwhich5.18
+< -rwxr-xr-x   1 root   wheel     47856 Jul 15  2017 pwpolicy
+< -rwxr-xr-x   5 root   wheel       925 Feb  7  2017 pydoc
+< lrwxr-xr-x   1 root   wheel        74 Aug  4  2018 pydoc2.6 -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/pydoc2.6
+< lrwxr-xr-x   1 root   wheel        74 Aug  4  2018 pydoc2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/pydoc2.7
+< -rwxr-xr-x   1 root   wheel     66576 Jul 15  2017 python
+< -rwxr-xr-x   5 root   wheel       925 Feb  7  2017 python-config
+< lrwxr-xr-x   1 root   wheel        75 Aug  4  2018 python2.6 -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/python2.6
+< lrwxr-xr-x   1 root   wheel        82 Aug  4  2018 python2.6-config -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/python2.6-config
+< lrwxr-xr-x   1 root   wheel        75 Aug  4  2018 python2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7
+< lrwxr-xr-x   1 root   wheel        82 Aug  4  2018 python2.7-config -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7-config
+< -rwxr-xr-x   1 root   wheel     66576 Jul 15  2017 pythonw
+< lrwxr-xr-x   1 root   wheel        76 Aug  4  2018 pythonw2.6 -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/pythonw2.6
+< lrwxr-xr-x   1 root   wheel        76 Aug  4  2018 pythonw2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/pythonw2.7
+< -rwxr-xr-x   1 root   wheel     45072 Jul 15  2017 qc2movie
+< lrwxr-xr-x   1 root   wheel       100 Aug  4  2018 qlmanage -> ../../System/Library/Frameworks/QuickLook.framework/Resources/quicklookd.app/Contents/MacOS/qlmanage
+< -rwxr-xr-x   1 root   wheel     51008 Jul 26  2019 qtdefaults
+< -rwxr-xr-x   1 root   wheel     85888 Jul 26  2019 qtmodernizer
+< -r-sr-xr-x   1 root   wheel     23552 Jul 15  2017 quota
+< -r-xr-xr-x   1 root   wheel       549 Feb  7  2017 rails
+< -r-xr-xr-x   1 root   wheel       517 Aug  1  2018 rake
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 ranlib
+< -rwxr-xr-x   1 root   wheel        41 Mar 25  2014 rbx
+< -r-xr-xr-x   1 root   wheel       988 Aug  1  2018 rdoc
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 read
+< -rwxr-xr-x   1 root   wheel     27456 Jul 15  2017 readlink
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 rebase
+< -rwxr-xr-x   1 root   wheel     18288 Jul 15  2017 redo_prebinding
+< -rwxr-xr-x   1 root   wheel    117904 Jul 15  2017 refer
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 renice
+< lrwxr-xr-x   1 root   wheel         4 Aug  4  2018 reset -> tset
+< -rwxr-xr-x   1 root   wheel     18272 Jul 15  2017 resolveLinks
+< -rwxr-xr-x   1 root   wheel     18352 Jul 15  2017 rev
+< -r-xr-xr-x   1 root   wheel       238 Aug  1  2018 ri
+< lrwxr-xr-x   1 root   wheel        74 Aug  4  2018 rmic -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/rmic
+< lrwxr-xr-x   1 root   wheel        74 Aug  4  2018 rmid -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/rmid
+< lrwxr-xr-x   1 root   wheel        81 Aug  4  2018 rmiregistry -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/rmiregistry
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 rpcgen
+< -rwxr-xr-x   1 root   wheel     22672 Jul 15  2017 rs
+< -rwxr-xr-x   1 root   wheel    295584 Jul 15  2017 rsync
+< -r-xr-xr-x   1 root   wheel     51968 Jul 26  2019 ruby
+< -rwxr-xr-x   1 root   wheel      1425 Feb  2  2017 runocc.d
+< -rwxr-xr-x   1 root   wheel     57808 Mar  7  2017 rvictl
+< lrwxr-xr-x   1 root   wheel         3 Aug  4  2018 rview -> vim
+< lrwxr-xr-x   1 root   wheel         3 Aug  4  2018 rvim -> vim
+< -rwxr-xr-x   1 root   wheel      1657 Feb  2  2017 rwbypid.d
+< -rwxr-xr-x   1 root   wheel      2473 Feb  2  2017 rwbytype.d
+< -rwxr-xr-x   1 root   wheel      6355 Feb  2  2017 rwsnoop
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 s2p
+< -rwxr-xr-x   1 root   wheel     53364 Feb  7  2017 s2p5.16
+< -rwxr-xr-x   1 root   wheel     53364 Feb  7  2017 s2p5.18
+< lrwxr-xr-x   1 root   wheel        77 Aug  4  2018 safaridriver -> /System/Library/CoreServices/SafariSupport.bundle/Contents/MacOS/safaridriver
+< -rwxr-xr-x   1 root   wheel     64160 Jul 26  2019 sample
+< -rwxr-xr-x   1 root   wheel      2544 Feb  2  2017 sampleproc
+< -rwxr-xr-x   1 root   wheel     23824 Jul 26  2019 sandbox-exec
+< -rwxr-xr-x   1 root   wheel     54256 Jul 15  2017 say
+< -rwxr-xr-x   1 root   wheel     82368 Jul 26  2019 sc_usage
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 scandeps.pl
+< -r-xr-xr-x   1 root   wheel      5815 Oct 15  2016 scandeps5.16.pl
+< -r-xr-xr-x   1 root   wheel      5815 Oct 15  2016 scandeps5.18.pl
+< lrwxr-xr-x   1 root   wheel        79 Aug  4  2018 schemagen -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/schemagen
+< -rwxr-xr-x   1 root   wheel     71648 Jul 15  2017 scp
+< -rwxr-xr-x   1 root   wheel    302480 Jul 15  2017 screen
+< -rwxr-xr-x   1 root   wheel     24064 Jul 15  2017 script
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 sdef
+< -rwxr-xr-x   1 root   wheel     37408 Jul 15  2017 sdiff
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 sdp
+< lrwxr-xr-x   1 root   wheel        32 Aug  4  2018 sdx -> ../../System/Library/Tcl/bin/sdx
+< -rwxr-xr-x   1 root   wheel    259872 Jul 26  2019 security
+< -rwxr-xr-x   1 root   wheel     42112 Jul 15  2017 sed
+< -rwxr-xr-x   1 root   wheel      2041 Feb  2  2017 seeksize.d
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 segedit
+< -rwxr-xr-x   1 root   wheel     22960 Jul 15  2017 seq
+< lrwxr-xr-x   1 root   wheel        79 Aug  4  2018 serialver -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/serialver
+< lrwxr-xr-x   1 root   wheel        80 Aug  4  2018 servertool -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/servertool
+< -r-xr-xr-x   1 root   wheel     24992 Jul 15  2017 setregion
+< -rwx------   1 root   wheel    116672 Aug 10  2017 setregproptool
+< -rwxr-xr-x   1 root   wheel      1606 Feb  2  2017 setuids.d
+< -rwxr-xr-x   1 root   wheel     84160 Jul 15  2017 sfltool
+< -rwxr-xr-x   1 root   wheel    110608 Jul 15  2017 sftp
+< -rwxr-xr-x   1 root   wheel      2516 Apr  5  2017 shar
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 shasum
+< -rwxr-xr-x   1 root   wheel      8629 Feb  7  2017 shasum5.16
+< -rwxr-xr-x   1 root   wheel      8629 Feb  7  2017 shasum5.18
+< -rwxr-xr-x   1 root   wheel     22992 Jul 15  2017 shlock
+< -r-xr-xr-x   1 root   wheel     24976 Jul 15  2017 showmount
+< -rwxr-xr-x   1 root   wheel      1603 Feb  2  2017 sigdist.d
+< -rwxr-xr-x   1 root   wheel    104608 Jul 26  2019 sips
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 size
+< lrwxr-xr-x   1 root   wheel         3 Aug  4  2018 slogin -> ssh
+< -r-xr-xr-x   1 root   wheel    102256 Jul 26  2019 smbutil
+< -rwx------   1 root   wheel     33136 Aug 12  2017 smc
+< -rwxr-xr-x   1 root   wheel       928 Feb  7  2017 smtpd.py
+< lrwxr-xr-x   1 root   wheel        77 Aug  4  2018 smtpd2.6.py -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/smtpd2.6.py
+< lrwxr-xr-x   1 root   wheel        77 Aug  4  2018 smtpd2.7.py -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/smtpd2.7.py
+< lrwxr-xr-x   1 root   wheel        59 Aug  4  2018 snfsdefrag -> /System/Library/Filesystems/acfs.fs/Contents/bin/snfsdefrag
+< -rwxr-xr-x   1 root   wheel     30680 Oct 15  2016 snmp-bridge-mib
+< -rwxr-xr-x   1 root   wheel     23600 Jul 15  2017 snmpbulkget
+< -rwxr-xr-x   1 root   wheel     24016 Jul 15  2017 snmpbulkwalk
+< -rwxr-xr-x   1 root   wheel     26136 Oct 15  2016 snmpconf
+< -rwxr-xr-x   1 root   wheel     29488 Jul 15  2017 snmpdelta
+< -rwxr-xr-x   1 root   wheel     23680 Jul 15  2017 snmpdf
+< -rwxr-xr-x   1 root   wheel     19392 Jul 15  2017 snmpget
+< -rwxr-xr-x   1 root   wheel     19392 Jul 15  2017 snmpgetnext
+< -rwxr-xr-x   1 root   wheel     24112 Jul 15  2017 snmpinform
+< -rwxr-xr-x   1 root   wheel     55264 Jul 15  2017 snmpnetstat
+< -rwxr-xr-x   1 root   wheel     23536 Jul 15  2017 snmpset
+< -rwxr-xr-x   1 root   wheel     24160 Jul 15  2017 snmpstatus
+< -rwxr-xr-x   1 root   wheel     29040 Jul 15  2017 snmptable
+< -rwxr-xr-x   1 root   wheel     24624 Jul 15  2017 snmptest
+< -rwxr-xr-x   1 root   wheel     25120 Jul 15  2017 snmptranslate
+< -rwxr-xr-x   1 root   wheel     24112 Jul 15  2017 snmptrap
+< -rwxr-xr-x   1 root   wheel     46224 Jul 15  2017 snmpusm
+< -rwxr-xr-x   1 root   wheel     40096 Jul 15  2017 snmpvacm
+< -rwxr-xr-x   1 root   wheel     23904 Jul 15  2017 snmpwalk
+< -rwxr-xr-x   1 root   wheel    165552 Jul 15  2017 sntp
+< -rwxr-xr-x   1 root   wheel     38864 Jul 15  2017 soelim
+< -rwxr-xr-x   1 root   wheel     54016 Jul 15  2017 sort
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 spfd
+< -r-xr-xr-x   1 root   wheel      9486 Oct 15  2016 spfd5.16
+< -r-xr-xr-x   1 root   wheel      9486 Oct 15  2016 spfd5.18
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 spfquery
+< -r-xr-xr-x   1 root   wheel     23081 Oct 15  2016 spfquery5.16
+< -r-xr-xr-x   1 root   wheel     23081 Oct 15  2016 spfquery5.18
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 splain
+< -rwxr-xr-x   1 root   wheel     18494 Feb  7  2017 splain5.16
+< -rwxr-xr-x   1 root   wheel     18681 Feb  7  2017 splain5.18
+< -rwxr-xr-x   1 root   wheel     23056 Jul 15  2017 split
+< -rwxr-xr-x   1 root   wheel    181280 Jul 15  2017 sqlite3
+< -rwxr-xr-x   1 root   wheel   2136192 Jul 15  2017 ssh
+< -rwxr-xr-x   1 root   wheel   1829936 Jul 15  2017 ssh-add
+< -rwxr-xr-x   1 root   wheel   1828624 Jul 15  2017 ssh-agent
+< -rwxr-xr-x   1 root   wheel     10372 Jan 24  2017 ssh-copy-id
+< -rwxr-xr-x   1 root   wheel   1865584 Jul 15  2017 ssh-keygen
+< -rwxr-xr-x   1 root   wheel   1880096 Jul 15  2017 ssh-keyscan
+< -rwxr-xr-x   1 root   wheel     27456 Jul 15  2017 stat
+< -rwxr-xr-x   1 root   wheel     75696 Jul 26  2019 stringdups
+< -rwxr-xr-x   1 root   wheel     88816 Jul 26  2019 stringdups32
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 strings
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 strip
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 stty.pl
+< -r-xr-xr-x   1 root   wheel       277 Oct 15  2016 stty5.16.pl
+< -r-xr-xr-x   1 root   wheel       277 Oct 15  2016 stty5.18.pl
+< -rwsr-xr-x   1 root   wheel     25424 Jul 15  2017 su
+< -r-s--x--x   1 root   wheel    369648 Jul 15  2017 sudo
+< -rwxr-xr-x   1 root   wheel     22640 Jul 15  2017 sum
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 svn
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 svnadmin
+< -rwxr-xr-x   1 root   wheel     18272 Jul 15  2017 svndumpfilter
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 svnlook
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 svnserve
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 svnsync
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 svnversion
+< -rwxr-xr-x   1 root   wheel     18800 Jul 15  2017 sw_vers
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 swift
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 swiftc
+< -rwxr-xr-x   1 root   wheel    145792 Jul 26  2019 symbols
+< -rwxr-xr-x   1 root   wheel    113216 Jul 15  2017 symbolscache
+< -rwxr-xr-x   1 root   wheel      1260 Feb  2  2017 syscallbypid.d
+< -rwxr-xr-x   1 root   wheel       253 Feb  2  2017 syscallbyproc.d
+< -rwxr-xr-x   1 root   wheel       248 Feb  2  2017 syscallbysysc.d
+< -rwxr-xr-x   1 root   wheel    406944 Jul 26  2019 sysdiagnose
+< -rwxr-xr-x   1 root   wheel     67632 Jul 15  2017 syslog
+< -rwxr-xr-x   1 root   wheel       453 Feb 17  2017 systriage
+< -rwxr-xr-x   1 root   wheel     47136 Jul 26  2019 tab2space
+< -rwxr-xr-x   1 root   wheel     18528 Jul 15  2017 tabs
+< -rwxr-xr-x   1 root   wheel     28496 Jul 15  2017 tail
+< -rwxr-xr-x   1 root   wheel     53840 Jul 15  2017 tailspin
+< -r-xr-xr-x   1 root   wheel     30848 Jul 15  2017 talk
+< lrwxr-xr-x   1 root   wheel         6 Aug  4  2018 tar -> bsdtar
+< -rwxr-xr-x   1 root   wheel     38208 Jul 26  2019 taskinfo
+< -rwxr-xr-x   1 root   wheel    119200 Jul 15  2017 tbl
+< -rwxr-xr-x   1 root   wheel     50688 Jul 15  2017 tbtdiagnose
+< -rwxr-xr-x   1 root   wheel     18880 Jul 15  2017 tccutil
+< lrwxr-xr-x   1 root   wheel         8 Aug  4  2018 tclsh -> tclsh8.5
+< lrwxr-xr-x   1 root   wheel        67 Aug  4  2018 tclsh8.4 -> ../../System/Library/Frameworks/Tcl.framework/Versions/8.4/tclsh8.4
+< lrwxr-xr-x   1 root   wheel        67 Aug  4  2018 tclsh8.5 -> ../../System/Library/Frameworks/Tcl.framework/Versions/8.5/tclsh8.5
+< -rwxr-xr-x   1 root   wheel     18352 Jul 15  2017 tee
+< -r-xr-xr-x   1 root   wheel    117008 Jul 15  2017 telnet
+< -rwxr-xr-x   1 root   wheel      8050 Mar  2  2017 tethered-caching
+< -rwxr-xr-x   1 root   wheel     28218 Oct 15  2016 texi2dvi
+< -rwxr-xr-x   1 root   wheel       660 Oct 15  2016 texi2pdf
+< -rwxr-xr-x   1 root   wheel     56448 Jul 15  2017 texindex
+< -rwxr-xr-x   1 root   wheel     48688 Jul 15  2017 textutil
+< -rwxr-xr-x   1 root   wheel     39088 Jul 15  2017 tfmtodit
+< -r-xr-xr-x   1 root   wheel     38944 Jul 15  2017 tftp
+< -rwxr-xr-x   1 root   wheel     26240 Jul 26  2019 thermal
+< -rwxr-xr-x   1 root   wheel     55712 Jul 15  2017 tic
+< -rwxr-xr-x   1 root   wheel     74720 Jul 26  2019 tidy
+< -rwxr-xr-x   1 root   wheel     23408 Jul 15  2017 tiff2icns
+< -rwxr-xr-x   1 root   wheel    335472 Jul 15  2017 tiffutil
+< -rwxr-xr-x   1 root   wheel     18368 Jul 15  2017 time
+< -rwxr-xr-x   1 root   wheel      2886 Jun 16  2017 timer_analyser.d
+< -rwxr-xr-x   1 root   wheel      6537 Jun 16  2017 timerfires
+< lrwxr-xr-x   1 root   wheel        43 Aug  4  2018 tkcon -> ../../System/Library/Tcl/tkcon2.6/tkcon.tcl
+< -rwxr-xr-x   1 root   wheel     30924 Oct 15  2016 tkmib
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 tkpp
+< -r-xr-xr-x   1 root   wheel     78220 Oct 15  2016 tkpp5.16
+< -r-xr-xr-x   1 root   wheel     82203 Oct 15  2016 tkpp5.18
+< -rwxr-xr-x   1 root   wheel    188704 Jul 26  2019 tmdiagnose
+< -rwxr-xr-x   1 root   wheel    284912 Jul 26  2019 tmutil
+< lrwxr-xr-x   1 root   wheel        79 Aug  4  2018 tnameserv -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/tnameserv
+< -rwxr-xr-x   1 root   wheel     24624 Jul 15  2017 toe
+< -r-sr-xr-x   1 root   wheel     88272 Jul 15  2017 top
+< -rwxr-xr-x   1 root   wheel    107392 Jul 15  2017 tops
+< -rwxr-xr-x   1 root   wheel      4603 Feb  2  2017 topsyscall
+< -rwxr-xr-x   1 root   wheel      2950 Feb  2  2017 topsysproc
+< -rwxr-xr-x   1 root   wheel     23312 Jul 15  2017 touch
+< -rwxr-xr-x   1 root   wheel     24160 Jul 15  2017 tput
+< -rwxr-xr-x   1 root   wheel     27696 Jul 15  2017 tr
+< -rwxr-xr-x   1 root   wheel    136256 Jul 26  2019 trace
+< -rwxr-xr-x   1 root   wheel      2207 Oct 15  2016 traptoemail
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 treereg
+< -r-xr-xr-x   1 root   wheel     10339 Oct 15  2016 treereg5.16
+< -r-xr-xr-x   1 root   wheel     10339 Oct 15  2016 treereg5.18
+< -rwxr-xr-x   1 root   wheel     24048 Jul 26  2019 trimforce
+< -rwxr-xr-x   1 root   wheel    474160 Jul 15  2017 troff
+< -rwxr-xr-x   1 root   wheel     17760 Jul 15  2017 true
+< -rwxr-xr-x   1 root   wheel     28752 Jul 15  2017 tset
+< -r-xr-xr-x   1 root   wheel     22928 Jul 15  2017 tsort
+< -rwxr-xr-x   1 root   wheel     17984 Jul 15  2017 tty
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 type
+< -rwxr-xr-x   1 root   wheel     23136 Jul 15  2017 ul
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 ulimit
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 umask
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 unalias
+< -rwxr-xr-x   1 root   wheel     18368 Jul 15  2017 uname
+< -rwxr-xr-x   1 root   wheel     27680 Jul 15  2017 uncompress
+< -rwxr-xr-x   1 root   wheel     18544 Jul 15  2017 unexpand
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 unifdef
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 unifdefall
+< -rwxr-xr-x   1 root   wheel     23104 Jul 15  2017 uniq
+< -r-xr-xr-x   1 root   wheel     27664 Jul 15  2017 units
+< lrwxr-xr-x   1 root   wheel        79 Aug  4  2018 unpack200 -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/unpack200
+< -rwxr-xr-x   1 root   wheel     18336 Jul 15  2017 unvis
+< -rwxr-xr-x   1 root   wheel    186000 Jul 15  2017 unzip
+< -rwxr-xr-x   1 root   wheel     88224 Jul 15  2017 unzipsfx
+< -rwxr-xr-x   1 root   wheel    854000 Jul 26  2019 update_dyld_shared_cache
+< -rwxr-xr-x   1 root   wheel     24176 Jul 15  2017 uptime
+< -rwxr-xr-x   1 root   wheel     38656 Jul 26  2019 usbkdp
+< -rwxr-xr-x   1 root   wheel     18320 Jul 15  2017 users
+---
+> -r-xr-xr-x   1 root  wheel      3040 Jun 27  2019 cups-config
+> -r-xr-xr-x   1 root  wheel     22976 Jul 26  2019 cupstestdsc
+> -r-xr-xr-x   1 root  wheel     63312 Jul 26  2019 cupstestppd
+> -rwxr-xr-x   1 root  wheel    189152 Jul 26  2019 curl
+> -rwxr-xr-x   1 root  wheel      4092 May 20  2017 curl-config
+> -rwxr-xr-x   1 root  wheel     23664 Jul 15  2017 cut
+> lrwxr-xr-x   1 root  wheel        59 Aug  4  2018 cvaffinity -> /System/Library/Filesystems/acfs.fs/Contents/bin/cvaffinity
+> lrwxr-xr-x   1 root  wheel        53 Aug  4  2018 cvcp -> /System/Library/Filesystems/acfs.fs/Contents/bin/cvcp
+> lrwxr-xr-x   1 root  wheel        56 Aug  4  2018 cvmkdir -> /System/Library/Filesystems/acfs.fs/Contents/bin/cvmkdir
+> lrwxr-xr-x   1 root  wheel        57 Aug  4  2018 cvmkfile -> /System/Library/Filesystems/acfs.fs/Contents/bin/cvmkfile
+> -rwxr-xr-x   1 root  wheel      7161 Feb  2  2017 dappprof
+> -rwxr-xr-x   1 root  wheel      7876 Feb  2  2017 dapptrace
+> -rwxr-xr-x   1 root  wheel    269520 Jul 15  2017 darwinup
+> -r-xr-xr-x   1 root  wheel   2067984 Jul 15  2017 db_archive
+> -r-xr-xr-x   1 root  wheel   2068048 Jul 15  2017 db_checkpoint
+> -r-xr-xr-x   1 root  wheel   2092608 Jul 15  2017 db_codegen
+> -r-xr-xr-x   1 root  wheel   2068048 Jul 15  2017 db_deadlock
+> -r-xr-xr-x   1 root  wheel   2068096 Jul 15  2017 db_dump
+> -r-xr-xr-x   1 root  wheel   2076416 Jul 15  2017 db_hotbackup
+> -r-xr-xr-x   1 root  wheel   2084976 Jul 15  2017 db_load
+> -r-xr-xr-x   1 root  wheel   2143584 Jul 15  2017 db_printlog
+> -r-xr-xr-x   1 root  wheel   2068128 Jul 15  2017 db_recover
+> -r-xr-xr-x   1 root  wheel   2067968 Jul 15  2017 db_stat
+> -r-xr-xr-x   1 root  wheel   2067984 Jul 15  2017 db_upgrade
+> -r-xr-xr-x   1 root  wheel   2068000 Jul 15  2017 db_verify
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 dbicadmin
+> -r-xr-xr-x   1 root  wheel      7078 Oct 15  2016 dbicadmin5.16
+> -r-xr-xr-x   1 root  wheel      7195 Oct 15  2016 dbicadmin5.18
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 dbilogstrip
+> -r-xr-xr-x   1 root  wheel      1469 Oct 15  2016 dbilogstrip5.16
+> -r-xr-xr-x   1 root  wheel      1469 Oct 15  2016 dbilogstrip5.18
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 dbiprof
+> -r-xr-xr-x   1 root  wheel      6305 Oct 15  2016 dbiprof5.16
+> -r-xr-xr-x   1 root  wheel      6295 Oct 15  2016 dbiprof5.18
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 dbiproxy
+> -r-xr-xr-x   1 root  wheel      5486 Oct 15  2016 dbiproxy5.16
+> -r-xr-xr-x   1 root  wheel      5479 Oct 15  2016 dbiproxy5.18
+> -rwxr-xr-x   1 root  wheel     46144 Jul 15  2017 dc
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 debinhex.pl
+> -r-xr-xr-x   1 root  wheel      5882 Oct 15  2016 debinhex5.18.pl
+> -rwxr-xr-x   1 root  wheel     39376 Jul 26  2019 defaults
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 desdp
+> -rwxr-xr-x   1 root  wheel    109600 Jul 15  2017 diff
+> -rwxr-xr-x   1 root  wheel     37024 Jul 15  2017 diff3
+> -rwxr-xr-x   1 root  wheel     41056 Jul 15  2017 diffstat
+> -rwxr-xr-x   1 root  wheel   1565152 Jul 15  2017 dig
+> -rwxr-xr-x   1 root  wheel     18080 Jul 15  2017 dirname
+> -rwxr-xr-x   1 root  wheel      2515 Feb  2  2017 diskhits
+> -rwxr-xr-x   1 root  wheel      1290 Feb  2  2017 dispqlen.d
+> -rwxr-xr-x   1 root  wheel     34496 Jul 15  2017 ditto
+> -rwxr-xr-x   1 root  wheel     57600 Jul 26  2019 dns-sd
+> -rwxr-xr-x   1 root  wheel    271920 Jul 15  2017 drutil
+> -rwxr-xr-x   1 root  wheel     34080 Jul 15  2017 dscacheutil
+> -rwxr-xr-x   1 root  wheel    202464 Jul 15  2017 dscl
+> -rwxr-xr-x   1 root  wheel     17968 Jul 15  2017 dserr
+> -rwxr-xr-x   1 root  wheel     33248 Jul 15  2017 dsexport
+> -rwxr-xr-x   1 root  wheel     83808 Jul 15  2017 dsimport
+> -rwxr-xr-x   1 root  wheel     27728 Jul 15  2017 dsmemberutil
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 dsymutil
+> -rwxr-xr-x   1 root  wheel     29431 Feb  2  2017 dtruss
+> -rwxr-xr-x   1 root  wheel     23552 Jul 15  2017 du
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 dwarfdump
+> -rwxr-xr-x   2 root  wheel       925 Oct 15  2016 easy_install
+> -rwxr-xr-x   1 root  wheel       454 Oct 15  2016 easy_install-2.6
+> -rwxr-xr-x   1 root  wheel       458 Oct 15  2016 easy_install-2.7
+> -rwxr-xr-x   1 root  wheel     33888 Jul 15  2017 egrep
+> -r-xr-xr-x   1 root  wheel  50925984 Jul 26  2019 emacs
+> -rwxr-xr-x   1 root  wheel   3193952 Jul 15  2017 emacs-undumped
+> -rwxr-xr-x   1 root  wheel     32912 Jul 15  2017 emacsclient
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 enc2xs
+> -rwxr-xr-x   1 root  wheel     39189 Feb  7  2017 enc2xs5.16
+> -rwxr-xr-x   1 root  wheel     39189 Feb  7  2017 enc2xs5.18
+> -rwxr-xr-x   1 root  wheel     28752 Jul 15  2017 encode_keychange
+> -rwxr-xr-x   1 root  wheel     23456 Jul 15  2017 env
+> -rwxr-xr-x   1 root  wheel    145024 Jul 15  2017 eqn
+> -r-xr-xr-x   1 root  wheel      4892 Aug  1  2018 erb
+> -rwxr-xr-x   1 root  wheel      4516 Feb  2  2017 errinfo
+> -rwxr-xr-x   1 root  wheel    107248 Jul 15  2017 etags
+> lrwxr-xr-x   1 root  wheel         3 Aug  4  2018 ex -> vim
+> lrwxr-xr-x   1 root  wheel        39 Aug 24  2018 examshell -> /usr/share/examshell/venv/bin/examshell
+> -rwxr-xr-x   1 root  wheel      5149 Feb  2  2017 execsnoop
+> -rwxr-xr-x   1 root  wheel     18544 Jul 15  2017 expand
+> -r-xr-xr-x   1 root  wheel     51616 Jul 15  2017 expect
+> lrwxr-xr-x   1 root  wheel        78 Aug  4  2018 extcheck -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/extcheck
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 eyapp
+> -r-xr-xr-x   1 root  wheel     12841 Oct 15  2016 eyapp5.16
+> -r-xr-xr-x   1 root  wheel     12841 Oct 15  2016 eyapp5.18
+> -rwxr-xr-x   1 root  wheel     17760 Jul 15  2017 false
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 fc
+> -rwxr-xr-x   1 root  wheel      2668 Feb  2  2017 fddist
+> -rwxr-xr-x   1 root  wheel    185904 Jul 15  2017 fdesetup
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 fg
+> -rwxr-xr-x   1 root  wheel     33888 Jul 15  2017 fgrep
+> -rwxr-xr-x   1 root  wheel    267024 Jul 26  2019 file
+> -rwxr-xr-x   1 root  wheel       272 Feb  2  2017 filebyproc.d
+> -rwxr-xr-x   1 root  wheel    123888 Jul 26  2019 filtercalltree
+> -rwxr-xr-x   1 root  wheel     51728 Jul 15  2017 find
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 find2perl
+> -rwxr-xr-x   1 root  wheel     23634 Feb  7  2017 find2perl5.16
+> -rwxr-xr-x   1 root  wheel     23634 Feb  7  2017 find2perl5.18
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 findrule
+> -r-xr-xr-x   1 root  wheel      3418 Oct 15  2016 findrule5.16
+> -r-xr-xr-x   1 root  wheel      3418 Oct 15  2016 findrule5.18
+> -rwxr-xr-x   1 root  wheel     33856 Jul 15  2017 finger
+> -rwxr-xr-x   1 root  wheel     15523 Oct 15  2016 fixproc
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 flex
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 flex++
+> -rwxr-xr-x   1 root  wheel     23152 Jul 15  2017 fmt
+> -rwxr-xr-x   1 root  wheel     18752 Jul 15  2017 fold
+> lrwxr-xr-x   1 root  wheel       126 Aug  4  2018 fontrestore -> ../../System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Support/fontmover
+> -rwxr-xr-x   1 root  wheel    115664 Jul 26  2019 footprint
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 format-sql
+> -r-xr-xr-x   1 root  wheel       448 Oct 15  2016 format-sql5.16
+> -r-xr-xr-x   1 root  wheel       448 Oct 15  2016 format-sql5.18
+> -rwxr-xr-x   1 root  wheel     18720 Jul 15  2017 from
+> -rwxr-xr-x   1 root  wheel     60112 Jul 15  2017 fs_usage
+> -r-xr-xr-x   1 root  wheel    161680 Jul 15  2017 ftp
+> -rwxr-xr-x   1 root  wheel     35424 Jul 15  2017 funzip
+> -r-xr-xr-x   1 root  wheel      2610 Oct 15  2016 fuser
+> -rwxr-xr-x   1 root  wheel     33856 Jul 15  2017 fwkdp
+> -rwxr-xr-x   1 root  wheel     42272 Jul 15  2017 fwkpfv
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 g++
+> -rwxr-xr-x   1 root  wheel     18288 Jul 15  2017 gatherheaderdoc
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 gcc
+> -rwxr-xr-x   1 root  wheel    117968 Jul 26  2019 gcore
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 gcov
+> -rwxr-xr-x   1 root  wheel      7198 Oct 15  2016 gdiffmk
+> -r-xr-xr-x   1 root  wheel       596 Aug  1  2018 gem
+> -r-xr-xr-x   1 root  wheel     80634 Oct 15  2016 gen_bridge_metadata
+> -rwxr-xr-x   1 root  wheel     27488 Jul 15  2017 gencat
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 genstrings
+> -rwxr-xr-x   1 root  wheel     63792 Jul 26  2019 getconf
+> -rwxr-xr-x   1 root  wheel     17952 Jul 15  2017 getopt
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 getopts
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 git
+> -rwxr-xr-x   1 root  wheel     18272 Jul 15  2017 git-cvsserver
+> -rwxr-xr-x   1 root  wheel     18288 Jul 15  2017 git-receive-pack
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 git-shell
+> -rwxr-xr-x   1 root  wheel     18288 Jul 15  2017 git-upload-archive
+> -rwxr-xr-x   1 root  wheel     18288 Jul 15  2017 git-upload-pack
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 gm4
+> -rwxr-xr-x   1 root  wheel       849 Oct 15  2016 gnuattach
+> -rwxr-xr-x   1 root  wheel     33088 Jul 15  2017 gnuclient
+> -rwxr-xr-x   1 root  wheel      1039 Oct 15  2016 gnudoit
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 gnumake
+> -rwxr-xr-x   1 root  wheel     28944 Jul 15  2017 gnuserv
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 gperf
+> -rwxr-xr-x   1 root  wheel     33888 Jul 15  2017 grep
+> -rwxr-xr-x   1 root  wheel     68112 Jul 15  2017 grn
+> -rwxr-xr-x   1 root  wheel     87296 Jul 15  2017 grodvi
+> -rwxr-xr-x   1 root  wheel     72352 Jul 15  2017 groff
+> -rwxr-xr-x   1 root  wheel      7074 Oct 15  2016 groffer
+> -rwxr-xr-x   1 root  wheel      2471 Oct 15  2016 grog
+> -rwxr-xr-x   1 root  wheel     90912 Jul 15  2017 grolbp
+> -rwxr-xr-x   1 root  wheel     82720 Jul 15  2017 grolj4
+> -rwxr-xr-x   1 root  wheel    120752 Jul 15  2017 grops
+> -rwxr-xr-x   1 root  wheel     82896 Jul 15  2017 grotty
+> -rwxr-xr-x   1 root  wheel     23216 Jul 15  2017 groups
+> -rwxr-xr-x   1 root  wheel     52960 Jul 15  2017 gunzip
+> -rwxr-xr-x   1 root  wheel     52960 Jul 15  2017 gzcat
+> -rwxr-xr-x   1 root  wheel      4085 Apr  5  2017 gzexe
+> -rwxr-xr-x   1 root  wheel     46992 Jul 15  2017 gzip
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 h2ph
+> -rwxr-xr-x   1 root  wheel     28167 Feb  7  2017 h2ph5.16
+> -rwxr-xr-x   1 root  wheel     28167 Feb  7  2017 h2ph5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 h2xs
+> -rwxr-xr-x   1 root  wheel     60600 Feb  7  2017 h2xs5.16
+> -rwxr-xr-x   1 root  wheel     60725 Feb  7  2017 h2xs5.18
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 hash
+> -rwxr-xr-x   1 root  wheel     17888 Jul 26  2019 hdid
+> -rwxr-xr-x   1 root  wheel    353280 Jul 26  2019 hdiutil
+> -rwxr-xr-x   1 root  wheel     18272 Jul 15  2017 hdxml2manxml
+> -rwxr-xr-x   1 root  wheel     18864 Jul 15  2017 head
+> -rwxr-xr-x   1 root  wheel     18288 Jul 15  2017 headerdoc2html
+> -rwxr-xr-x   1 root  wheel     70896 Jul 26  2019 heap
+> -rwxr-xr-x   1 root  wheel     84480 Jul 26  2019 heap32
+> -rwxr-xr-x   1 root  wheel     32800 Jul 15  2017 hexdump
+> -rwxr-xr-x   1 root  wheel     33776 Jul 26  2019 hidutil
+> -rwxr-xr-x   1 root  wheel     91120 Jul 15  2017 hiutil
+> -rwxr-xr-x   1 root  wheel   1548512 Jul 15  2017 host
+> -rwxr-xr-x   1 root  wheel     43040 Jul 26  2019 hostinfo
+> -rwxr-xr-x   1 root  wheel      1939 Feb  2  2017 hotspot.d
+> -rwxr-xr-x   1 root  wheel    126736 Jul 15  2017 hpftodit
+> -rwxr-xr-x   1 root  wheel     92208 Jul 26  2019 hpmdiagnose
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 htmltree
+> -r-xr-xr-x   1 root  wheel      1177 Oct 15  2016 htmltree5.16
+> -r-xr-xr-x   1 root  wheel      1177 Oct 15  2016 htmltree5.18
+> -rwxr-xr-x   1 root  wheel      2523 Feb  2  2017 httpdstat.d
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 ibtool
+> -rwxr-xr-x   1 root  wheel     28000 Jul 15  2017 iconutil
+> -rwxr-xr-x   1 root  wheel     32128 Jul 15  2017 iconv
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 ictool
+> -rwxr-xr-x   1 root  wheel     23216 Jul 15  2017 id
+> -rwxr-xr-x   5 root  wheel       925 Feb  7  2017 idle
+> lrwxr-xr-x   1 root  wheel        73 Aug  4  2018 idle2.6 -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/idle2.6
+> lrwxr-xr-x   1 root  wheel        73 Aug  4  2018 idle2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/idle2.7
+> lrwxr-xr-x   1 root  wheel        74 Aug  4  2018 idlj -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/idlj
+> -rwxr-xr-x   1 root  wheel      8556 Jun 16  2017 imptrace
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 indent
+> -rwxr-xr-x   1 root  wheel     44336 Jul 15  2017 indxbib
+> -rwxr-xr-x   1 root  wheel    175024 Jul 15  2017 info
+> -rwxr-xr-x   1 root  wheel     58688 Jul 15  2017 infocmp
+> -rwxr-xr-x   1 root  wheel     55296 Jul 15  2017 infokey
+> lrwxr-xr-x   1 root  wheel         3 Aug  4  2018 infotocap -> tic
+> -rwxr-xr-x   1 root  wheel     28528 Jul 15  2017 install
+> -rwxr-xr-x   1 root  wheel     59936 Jul 15  2017 install-info
+> -rwxr-xr-x   1 root  wheel     18288 Jul 15  2017 install_name_tool
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 instmodsh
+> -rwxr-xr-x   1 root  wheel      4288 Feb  7  2017 instmodsh5.16
+> -rwxr-xr-x   1 root  wheel      4288 Feb  7  2017 instmodsh5.18
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 instruments
+> -rwxr-xr-x   1 root  wheel      1976 Feb  2  2017 iofile.d
+> -rwxr-xr-x   1 root  wheel      1573 Feb  2  2017 iofileb.d
+> -rwxr-xr-x   1 root  wheel      6600 Feb  2  2017 iopattern
+> -rwxr-xr-x   1 root  wheel      5942 Feb  2  2017 iopending
+> -rwxr-xr-x   1 root  wheel     12135 Feb  2  2017 iosnoop
+> -rwxr-xr-x   1 root  wheel     11884 Feb  2  2017 iotop
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 ip2cc
+> -r-xr-xr-x   1 root  wheel      2116 Oct 15  2016 ip2cc5.16
+> -r-xr-xr-x   1 root  wheel      2116 Oct 15  2016 ip2cc5.18
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 ipcount
+> -r-xr-xr-x   1 root  wheel      3728 Oct 15  2016 ipcount5.16
+> -r-xr-xr-x   1 root  wheel      3728 Oct 15  2016 ipcount5.18
+> -rwxr-xr-x   1 root  wheel     18528 Jul 15  2017 ipcrm
+> -rwxr-xr-x   1 root  wheel     26832 Jul 15  2017 ipcs
+> -r-xr-xr-x   1 root  wheel     47152 Jul 26  2019 ippfind
+> -r-xr-xr-x   1 root  wheel     87776 Jul 26  2019 ipptool
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 iprofiler
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 iptab
+> -r-xr-xr-x   1 root  wheel       986 Oct 15  2016 iptab5.16
+> -r-xr-xr-x   1 root  wheel       986 Oct 15  2016 iptab5.18
+> -r-xr-xr-x   1 root  wheel       240 Aug  1  2018 irb
+> -rwxr-xr-x   1 root  wheel    107556 Aug  8  2018 iscsictl
+> lrwxr-xr-x   1 root  wheel        73 Aug  4  2018 jar -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jar
+> lrwxr-xr-x   1 root  wheel        79 Aug  4  2018 jarsigner -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jarsigner
+> lrwxr-xr-x   1 root  wheel        74 Aug  4  2018 java -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/java
+> lrwxr-xr-x   1 root  wheel        75 Aug  4  2018 javac -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/javac
+> lrwxr-xr-x   1 root  wheel        77 Aug  4  2018 javadoc -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/javadoc
+> lrwxr-xr-x   1 root  wheel        75 Aug  4  2018 javah -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/javah
+> lrwxr-xr-x   1 root  wheel        75 Aug  4  2018 javap -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/javap
+> lrwxr-xr-x   1 root  wheel        82 Aug  4  2018 javapackager -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/javapackager
+> lrwxr-xr-x   1 root  wheel        76 Aug  4  2018 javaws -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/javaws
+> lrwxr-xr-x   1 root  wheel        74 Aug  4  2018 jcmd -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jcmd
+> lrwxr-xr-x   1 root  wheel        78 Aug  4  2018 jconsole -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jconsole
+> lrwxr-xr-x   1 root  wheel        78 Aug  4  2018 jcontrol -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jcontrol
+> lrwxr-xr-x   1 root  wheel        73 Aug  4  2018 jdb -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jdb
+> lrwxr-xr-x   1 root  wheel        75 Aug  4  2018 jdeps -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jdeps
+> lrwxr-xr-x   1 root  wheel        74 Aug  4  2018 jhat -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jhat
+> lrwxr-xr-x   1 root  wheel        75 Aug  4  2018 jhsdb -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jhsdb
+> lrwxr-xr-x   1 root  wheel        76 Aug  4  2018 jimage -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jimage
+> lrwxr-xr-x   1 root  wheel        75 Aug  4  2018 jinfo -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jinfo
+> lrwxr-xr-x   1 root  wheel        73 Aug  4  2018 jjs -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jjs
+> lrwxr-xr-x   1 root  wheel        74 Aug  4  2018 jmap -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jmap
+> lrwxr-xr-x   1 root  wheel        73 Aug  4  2018 jmc -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jmc
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 jobs
+> -rwxr-xr-x   1 root  wheel     23456 Jul 15  2017 join
+> -rwxr-xr-x   1 root  wheel     23040 Jul 15  2017 jot
+> lrwxr-xr-x   1 root  wheel        73 Aug  4  2018 jps -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jps
+> lrwxr-xr-x   1 root  wheel        80 Aug  4  2018 jrunscript -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jrunscript
+> lrwxr-xr-x   1 root  wheel        79 Aug  4  2018 jsadebugd -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jsadebugd
+> lrwxr-xr-x   1 root  wheel        76 Aug  4  2018 jshell -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jshell
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 json_pp
+> -rwxr-xr-x   1 root  wheel      3953 Feb  7  2017 json_pp5.16
+> -rwxr-xr-x   1 root  wheel      3953 Feb  7  2017 json_pp5.18
+> lrwxr-xr-x   1 root  wheel        76 Aug  4  2018 jstack -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jstack
+> lrwxr-xr-x   1 root  wheel        75 Aug  4  2018 jstat -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jstat
+> lrwxr-xr-x   1 root  wheel        76 Aug  4  2018 jstatd -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jstatd
+> lrwxr-xr-x   1 root  wheel        79 Aug  4  2018 jvisualvm -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/jvisualvm
+> -rwxr-xr-x   1 root  wheel     51328 Jul 26  2019 kcc
+> -rwxr-xr-x   1 root  wheel     28992 Jul 26  2019 kdestroy
+> -rwxr-xr-x   1 root  wheel    159440 Jul 26  2019 kextutil
+> lrwxr-xr-x   1 root  wheel        77 Aug  4  2018 keytool -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/keytool
+> -rwxr-xr-x   1 root  wheel     29936 Jul 26  2019 kgetcred
+> -rwxr-xr-x   1 root  wheel      1621 Feb  2  2017 kill.d
+> -rwxr-xr-x   1 root  wheel     23952 Jul 15  2017 killall
+> -rwxr-xr-x   1 root  wheel     48288 Jul 26  2019 kinit
+> lrwxr-xr-x   1 root  wheel         3 Aug  4  2018 klist -> kcc
+> -rwxr-xr-x   1 root  wheel     30128 Jul 26  2019 kpasswd
+> -rwxr-xr-x   1 root  wheel      3252 Oct 15  2016 krb5-config
+> lrwxr-xr-x   1 root  wheel         3 Aug  4  2018 kswitch -> kcc
+> -rwxr-xr-x   1 root  wheel     18576 Jul 15  2017 lam
+> -rwxr-xr-x   1 root  wheel     23344 Jul 15  2017 last
+> -rwxr-xr-x   1 root  wheel     18896 Jul 15  2017 lastcomm
+> -rwxr-xr-x   1 root  wheel      2297 Feb  2  2017 lastwords
+> -rwxr-xr-x   1 root  wheel     98592 Jul 26  2019 latency
+> -rwxr-xr-x   1 root  wheel    604096 Jul 26  2019 layerutil
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 ld
+> lrwxr-xr-x   1 root  wheel        10 Aug  4  2018 ldapadd -> ldapmodify
+> -rwxr-xr-x   1 root  wheel    305120 Jul 15  2017 ldapcompare
+> -rwxr-xr-x   1 root  wheel    309200 Jul 15  2017 ldapdelete
+> -rwxr-xr-x   1 root  wheel    309264 Jul 15  2017 ldapexop
+> -rwxr-xr-x   1 root  wheel    317760 Jul 15  2017 ldapmodify
+> -rwxr-xr-x   1 root  wheel    305104 Jul 15  2017 ldapmodrdn
+> -rwxr-xr-x   1 root  wheel    304992 Jul 15  2017 ldappasswd
+> -rwxr-xr-x   1 root  wheel    337712 Jul 15  2017 ldapsearch
+> -rwxr-xr-x   1 root  wheel    255616 Jul 15  2017 ldapurl
+> -rwxr-xr-x   1 root  wheel    305088 Jul 15  2017 ldapwhoami
+> -rwxr-xr-x   1 root  wheel    120448 Jul 26  2019 leaks
+> -rwxr-xr-x   1 root  wheel    143008 Jul 26  2019 leaks32
+> -r-xr-xr-x   1 root  wheel     18352 Jul 15  2017 leave
+> -rwxr-xr-x   1 root  wheel    129536 Jul 15  2017 less
+> -rwxr-xr-x   1 root  wheel     18272 Jul 15  2017 lessecho
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 lex
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 libnetcfg
+> -rwxr-xr-x   1 root  wheel     15759 Feb  7  2017 libnetcfg5.16
+> -rwxr-xr-x   1 root  wheel     15754 Feb  7  2017 libnetcfg5.18
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 libtool
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 lipo
+> -rwxr-xr-x   1 root  wheel     50480 Jul 15  2017 lkbib
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 lldb
+> lrwxr-xr-x   1 root  wheel         7 Aug  4  2018 llvm-g++ -> clang++
+> lrwxr-xr-x   1 root  wheel         5 Aug  4  2018 llvm-gcc -> clang
+> -rwxr-xr-x   1 root  wheel      1936 Feb  2  2017 loads.d
+> -rwxr-xr-x   1 root  wheel     68528 Jul 15  2017 locale
+> -rwxr-xr-x   1 root  wheel     30650 Oct 15  2016 localedef
+> -rwxr-xr-x   1 root  wheel     23392 Jul 15  2017 locate
+> -rwxr-xr-x   1 root  wheel     57760 Jul 15  2017 lockstat
+> -rwxr-xr-x   1 root  wheel    150224 Jul 26  2019 log
+> -r-xr-xr-x   1 root  wheel     18784 Jul 15  2017 logger
+> -r-sr-xr-x   1 root  wheel     76208 Jul 26  2019 login
+> -rwxr-xr-x   1 root  wheel     18128 Jul 15  2017 logname
+> -rwxr-xr-x   1 root  wheel     18768 Jul 15  2017 look
+> -rwxr-xr-x   1 root  wheel     50752 Jul 15  2017 lookbib
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 lorder
+> -r-xr-xr-x   1 root  wheel     28352 Jul 26  2019 lp
+> -r-xr-xr-x   1 root  wheel     24176 Jul 26  2019 lpoptions
+> -r-xr-xr-x   1 root  wheel     24160 Jul 26  2019 lpq
+> -r-xr-xr-x   1 root  wheel     23888 Jul 26  2019 lpr
+> -r-xr-xr-x   1 root  wheel     18528 Jul 26  2019 lprm
+> -r-xr-xr-x   1 root  wheel     36944 Jul 26  2019 lpstat
+> -rwxr-xr-x   1 root  wheel    247824 Jul 26  2019 lsappinfo
+> -rwxr-xr-x   1 root  wheel     29168 Jul 15  2017 lsbom
+> -rwxr-xr-x   1 root  wheel     60064 Jul 26  2019 lskq
+> -rwxr-xr-x   1 root  wheel     52512 Jul 15  2017 lsm
+> -rwxr-xr-x   1 root  wheel     73968 Jul 26  2019 lsmp
+> -rwxr-xr-x   1 root  wheel     18288 Jul 15  2017 lsvfs
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 lwp-download
+> -r-xr-xr-x   1 root  wheel      8639 Oct 15  2016 lwp-download5.16
+> -r-xr-xr-x   1 root  wheel      8639 Oct 15  2016 lwp-download5.18
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 lwp-dump
+> -r-xr-xr-x   1 root  wheel      2802 Oct 15  2016 lwp-dump5.16
+> -r-xr-xr-x   1 root  wheel      2802 Oct 15  2016 lwp-dump5.18
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 lwp-mirror
+> -r-xr-xr-x   1 root  wheel      2481 Oct 15  2016 lwp-mirror5.16
+> -r-xr-xr-x   1 root  wheel      2482 Oct 15  2016 lwp-mirror5.18
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 lwp-request
+> -r-xr-xr-x   1 root  wheel     15063 Oct 15  2016 lwp-request5.16
+> -r-xr-xr-x   1 root  wheel     15063 Oct 15  2016 lwp-request5.18
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 m4
+> -rwxr-xr-x   1 root  wheel     42000 Jul 15  2017 macbinary
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 macerror
+> -r-xr-xr-x   1 root  wheel       728 Oct 15  2016 macerror5.16
+> -r-xr-xr-x   1 root  wheel       728 Oct 15  2016 macerror5.18
+> -rwxr-xr-x   1 root  wheel     66752 Jul 26  2019 machine
+> -rwx------   1 root  wheel  10793588 Jan  9 15:55 macreport
+> -rwxr-xr-x   1 root  wheel     89808 Jul 15  2017 mail
+> lrwxr-xr-x   1 root  wheel        16 Aug  4  2018 mailq -> ../sbin/sendmail
+> -rwxr-xr-x   1 root  wheel     89808 Jul 15  2017 mailx
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 make
+> -rwxr-xr-x   1 root  wheel    243056 Jul 15  2017 makeinfo
+> -rwxr-xr-x   1 root  wheel     85920 Jul 26  2019 malloc_history
+> -rwxr-xr-x   1 root  wheel    104064 Jul 26  2019 malloc_history32
+> -r-xr-xr-x   1 root  wheel     70128 Jul 15  2017 man
+> lrwxr-xr-x   1 root  wheel         3 Aug  4  2018 manpath -> man
+> -rwxr-xr-x   1 root  wheel     87232 Jul 15  2017 mcxquery
+> -rwxr-xr-x   1 root  wheel     23344 Jul 15  2017 mcxrefresh
+> -rwxr-xr-x   1 root  wheel    153696 Jul 26  2019 mddiagnose
+> -rwxr-xr-x   1 root  wheel     29248 Jul 26  2019 mdfind
+> -rwxr-xr-x   1 root  wheel    292048 Jul 26  2019 mdimport
+> -rwxr-xr-x   1 root  wheel    310832 Jul 26  2019 mdimport32
+> -rwxr-xr-x   1 root  wheel     23984 Jul 26  2019 mdls
+> -rwxr-xr-x   1 root  wheel     76512 Jul 26  2019 mdutil
+> -rwxr-xr-x   1 root  wheel     68592 Jul 26  2019 memory_pressure
+> -r-xr-xr-x   1 root  wheel     18160 Jul 15  2017 mesg
+> -rwxr-xr-x   1 root  wheel     43760 Oct 15  2016 mib2c
+> -rwxr-xr-x   1 root  wheel      8780 Oct 15  2016 mib2c-update
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 mig
+> -rwxr-xr-x   1 root  wheel     19856 Jul 15  2017 mkbom
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 mkdep
+> -rwxr-xr-x   1 root  wheel     18368 Jul 15  2017 mkfifo
+> -rwxr-xr-x   1 root  wheel     40288 Jul 15  2017 mklocale
+> -rwxr-xr-x   1 root  wheel     18752 Jul 15  2017 mktemp
+> -rwxr-xr-x   1 root  wheel      2975 Oct 15  2016 mmroff
+> -rwxr-xr-x   1 root  wheel     28688 Jul 15  2017 mnthome
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 moo-outdated
+> -r-xr-xr-x   1 root  wheel       448 Oct 15  2016 moo-outdated5.18
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 moose-outdated
+> -r-xr-xr-x   1 root  wheel       455 Oct 15  2016 moose-outdated5.16
+> -r-xr-xr-x   1 root  wheel       455 Oct 15  2016 moose-outdated5.18
+> -rwxr-xr-x   1 root  wheel    129536 Jul 15  2017 more
+> -r-xr-xr-x   1 root  wheel      1271 Oct 15  2016 mp2bug
+> -rwxr-xr-x   1 root  wheel     29440 Jul 15  2017 msgs
+> -rwxr-xr-x   1 root  wheel    145296 Jul 15  2017 nano
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 nasm
+> lrwxr-xr-x   1 root  wheel        82 Aug  4  2018 native2ascii -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/native2ascii
+> -rwxr-xr-x   1 root  wheel     25440 Jul 26  2019 nbdst
+> -r-xr-xr-x   1 root  wheel     46896 Jul 15  2017 nc
+> -r-xr-xr-x   1 root  wheel     31824 Jul 15  2017 ncal
+> -r-xr-xr-x   1 root  wheel     23888 Jul 15  2017 ncctl
+> -r-xr-xr-x   1 root  wheel     23888 Jul 15  2017 ncdestroy
+> -r-xr-xr-x   1 root  wheel     23888 Jul 15  2017 ncinit
+> -r-xr-xr-x   1 root  wheel     23888 Jul 15  2017 nclist
+> -rwxr-xr-x   1 root  wheel      4977 Oct 15  2016 ncurses5.4-config
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 ndisasm
+> -rwxr-xr-x   1 root  wheel       271 Oct 15  2016 neqn
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 net-server
+> -r-xr-xr-x   1 root  wheel      3429 Oct 15  2016 net-server5.16
+> -r-xr-xr-x   1 root  wheel      3429 Oct 15  2016 net-server5.18
+> -rwxr-xr-x   1 root  wheel     78699 Oct 15  2016 net-snmp-cert
+> -rwxr-xr-x   1 root  wheel     25356 Oct 15  2016 net-snmp-config
+> -rwxr-xr-x   1 root  wheel      3651 Oct 15  2016 net-snmp-create-v3-user
+> -rwxr-xr-x   1 root  wheel     71328 Jul 15  2017 nettop
+> lrwxr-xr-x   1 root  wheel        16 Aug  4  2018 newaliases -> ../sbin/sendmail
+> -r-sr-xr-x   1 root  wheel     52480 Jul 26  2019 newgrp
+> -rwxr-xr-x   1 root  wheel      4376 Feb  2  2017 newproc.d
+> -r-xr-xr-x   1 root  wheel     45136 Jul 15  2017 nfsstat
+> -rwxr-xr-x   1 root  wheel     18352 Jul 15  2017 nice
+> -rwxr-xr-x   1 root  wheel     23504 Jul 15  2017 nl
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 nm
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 nmedit
+> -rwxr-xr-x   1 root  wheel     18576 Jul 15  2017 nohup
+> lrwxr-xr-x   1 root  wheel        33 Aug 30  2019 norminette -> ../share/norminette/norminette.rb
+> -rwxr-xr-x   1 root  wheel     28992 Jul 15  2017 notifyutil
+> -rwxr-xr-x   1 root  wheel      2357 Oct 15  2016 nroff
+> -rwxr-xr-x   1 root  wheel     96560 Jul 26  2019 nscurl
+> -rwxr-xr-x   1 root  wheel   1552544 Jul 15  2017 nslookup
+> -rwxr-xr-x   1 root  wheel   1543296 Jul 15  2017 nsupdate
+> -rwxr-xr-x   1 root  wheel     70912 Jul 15  2017 ntp-keygen
+> -rwxr-xr-x   1 root  wheel    184880 Jul 15  2017 ntpq
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 objdump
+> -rwxr-xr-x   1 root  wheel     32800 Jul 15  2017 od
+> -rwxr-xr-x   1 root  wheel     61504 Jul 15  2017 odutil
+> -rwxr-xr-x   1 root  wheel    105888 Jul 15  2017 open
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 opendiff
+> -rwxr-xr-x   1 root  wheel      8034 Feb  2  2017 opensnoop
+> -rwxr-xr-x   1 root  wheel    923824 Jul 26  2019 openssl
+> lrwxr-xr-x   1 root  wheel        74 Aug  4  2018 orbd -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/orbd
+> -rwxr-xr-x   1 root  wheel     41744 Jul 26  2019 osacompile
+> -rwxr-xr-x   1 root  wheel     19904 Jul 26  2019 osadecompile
+> -rwxr-xr-x   1 root  wheel     18560 Jul 26  2019 osalang
+> -rwxr-xr-x   1 root  wheel     43104 Jul 26  2019 osascript
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 otool
+> lrwxr-xr-x   1 root  wheel        77 Aug  4  2018 pack200 -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/pack200
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 package-stash-conflicts
+> -r-xr-xr-x   1 root  wheel       491 Oct 15  2016 package-stash-conflicts5.16
+> -r-xr-xr-x   1 root  wheel       844 Oct 15  2016 package-stash-conflicts5.18
+> -rwxr-xr-x   1 root  wheel      2006 Jun 16  2017 pagesize
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 pagestuff
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 par.pl
+> -r-xr-xr-x   1 root  wheel     29540 Oct 15  2016 par5.16.pl
+> -r-xr-xr-x   1 root  wheel     29555 Oct 15  2016 par5.18.pl
+> -rwxr-xr-x   1 root  wheel     66576 Jul 26  2019 parl
+> -r-xr-xr-x   1 root  wheel   5303984 Jul 26  2019 parl5.16
+> -r-xr-xr-x   1 root  wheel   5472608 Jul 26  2019 parl5.18
+> -rwxr-xr-x   1 root  wheel     66576 Jul 26  2019 parldyn
+> -r-xr-xr-x   1 root  wheel    120608 Jul 26  2019 parldyn5.16
+> -r-xr-xr-x   1 root  wheel    128912 Jul 26  2019 parldyn5.18
+> -rwxr-xr-x   1 root  wheel     67952 Jul 26  2019 passwd
+> -rwxr-xr-x   1 root  wheel     18544 Jul 15  2017 paste
+> -rwxr-xr-x   1 root  wheel     95056 Jul 15  2017 patch
+> -rwxr-xr-x   1 root  wheel     18480 Jul 15  2017 pathchk
+> -rwxr-xr-x   1 root  wheel      2378 Feb  2  2017 pathopens.d
+> -rwxr-xr-x   1 root  wheel     23552 Jul 15  2017 pbcopy
+> -rwxr-xr-x   1 root  wheel     23552 Jul 15  2017 pbpaste
+> -rwxr-xr-x   1 root  wheel      1622 Mar 21  2017 pcap-config
+> -rwxr-xr-x   1 root  wheel     43296 Jul 15  2017 pcsctest
+> -rwxr-xr-x   1 root  wheel     66560 Jul 26  2019 perl
+> -rwxr-xr-x   1 root  wheel     52816 Jul 26  2019 perl5.16
+> -rwxr-xr-x   1 root  wheel     52816 Jul 26  2019 perl5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 perlbug
+> -rwxr-xr-x   1 root  wheel     41917 Feb 25  2019 perlbug5.16
+> -rwxr-xr-x   1 root  wheel     41944 Feb 25  2019 perlbug5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 perldoc
+> -rwxr-xr-x   1 root  wheel       259 Feb  7  2017 perldoc5.16
+> -rwxr-xr-x   1 root  wheel       259 Feb  7  2017 perldoc5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 perlivp
+> -rwxr-xr-x   1 root  wheel     10807 Feb  7  2017 perlivp5.16
+> -rwxr-xr-x   1 root  wheel     10807 Feb  7  2017 perlivp5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 perlthanks
+> -rwxr-xr-x   1 root  wheel     41917 Feb 25  2019 perlthanks5.16
+> -rwxr-xr-x   1 root  wheel     41944 Feb 25  2019 perlthanks5.18
+> -rwxr-xr-x   1 root  wheel     22880 Jul 15  2017 pfbtops
+> -rwxr-xr-x   1 root  wheel     30480 Jul 15  2017 pgrep
+> lrwxr-xr-x   1 root  wheel         9 Aug  4  2018 phar -> phar.phar
+> -rwxr-xr-x   1 root  wheel     14775 Oct 30  2017 phar.phar
+> -rwxr-xr-x   1 root  wheel  10898944 Jul 26  2019 php
+> -rwxr-xr-x   1 root  wheel      6809 Feb  8  2017 php-config
+> -rwxr-xr-x   1 root  wheel      4508 Feb  8  2017 phpize
+> -rwxr-xr-x   1 root  wheel    217280 Jul 15  2017 pic
+> lrwxr-xr-x   1 root  wheel         4 Aug  4  2018 pico -> nano
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 piconv
+> -rwxr-xr-x   1 root  wheel      7372 Feb  7  2017 piconv5.16
+> -rwxr-xr-x   1 root  wheel      7372 Feb  7  2017 piconv5.18
+> -rwxr-xr-x   1 root  wheel      1295 Feb  2  2017 pidpersec.d
+> -rwxr-xr-x   1 root  wheel     82736 Jul 26  2019 pkgbuild
+> -rwxr-xr-x   1 root  wheel     30480 Jul 15  2017 pkill
+> -rwxr-xr-x   1 root  wheel     22880 Jul 26  2019 pl
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 pl2pm
+> -rwxr-xr-x   1 root  wheel      4566 Feb  7  2017 pl2pm5.16
+> -rwxr-xr-x   1 root  wheel      4566 Feb  7  2017 pl2pm5.18
+> -rwxr-xr-x   1 root  wheel     33504 Jul 15  2017 plockstat
+> -rwxr-xr-x   1 root  wheel    184256 Jul 26  2019 pluginkit
+> -rwxr-xr-x   1 root  wheel     41040 Jul 26  2019 plutil
+> -rwxr-xr-x   1 root  wheel    173936 Jul 26  2019 pmset
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 pod2html
+> -rwxr-xr-x   1 root  wheel      2073 Feb  7  2017 pod2html5.16
+> -rwxr-xr-x   1 root  wheel      2073 Feb  7  2017 pod2html5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 pod2latex
+> -rwxr-xr-x   1 root  wheel     10374 Feb  7  2017 pod2latex5.16
+> -rwxr-xr-x   1 root  wheel     10374 Feb  7  2017 pod2latex5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 pod2man
+> -rwxr-xr-x   1 root  wheel     11611 Feb  7  2017 pod2man5.16
+> -rwxr-xr-x   1 root  wheel     13700 Feb  7  2017 pod2man5.18
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 pod2readme
+> -r-xr-xr-x   1 root  wheel      1603 Oct 15  2016 pod2readme5.16
+> -r-xr-xr-x   1 root  wheel      1603 Oct 15  2016 pod2readme5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 pod2text
+> -rwxr-xr-x   1 root  wheel      9154 Feb  7  2017 pod2text5.16
+> -rwxr-xr-x   1 root  wheel     11123 Feb  7  2017 pod2text5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 pod2usage
+> -rwxr-xr-x   1 root  wheel      3462 Feb  7  2017 pod2usage5.16
+> -rwxr-xr-x   1 root  wheel      3790 Feb  7  2017 pod2usage5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 podchecker
+> -rwxr-xr-x   1 root  wheel      3819 Feb  7  2017 podchecker5.16
+> -rwxr-xr-x   1 root  wheel      3819 Feb  7  2017 podchecker5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 podselect
+> -rwxr-xr-x   1 root  wheel      2647 Feb  7  2017 podselect5.16
+> -rwxr-xr-x   1 root  wheel      2647 Feb  7  2017 podselect5.18
+> lrwxr-xr-x   1 root  wheel        80 Aug  4  2018 policytool -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/policytool
+> -rwxr-xr-x   1 root  wheel    151504 Jul 15  2017 post-grohtml
+> -rwxr-xr-x   1 root  wheel       951 Jun 16  2017 power_report.sh
+> -rwxr-xr-x   1 root  wheel    157408 Jul 26  2019 powermetrics
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 pp
+> -r-xr-xr-x   1 root  wheel       152 Oct 15  2016 pp5.16
+> -r-xr-xr-x   1 root  wheel       152 Oct 15  2016 pp5.18
+> -r-xr-xr-x   1 root  wheel     25280 Jul 26  2019 ppdc
+> -r-xr-xr-x   1 root  wheel     23632 Jul 26  2019 ppdhtml
+> -r-xr-xr-x   1 root  wheel     18768 Jul 26  2019 ppdi
+> -r-xr-xr-x   1 root  wheel     24272 Jul 26  2019 ppdmerge
+> -r-xr-xr-x   1 root  wheel     23760 Jul 26  2019 ppdpo
+> -rwxr-xr-x   1 root  wheel     32176 Jul 15  2017 pr
+> -rwxr-xr-x   1 root  wheel     73856 Jul 15  2017 pre-grohtml
+> -rwxr-xr-x   1 root  wheel      1839 Feb  2  2017 priclass.d
+> -rwxr-xr-x   1 root  wheel      1836 Feb  2  2017 pridist.d
+> -rwxr-xr-x   1 root  wheel     18128 Jul 15  2017 printenv
+> -rwxr-xr-x   1 root  wheel     23184 Jul 15  2017 printf
+> -rwxr-xr-x   1 root  wheel      6344 Feb  2  2017 procsystime
+> -rwxr-xr-x   1 root  wheel    126752 Jul 26  2019 productbuild
+> -rwxr-xr-x   1 root  wheel     38480 Jul 26  2019 productsign
+> -rwxr-xr-x   1 root  wheel    118576 Jul 15  2017 profiles
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 prove
+> -rwxr-xr-x   1 root  wheel     11120 Feb  7  2017 prove5.16
+> -rwxr-xr-x   1 root  wheel     11120 Feb  7  2017 prove5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 psed
+> -rwxr-xr-x   1 root  wheel     53364 Feb  7  2017 psed5.16
+> -rwxr-xr-x   1 root  wheel     53364 Feb  7  2017 psed5.18
+> -rwxr-xr-x   1 root  wheel     23936 Jul 15  2017 pstopdf
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 pstruct
+> -rwxr-xr-x   1 root  wheel     36642 Feb  7  2017 pstruct5.16
+> -rwxr-xr-x   1 root  wheel     36642 Feb  7  2017 pstruct5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 ptar
+> -rwxr-xr-x   1 root  wheel      3015 Feb  7  2017 ptar5.16
+> -rwxr-xr-x   1 root  wheel      3559 Feb  7  2017 ptar5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 ptardiff
+> -rwxr-xr-x   1 root  wheel      2507 Feb  7  2017 ptardiff5.16
+> -rwxr-xr-x   1 root  wheel      2507 Feb  7  2017 ptardiff5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 ptargrep
+> -rwxr-xr-x   1 root  wheel      4274 Feb  7  2017 ptargrep5.16
+> -rwxr-xr-x   1 root  wheel      4274 Feb  7  2017 ptargrep5.18
+> -rwxr-xr-x   1 root  wheel    114384 Jul 15  2017 pubsub
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 pwhich
+> -r-xr-xr-x   1 root  wheel      3106 Oct 15  2016 pwhich5.16
+> -r-xr-xr-x   1 root  wheel      3106 Oct 15  2016 pwhich5.18
+> -rwxr-xr-x   1 root  wheel     47856 Jul 15  2017 pwpolicy
+> -rwxr-xr-x   5 root  wheel       925 Feb  7  2017 pydoc
+> lrwxr-xr-x   1 root  wheel        74 Aug  4  2018 pydoc2.6 -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/pydoc2.6
+> lrwxr-xr-x   1 root  wheel        74 Aug  4  2018 pydoc2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/pydoc2.7
+> -rwxr-xr-x   1 root  wheel     66576 Jul 15  2017 python
+> -rwxr-xr-x   5 root  wheel       925 Feb  7  2017 python-config
+> lrwxr-xr-x   1 root  wheel        75 Aug  4  2018 python2.6 -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/python2.6
+> lrwxr-xr-x   1 root  wheel        82 Aug  4  2018 python2.6-config -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/python2.6-config
+> lrwxr-xr-x   1 root  wheel        75 Aug  4  2018 python2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7
+> lrwxr-xr-x   1 root  wheel        82 Aug  4  2018 python2.7-config -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7-config
+> -rwxr-xr-x   1 root  wheel     66576 Jul 15  2017 pythonw
+> lrwxr-xr-x   1 root  wheel        76 Aug  4  2018 pythonw2.6 -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/pythonw2.6
+> lrwxr-xr-x   1 root  wheel        76 Aug  4  2018 pythonw2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/pythonw2.7
+> -rwxr-xr-x   1 root  wheel     45072 Jul 15  2017 qc2movie
+> lrwxr-xr-x   1 root  wheel       100 Aug  4  2018 qlmanage -> ../../System/Library/Frameworks/QuickLook.framework/Resources/quicklookd.app/Contents/MacOS/qlmanage
+> -rwxr-xr-x   1 root  wheel     51008 Jul 26  2019 qtdefaults
+> -rwxr-xr-x   1 root  wheel     85888 Jul 26  2019 qtmodernizer
+> -r-sr-xr-x   1 root  wheel     23552 Jul 15  2017 quota
+> -r-xr-xr-x   1 root  wheel       549 Feb  7  2017 rails
+> -r-xr-xr-x   1 root  wheel       517 Aug  1  2018 rake
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 ranlib
+> -rwxr-xr-x   1 root  wheel        41 Mar 25  2014 rbx
+> -r-xr-xr-x   1 root  wheel       988 Aug  1  2018 rdoc
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 read
+> -rwxr-xr-x   1 root  wheel     27456 Jul 15  2017 readlink
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 rebase
+> -rwxr-xr-x   1 root  wheel     18288 Jul 15  2017 redo_prebinding
+> -rwxr-xr-x   1 root  wheel    117904 Jul 15  2017 refer
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 renice
+> lrwxr-xr-x   1 root  wheel         4 Aug  4  2018 reset -> tset
+> -rwxr-xr-x   1 root  wheel     18272 Jul 15  2017 resolveLinks
+> -rwxr-xr-x   1 root  wheel     18352 Jul 15  2017 rev
+> -r-xr-xr-x   1 root  wheel       238 Aug  1  2018 ri
+> lrwxr-xr-x   1 root  wheel        74 Aug  4  2018 rmic -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/rmic
+> lrwxr-xr-x   1 root  wheel        74 Aug  4  2018 rmid -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/rmid
+> lrwxr-xr-x   1 root  wheel        81 Aug  4  2018 rmiregistry -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/rmiregistry
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 rpcgen
+> -rwxr-xr-x   1 root  wheel     22672 Jul 15  2017 rs
+> -rwxr-xr-x   1 root  wheel    295584 Jul 15  2017 rsync
+> -r-xr-xr-x   1 root  wheel     51968 Jul 26  2019 ruby
+> -rwxr-xr-x   1 root  wheel      1425 Feb  2  2017 runocc.d
+> -rwxr-xr-x   1 root  wheel     57808 Mar  7  2017 rvictl
+> lrwxr-xr-x   1 root  wheel         3 Aug  4  2018 rview -> vim
+> lrwxr-xr-x   1 root  wheel         3 Aug  4  2018 rvim -> vim
+> -rwxr-xr-x   1 root  wheel      1657 Feb  2  2017 rwbypid.d
+> -rwxr-xr-x   1 root  wheel      2473 Feb  2  2017 rwbytype.d
+> -rwxr-xr-x   1 root  wheel      6355 Feb  2  2017 rwsnoop
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 s2p
+> -rwxr-xr-x   1 root  wheel     53364 Feb  7  2017 s2p5.16
+> -rwxr-xr-x   1 root  wheel     53364 Feb  7  2017 s2p5.18
+> lrwxr-xr-x   1 root  wheel        77 Aug  4  2018 safaridriver -> /System/Library/CoreServices/SafariSupport.bundle/Contents/MacOS/safaridriver
+> -rwxr-xr-x   1 root  wheel     64160 Jul 26  2019 sample
+> -rwxr-xr-x   1 root  wheel      2544 Feb  2  2017 sampleproc
+> -rwxr-xr-x   1 root  wheel     23824 Jul 26  2019 sandbox-exec
+> -rwxr-xr-x   1 root  wheel     54256 Jul 15  2017 say
+> -rwxr-xr-x   1 root  wheel     82368 Jul 26  2019 sc_usage
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 scandeps.pl
+> -r-xr-xr-x   1 root  wheel      5815 Oct 15  2016 scandeps5.16.pl
+> -r-xr-xr-x   1 root  wheel      5815 Oct 15  2016 scandeps5.18.pl
+> lrwxr-xr-x   1 root  wheel        79 Aug  4  2018 schemagen -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/schemagen
+> -rwxr-xr-x   1 root  wheel     71648 Jul 15  2017 scp
+> -rwxr-xr-x   1 root  wheel    302480 Jul 15  2017 screen
+> -rwxr-xr-x   1 root  wheel     24064 Jul 15  2017 script
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 sdef
+> -rwxr-xr-x   1 root  wheel     37408 Jul 15  2017 sdiff
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 sdp
+> lrwxr-xr-x   1 root  wheel        32 Aug  4  2018 sdx -> ../../System/Library/Tcl/bin/sdx
+> -rwxr-xr-x   1 root  wheel    259872 Jul 26  2019 security
+> -rwxr-xr-x   1 root  wheel     42112 Jul 15  2017 sed
+> -rwxr-xr-x   1 root  wheel      2041 Feb  2  2017 seeksize.d
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 segedit
+> -rwxr-xr-x   1 root  wheel     22960 Jul 15  2017 seq
+> lrwxr-xr-x   1 root  wheel        79 Aug  4  2018 serialver -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/serialver
+> lrwxr-xr-x   1 root  wheel        80 Aug  4  2018 servertool -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/servertool
+> -r-xr-xr-x   1 root  wheel     24992 Jul 15  2017 setregion
+> -rwx------   1 root  wheel    116672 Aug 10  2017 setregproptool
+> -rwxr-xr-x   1 root  wheel      1606 Feb  2  2017 setuids.d
+> -rwxr-xr-x   1 root  wheel     84160 Jul 15  2017 sfltool
+> -rwxr-xr-x   1 root  wheel    110608 Jul 15  2017 sftp
+> -rwxr-xr-x   1 root  wheel      2516 Apr  5  2017 shar
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 shasum
+> -rwxr-xr-x   1 root  wheel      8629 Feb  7  2017 shasum5.16
+> -rwxr-xr-x   1 root  wheel      8629 Feb  7  2017 shasum5.18
+> -rwxr-xr-x   1 root  wheel     22992 Jul 15  2017 shlock
+> -r-xr-xr-x   1 root  wheel     24976 Jul 15  2017 showmount
+> -rwxr-xr-x   1 root  wheel      1603 Feb  2  2017 sigdist.d
+> -rwxr-xr-x   1 root  wheel    104608 Jul 26  2019 sips
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 size
+> lrwxr-xr-x   1 root  wheel         3 Aug  4  2018 slogin -> ssh
+> -r-xr-xr-x   1 root  wheel    102256 Jul 26  2019 smbutil
+> -rwx------   1 root  wheel     33136 Aug 12  2017 smc
+> -rwxr-xr-x   1 root  wheel       928 Feb  7  2017 smtpd.py
+> lrwxr-xr-x   1 root  wheel        77 Aug  4  2018 smtpd2.6.py -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/bin/smtpd2.6.py
+> lrwxr-xr-x   1 root  wheel        77 Aug  4  2018 smtpd2.7.py -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/bin/smtpd2.7.py
+> lrwxr-xr-x   1 root  wheel        59 Aug  4  2018 snfsdefrag -> /System/Library/Filesystems/acfs.fs/Contents/bin/snfsdefrag
+> -rwxr-xr-x   1 root  wheel     30680 Oct 15  2016 snmp-bridge-mib
+> -rwxr-xr-x   1 root  wheel     23600 Jul 15  2017 snmpbulkget
+> -rwxr-xr-x   1 root  wheel     24016 Jul 15  2017 snmpbulkwalk
+> -rwxr-xr-x   1 root  wheel     26136 Oct 15  2016 snmpconf
+> -rwxr-xr-x   1 root  wheel     29488 Jul 15  2017 snmpdelta
+> -rwxr-xr-x   1 root  wheel     23680 Jul 15  2017 snmpdf
+> -rwxr-xr-x   1 root  wheel     19392 Jul 15  2017 snmpget
+> -rwxr-xr-x   1 root  wheel     19392 Jul 15  2017 snmpgetnext
+> -rwxr-xr-x   1 root  wheel     24112 Jul 15  2017 snmpinform
+> -rwxr-xr-x   1 root  wheel     55264 Jul 15  2017 snmpnetstat
+> -rwxr-xr-x   1 root  wheel     23536 Jul 15  2017 snmpset
+> -rwxr-xr-x   1 root  wheel     24160 Jul 15  2017 snmpstatus
+> -rwxr-xr-x   1 root  wheel     29040 Jul 15  2017 snmptable
+> -rwxr-xr-x   1 root  wheel     24624 Jul 15  2017 snmptest
+> -rwxr-xr-x   1 root  wheel     25120 Jul 15  2017 snmptranslate
+> -rwxr-xr-x   1 root  wheel     24112 Jul 15  2017 snmptrap
+> -rwxr-xr-x   1 root  wheel     46224 Jul 15  2017 snmpusm
+> -rwxr-xr-x   1 root  wheel     40096 Jul 15  2017 snmpvacm
+> -rwxr-xr-x   1 root  wheel     23904 Jul 15  2017 snmpwalk
+> -rwxr-xr-x   1 root  wheel    165552 Jul 15  2017 sntp
+> -rwxr-xr-x   1 root  wheel     38864 Jul 15  2017 soelim
+> -rwxr-xr-x   1 root  wheel     54016 Jul 15  2017 sort
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 spfd
+> -r-xr-xr-x   1 root  wheel      9486 Oct 15  2016 spfd5.16
+> -r-xr-xr-x   1 root  wheel      9486 Oct 15  2016 spfd5.18
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 spfquery
+> -r-xr-xr-x   1 root  wheel     23081 Oct 15  2016 spfquery5.16
+> -r-xr-xr-x   1 root  wheel     23081 Oct 15  2016 spfquery5.18
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 splain
+> -rwxr-xr-x   1 root  wheel     18494 Feb  7  2017 splain5.16
+> -rwxr-xr-x   1 root  wheel     18681 Feb  7  2017 splain5.18
+> -rwxr-xr-x   1 root  wheel     23056 Jul 15  2017 split
+> -rwxr-xr-x   1 root  wheel    181280 Jul 15  2017 sqlite3
+> -rwxr-xr-x   1 root  wheel   2136192 Jul 15  2017 ssh
+> -rwxr-xr-x   1 root  wheel   1829936 Jul 15  2017 ssh-add
+> -rwxr-xr-x   1 root  wheel   1828624 Jul 15  2017 ssh-agent
+> -rwxr-xr-x   1 root  wheel     10372 Jan 24  2017 ssh-copy-id
+> -rwxr-xr-x   1 root  wheel   1865584 Jul 15  2017 ssh-keygen
+> -rwxr-xr-x   1 root  wheel   1880096 Jul 15  2017 ssh-keyscan
+> -rwxr-xr-x   1 root  wheel     27456 Jul 15  2017 stat
+> -rwxr-xr-x   1 root  wheel     75696 Jul 26  2019 stringdups
+> -rwxr-xr-x   1 root  wheel     88816 Jul 26  2019 stringdups32
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 strings
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 strip
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 stty.pl
+> -r-xr-xr-x   1 root  wheel       277 Oct 15  2016 stty5.16.pl
+> -r-xr-xr-x   1 root  wheel       277 Oct 15  2016 stty5.18.pl
+> -rwsr-xr-x   1 root  wheel     25424 Jul 15  2017 su
+> -r-s--x--x   1 root  wheel    369648 Jul 15  2017 sudo
+> -rwxr-xr-x   1 root  wheel     22640 Jul 15  2017 sum
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 svn
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 svnadmin
+> -rwxr-xr-x   1 root  wheel     18272 Jul 15  2017 svndumpfilter
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 svnlook
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 svnserve
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 svnsync
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 svnversion
+> -rwxr-xr-x   1 root  wheel     18800 Jul 15  2017 sw_vers
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 swift
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 swiftc
+> -rwxr-xr-x   1 root  wheel    145792 Jul 26  2019 symbols
+> -rwxr-xr-x   1 root  wheel    113216 Jul 15  2017 symbolscache
+> -rwxr-xr-x   1 root  wheel      1260 Feb  2  2017 syscallbypid.d
+> -rwxr-xr-x   1 root  wheel       253 Feb  2  2017 syscallbyproc.d
+> -rwxr-xr-x   1 root  wheel       248 Feb  2  2017 syscallbysysc.d
+> -rwxr-xr-x   1 root  wheel    406944 Jul 26  2019 sysdiagnose
+> -rwxr-xr-x   1 root  wheel     67632 Jul 15  2017 syslog
+> -rwxr-xr-x   1 root  wheel       453 Feb 17  2017 systriage
+> -rwxr-xr-x   1 root  wheel     47136 Jul 26  2019 tab2space
+> -rwxr-xr-x   1 root  wheel     18528 Jul 15  2017 tabs
+> -rwxr-xr-x   1 root  wheel     28496 Jul 15  2017 tail
+> -rwxr-xr-x   1 root  wheel     53840 Jul 15  2017 tailspin
+> -r-xr-xr-x   1 root  wheel     30848 Jul 15  2017 talk
+> lrwxr-xr-x   1 root  wheel         6 Aug  4  2018 tar -> bsdtar
+> -rwxr-xr-x   1 root  wheel     38208 Jul 26  2019 taskinfo
+> -rwxr-xr-x   1 root  wheel    119200 Jul 15  2017 tbl
+> -rwxr-xr-x   1 root  wheel     50688 Jul 15  2017 tbtdiagnose
+> -rwxr-xr-x   1 root  wheel     18880 Jul 15  2017 tccutil
+> lrwxr-xr-x   1 root  wheel         8 Aug  4  2018 tclsh -> tclsh8.5
+> lrwxr-xr-x   1 root  wheel        67 Aug  4  2018 tclsh8.4 -> ../../System/Library/Frameworks/Tcl.framework/Versions/8.4/tclsh8.4
+> lrwxr-xr-x   1 root  wheel        67 Aug  4  2018 tclsh8.5 -> ../../System/Library/Frameworks/Tcl.framework/Versions/8.5/tclsh8.5
+> -rwxr-xr-x   1 root  wheel     18352 Jul 15  2017 tee
+> -r-xr-xr-x   1 root  wheel    117008 Jul 15  2017 telnet
+> -rwxr-xr-x   1 root  wheel      8050 Mar  2  2017 tethered-caching
+> -rwxr-xr-x   1 root  wheel     28218 Oct 15  2016 texi2dvi
+> -rwxr-xr-x   1 root  wheel       660 Oct 15  2016 texi2pdf
+> -rwxr-xr-x   1 root  wheel     56448 Jul 15  2017 texindex
+> -rwxr-xr-x   1 root  wheel     48688 Jul 15  2017 textutil
+> -rwxr-xr-x   1 root  wheel     39088 Jul 15  2017 tfmtodit
+> -r-xr-xr-x   1 root  wheel     38944 Jul 15  2017 tftp
+> -rwxr-xr-x   1 root  wheel     26240 Jul 26  2019 thermal
+> -rwxr-xr-x   1 root  wheel     55712 Jul 15  2017 tic
+> -rwxr-xr-x   1 root  wheel     74720 Jul 26  2019 tidy
+> -rwxr-xr-x   1 root  wheel     23408 Jul 15  2017 tiff2icns
+> -rwxr-xr-x   1 root  wheel    335472 Jul 15  2017 tiffutil
+> -rwxr-xr-x   1 root  wheel     18368 Jul 15  2017 time
+> -rwxr-xr-x   1 root  wheel      2886 Jun 16  2017 timer_analyser.d
+> -rwxr-xr-x   1 root  wheel      6537 Jun 16  2017 timerfires
+> lrwxr-xr-x   1 root  wheel        43 Aug  4  2018 tkcon -> ../../System/Library/Tcl/tkcon2.6/tkcon.tcl
+> -rwxr-xr-x   1 root  wheel     30924 Oct 15  2016 tkmib
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 tkpp
+> -r-xr-xr-x   1 root  wheel     78220 Oct 15  2016 tkpp5.16
+> -r-xr-xr-x   1 root  wheel     82203 Oct 15  2016 tkpp5.18
+> -rwxr-xr-x   1 root  wheel    188704 Jul 26  2019 tmdiagnose
+> -rwxr-xr-x   1 root  wheel    284912 Jul 26  2019 tmutil
+> lrwxr-xr-x   1 root  wheel        79 Aug  4  2018 tnameserv -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/tnameserv
+> -rwxr-xr-x   1 root  wheel     24624 Jul 15  2017 toe
+> -r-sr-xr-x   1 root  wheel     88272 Jul 15  2017 top
+> -rwxr-xr-x   1 root  wheel    107392 Jul 15  2017 tops
+> -rwxr-xr-x   1 root  wheel      4603 Feb  2  2017 topsyscall
+> -rwxr-xr-x   1 root  wheel      2950 Feb  2  2017 topsysproc
+> -rwxr-xr-x   1 root  wheel     23312 Jul 15  2017 touch
+> -rwxr-xr-x   1 root  wheel     24160 Jul 15  2017 tput
+> -rwxr-xr-x   1 root  wheel     27696 Jul 15  2017 tr
+> -rwxr-xr-x   1 root  wheel    136256 Jul 26  2019 trace
+> -rwxr-xr-x   1 root  wheel      2207 Oct 15  2016 traptoemail
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 treereg
+> -r-xr-xr-x   1 root  wheel     10339 Oct 15  2016 treereg5.16
+> -r-xr-xr-x   1 root  wheel     10339 Oct 15  2016 treereg5.18
+> -rwxr-xr-x   1 root  wheel     24048 Jul 26  2019 trimforce
+> -rwxr-xr-x   1 root  wheel    474160 Jul 15  2017 troff
+> -rwxr-xr-x   1 root  wheel     17760 Jul 15  2017 true
+> -rwxr-xr-x   1 root  wheel     28752 Jul 15  2017 tset
+> -r-xr-xr-x   1 root  wheel     22928 Jul 15  2017 tsort
+> -rwxr-xr-x   1 root  wheel     17984 Jul 15  2017 tty
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 type
+> -rwxr-xr-x   1 root  wheel     23136 Jul 15  2017 ul
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 ulimit
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 umask
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 unalias
+> -rwxr-xr-x   1 root  wheel     18368 Jul 15  2017 uname
+> -rwxr-xr-x   1 root  wheel     27680 Jul 15  2017 uncompress
+> -rwxr-xr-x   1 root  wheel     18544 Jul 15  2017 unexpand
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 unifdef
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 unifdefall
+> -rwxr-xr-x   1 root  wheel     23104 Jul 15  2017 uniq
+> -r-xr-xr-x   1 root  wheel     27664 Jul 15  2017 units
+> lrwxr-xr-x   1 root  wheel        79 Aug  4  2018 unpack200 -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/unpack200
+> -rwxr-xr-x   1 root  wheel     18336 Jul 15  2017 unvis
+> -rwxr-xr-x   1 root  wheel    186000 Jul 15  2017 unzip
+> -rwxr-xr-x   1 root  wheel     88224 Jul 15  2017 unzipsfx
+> -rwxr-xr-x   1 root  wheel    854000 Jul 26  2019 update_dyld_shared_cache
+> -rwxr-xr-x   1 root  wheel     24176 Jul 15  2017 uptime
+> -rwxr-xr-x   1 root  wheel     38656 Jul 26  2019 usbkdp
+> -rwxr-xr-x   1 root  wheel     18320 Jul 15  2017 users
+982,985c982,985
+< -r-xr-xr-x   1 root   wheel     24128 Jul 15  2017 uudecode
+< -r-xr-xr-x   1 root   wheel     18736 Jul 15  2017 uuencode
+< -rwxr-xr-x   1 root   wheel     42960 Jul 26  2019 uuidgen
+< -rwxr-xr-x   1 root   wheel     70128 Jul 15  2017 uulog
+---
+> -r-xr-xr-x   1 root  wheel     24128 Jul 15  2017 uudecode
+> -r-xr-xr-x   1 root  wheel     18736 Jul 15  2017 uuencode
+> -rwxr-xr-x   1 root  wheel     42960 Jul 26  2019 uuidgen
+> -rwxr-xr-x   1 root  wheel     70128 Jul 15  2017 uulog
+987c987
+< -rwxr-xr-x   1 root   wheel     75360 Jul 15  2017 uupick
+---
+> -rwxr-xr-x   1 root  wheel     75360 Jul 15  2017 uupick
+989c989
+< -rwxr-xr-x   1 root   wheel      1958 Oct 15  2016 uuto
+---
+> -rwxr-xr-x   1 root  wheel      1958 Oct 15  2016 uuto
+991,1073c991,1073
+< lrwxr-xr-x   1 root   wheel         3 Aug  4  2018 vi -> vim
+< lrwxr-xr-x   1 root   wheel         3 Aug  4  2018 view -> vim
+< -rwxr-xr-x   1 root   wheel   1745872 Jul 26  2019 vim
+< lrwxr-xr-x   1 root   wheel         3 Aug  4  2018 vimdiff -> vim
+< -rwxr-xr-x   1 root   wheel      2084 Apr  5  2017 vimtutor
+< -rwxr-xr-x   1 root   wheel     18464 Jul 15  2017 vis
+< -rwxr-xr-x   1 root   wheel     51744 Jul 26  2019 vm_stat
+< -rwxr-xr-x   1 root   wheel     66736 Jul 26  2019 vmmap
+< -rwxr-xr-x   1 root   wheel     79792 Jul 26  2019 vmmap32
+< -rwxr-xr-x   1 root   wheel     24176 Jul 15  2017 w
+< -rwxr-xr-x  15 root   wheel       190 Oct 15  2016 wait
+< -r-xr-sr-x   1 root   tty       24768 Jul 15  2017 wall
+< -rwxr-xr-x   1 root   wheel     23040 Jul 15  2017 wc
+< -rwxr-xr-x   1 root   wheel     28720 Jul 26  2019 wdutil
+< -rwxr-xr-x   1 root   wheel      4013 Feb  2  2017 weblatency.d
+< -rwxr-xr-x   1 root   wheel     18048 Jul 15  2017 what
+< -r-xr-xr-x   1 root   wheel      1806 Oct 15  2016 whatis
+< -rwxr-xr-x   1 root   wheel     18512 Jul 15  2017 whereis
+< -rwxr-xr-x   1 root   wheel     18528 Jul 15  2017 which
+< -rwxr-xr-x   1 root   wheel     23488 Jul 15  2017 who
+< -rwxr-xr-x   1 root   wheel     23216 Jul 15  2017 whoami
+< -rwxr-xr-x   1 root   wheel     23392 Jul 15  2017 whois
+< lrwxr-xr-x   1 root   wheel         7 Aug  4  2018 wish -> wish8.5
+< -r-xr-xr-x   1 root   wheel       127 Feb  7  2017 wish8.4
+< -r-xr-xr-x   1 root   wheel       127 Feb  7  2017 wish8.5
+< drwx------   3 root   wheel       102 Aug 24  2018 wrapper.app
+< -r-xr-sr-x   1 root   tty       23872 Jul 15  2017 write
+< lrwxr-xr-x   1 root   wheel        75 Aug  4  2018 wsgen -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/wsgen
+< lrwxr-xr-x   1 root   wheel        78 Aug  4  2018 wsimport -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/wsimport
+< -rwxr-xr-x   1 root   wheel     38608 Jul 26  2019 xar
+< -rwxr-xr-x   1 root   wheel     24128 Jul 15  2017 xargs
+< -rwxr-xr-x   2 root   wheel       925 Oct 15  2016 xattr
+< -rwxr-xr-x   1 root   wheel       392 Oct 15  2016 xattr-2.6
+< -rwxr-xr-x   1 root   wheel       432 Oct 15  2016 xattr-2.7
+< -rwxr-xr-x   1 root   wheel     23920 Jul 15  2017 xcode-select
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 xcodebuild
+< -rwxr-xr-x   1 root   wheel     17904 Jul 15  2017 xcrun
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 xcscontrol
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 xcsdiagnose
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 xed
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 xgettext.pl
+< -r-xr-xr-x   1 root   wheel      6247 Oct 15  2016 xgettext5.16.pl
+< -r-xr-xr-x   1 root   wheel      6650 Oct 15  2016 xgettext5.18.pl
+< -rwxr-xr-x   1 root   wheel     28560 Jul 26  2019 xip
+< lrwxr-xr-x   1 root   wheel        73 Aug  4  2018 xjc -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/xjc
+< -rwxr-xr-x   1 root   wheel      1874 May 11  2017 xml2-config
+< -rwxr-xr-x   1 root   wheel     18256 Jul 15  2017 xml2man
+< -rwxr-xr-x   1 root   wheel     61072 Jul 26  2019 xmlcatalog
+< -rwxr-xr-x   1 root   wheel    141152 Jul 26  2019 xmllint
+< -rwxr-xr-x  35 root   wheel       811 Oct 15  2016 xpath
+< -r-xr-xr-x   1 root   wheel      1445 Oct 15  2016 xpath5.16
+< -r-xr-xr-x   1 root   wheel      1445 Oct 15  2016 xpath5.18
+< -rwxr-xr-x   1 root   wheel      2546 Feb 11  2017 xslt-config
+< -rwxr-xr-x   1 root   wheel     75040 Jul 26  2019 xsltproc
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 xsubpp
+< -rwxr-xr-x   1 root   wheel      4591 Feb  7  2017 xsubpp5.16
+< -rwxr-xr-x   1 root   wheel      4591 Feb  7  2017 xsubpp5.18
+< -rwxr-xr-x   1 root   wheel     27264 Jul 26  2019 xxd
+< -rwxr-xr-x   1 root   wheel     18240 Jul 15  2017 yacc
+< -rwxr-xr-x   1 root   wheel     17760 Jul 15  2017 yes
+< -r-xr-xr-x   1 root   wheel     18336 Jul 15  2017 ypcat
+< -r-xr-xr-x   1 root   wheel     18416 Jul 15  2017 ypmatch
+< -r-xr-xr-x   1 root   wheel     18992 Jul 15  2017 ypwhich
+< -rwxr-xr-x   1 root   wheel     52960 Jul 15  2017 zcat
+< -rwxr-xr-x   2 root   wheel      3264 Apr  5  2017 zcmp
+< -rwxr-xr-x   2 root   wheel      3264 Apr  5  2017 zdiff
+< -rwxr-xr-x   1 root   wheel     33888 Jul 15  2017 zegrep
+< -rwxr-xr-x   1 root   wheel     33888 Jul 15  2017 zfgrep
+< -rwxr-xr-x   1 root   wheel      1454 Apr  5  2017 zforce
+< -rwxr-xr-x   1 root   wheel     33888 Jul 15  2017 zgrep
+< -rwxr-xr-x   1 root   wheel    175920 Jul 15  2017 zip
+< -rwxr-xr-x   1 root   wheel     82304 Jul 15  2017 zipcloak
+< -rwxr-xr-x  38 root   wheel       811 Feb  7  2017 zipdetails
+< -rwxr-xr-x   1 root   wheel     48113 Feb  7  2017 zipdetails5.16
+< -rwxr-xr-x   1 root   wheel     48113 Feb  7  2017 zipdetails5.18
+< -rwxr-xr-x   1 root   wheel      2953 Oct 15  2016 zipgrep
+< -rwxr-xr-x   1 root   wheel    186000 Jul 15  2017 zipinfo
+< -rwxr-xr-x   1 root   wheel     73360 Jul 15  2017 zipnote
+< -rwxr-xr-x   1 root   wheel     77600 Jul 15  2017 zipsplit
+< -rwxr-xr-x   2 root   wheel      2077 Apr  5  2017 zless
+< -rwxr-xr-x   2 root   wheel      2077 Apr  5  2017 zmore
+< -rwxr-xr-x   1 root   wheel      3376 Apr  5  2017 znew
+< -rwxr-xr-x   1 root   wheel     74464 Jul 26  2019 zprint
+---
+> lrwxr-xr-x   1 root  wheel         3 Aug  4  2018 vi -> vim
+> lrwxr-xr-x   1 root  wheel         3 Aug  4  2018 view -> vim
+> -rwxr-xr-x   1 root  wheel   1745872 Jul 26  2019 vim
+> lrwxr-xr-x   1 root  wheel         3 Aug  4  2018 vimdiff -> vim
+> -rwxr-xr-x   1 root  wheel      2084 Apr  5  2017 vimtutor
+> -rwxr-xr-x   1 root  wheel     18464 Jul 15  2017 vis
+> -rwxr-xr-x   1 root  wheel     51744 Jul 26  2019 vm_stat
+> -rwxr-xr-x   1 root  wheel     66736 Jul 26  2019 vmmap
+> -rwxr-xr-x   1 root  wheel     79792 Jul 26  2019 vmmap32
+> -rwxr-xr-x   1 root  wheel     24176 Jul 15  2017 w
+> -rwxr-xr-x  15 root  wheel       190 Oct 15  2016 wait
+> -r-xr-sr-x   1 root  tty     24768 Jul 15  2017 wall
+> -rwxr-xr-x   1 root  wheel     23040 Jul 15  2017 wc
+> -rwxr-xr-x   1 root  wheel     28720 Jul 26  2019 wdutil
+> -rwxr-xr-x   1 root  wheel      4013 Feb  2  2017 weblatency.d
+> -rwxr-xr-x   1 root  wheel     18048 Jul 15  2017 what
+> -r-xr-xr-x   1 root  wheel      1806 Oct 15  2016 whatis
+> -rwxr-xr-x   1 root  wheel     18512 Jul 15  2017 whereis
+> -rwxr-xr-x   1 root  wheel     18528 Jul 15  2017 which
+> -rwxr-xr-x   1 root  wheel     23488 Jul 15  2017 who
+> -rwxr-xr-x   1 root  wheel     23216 Jul 15  2017 whoami
+> -rwxr-xr-x   1 root  wheel     23392 Jul 15  2017 whois
+> lrwxr-xr-x   1 root  wheel         7 Aug  4  2018 wish -> wish8.5
+> -r-xr-xr-x   1 root  wheel       127 Feb  7  2017 wish8.4
+> -r-xr-xr-x   1 root  wheel       127 Feb  7  2017 wish8.5
+> drwx------   3 root  wheel       102 Aug 24  2018 wrapper.app
+> -r-xr-sr-x   1 root  tty     23872 Jul 15  2017 write
+> lrwxr-xr-x   1 root  wheel        75 Aug  4  2018 wsgen -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/wsgen
+> lrwxr-xr-x   1 root  wheel        78 Aug  4  2018 wsimport -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/wsimport
+> -rwxr-xr-x   1 root  wheel     38608 Jul 26  2019 xar
+> -rwxr-xr-x   1 root  wheel     24128 Jul 15  2017 xargs
+> -rwxr-xr-x   2 root  wheel       925 Oct 15  2016 xattr
+> -rwxr-xr-x   1 root  wheel       392 Oct 15  2016 xattr-2.6
+> -rwxr-xr-x   1 root  wheel       432 Oct 15  2016 xattr-2.7
+> -rwxr-xr-x   1 root  wheel     23920 Jul 15  2017 xcode-select
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 xcodebuild
+> -rwxr-xr-x   1 root  wheel     17904 Jul 15  2017 xcrun
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 xcscontrol
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 xcsdiagnose
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 xed
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 xgettext.pl
+> -r-xr-xr-x   1 root  wheel      6247 Oct 15  2016 xgettext5.16.pl
+> -r-xr-xr-x   1 root  wheel      6650 Oct 15  2016 xgettext5.18.pl
+> -rwxr-xr-x   1 root  wheel     28560 Jul 26  2019 xip
+> lrwxr-xr-x   1 root  wheel        73 Aug  4  2018 xjc -> /System/Library/Frameworks/JavaVM.framework/Versions/Current/Commands/xjc
+> -rwxr-xr-x   1 root  wheel      1874 May 11  2017 xml2-config
+> -rwxr-xr-x   1 root  wheel     18256 Jul 15  2017 xml2man
+> -rwxr-xr-x   1 root  wheel     61072 Jul 26  2019 xmlcatalog
+> -rwxr-xr-x   1 root  wheel    141152 Jul 26  2019 xmllint
+> -rwxr-xr-x  35 root  wheel       811 Oct 15  2016 xpath
+> -r-xr-xr-x   1 root  wheel      1445 Oct 15  2016 xpath5.16
+> -r-xr-xr-x   1 root  wheel      1445 Oct 15  2016 xpath5.18
+> -rwxr-xr-x   1 root  wheel      2546 Feb 11  2017 xslt-config
+> -rwxr-xr-x   1 root  wheel     75040 Jul 26  2019 xsltproc
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 xsubpp
+> -rwxr-xr-x   1 root  wheel      4591 Feb  7  2017 xsubpp5.16
+> -rwxr-xr-x   1 root  wheel      4591 Feb  7  2017 xsubpp5.18
+> -rwxr-xr-x   1 root  wheel     27264 Jul 26  2019 xxd
+> -rwxr-xr-x   1 root  wheel     18240 Jul 15  2017 yacc
+> -rwxr-xr-x   1 root  wheel     17760 Jul 15  2017 yes
+> -r-xr-xr-x   1 root  wheel     18336 Jul 15  2017 ypcat
+> -r-xr-xr-x   1 root  wheel     18416 Jul 15  2017 ypmatch
+> -r-xr-xr-x   1 root  wheel     18992 Jul 15  2017 ypwhich
+> -rwxr-xr-x   1 root  wheel     52960 Jul 15  2017 zcat
+> -rwxr-xr-x   2 root  wheel      3264 Apr  5  2017 zcmp
+> -rwxr-xr-x   2 root  wheel      3264 Apr  5  2017 zdiff
+> -rwxr-xr-x   1 root  wheel     33888 Jul 15  2017 zegrep
+> -rwxr-xr-x   1 root  wheel     33888 Jul 15  2017 zfgrep
+> -rwxr-xr-x   1 root  wheel      1454 Apr  5  2017 zforce
+> -rwxr-xr-x   1 root  wheel     33888 Jul 15  2017 zgrep
+> -rwxr-xr-x   1 root  wheel    175920 Jul 15  2017 zip
+> -rwxr-xr-x   1 root  wheel     82304 Jul 15  2017 zipcloak
+> -rwxr-xr-x  38 root  wheel       811 Feb  7  2017 zipdetails
+> -rwxr-xr-x   1 root  wheel     48113 Feb  7  2017 zipdetails5.16
+> -rwxr-xr-x   1 root  wheel     48113 Feb  7  2017 zipdetails5.18
+> -rwxr-xr-x   1 root  wheel      2953 Oct 15  2016 zipgrep
+> -rwxr-xr-x   1 root  wheel    186000 Jul 15  2017 zipinfo
+> -rwxr-xr-x   1 root  wheel     73360 Jul 15  2017 zipnote
+> -rwxr-xr-x   1 root  wheel     77600 Jul 15  2017 zipsplit
+> -rwxr-xr-x   2 root  wheel      2077 Apr  5  2017 zless
+> -rwxr-xr-x   2 root  wheel      2077 Apr  5  2017 zmore
+> -rwxr-xr-x   1 root  wheel      3376 Apr  5  2017 znew
+> -rwxr-xr-x   1 root  wheel     74464 Jul 26  2019 zprint

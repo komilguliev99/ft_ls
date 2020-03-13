@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 15:41:10 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/07 19:48:00 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/13 18:27:04 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@ t_file			*create_file(char *name, char type)
 	t_file		*file;
 
 	if (!(file = (t_file *)malloc(sizeof(t_file))))
-		exit(0);
+		exit(EXIT_FAILURE);
+	if (!(file->date = (t_date *)malloc(sizeof(t_date))))
+		exit(EXIT_FAILURE);
 	file->name = ft_strdup(name);
 	file->type = type;
 	file->attr = 0;
@@ -104,8 +106,6 @@ void			clear_files(t_file **f)
 			free(del->u_name);
 		if (del->gr_name)
 			free(del->gr_name);
-		if (del->ctime)
-			free(del->ctime);
 		free(del);
 	}
 }

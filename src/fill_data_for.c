@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 16:40:35 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/13 17:16:10 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/13 18:31:09 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,6 +108,25 @@ static void	set_mode(size_t mode, char *buff)
 	buff[9] = '\0';
 }
 
+static void		set_date(t_file *f, char *s, t_main *st)
+{
+	char		**av;
+	int			len;
+
+	av = ft_strsplit(s, ' ');
+	if (!av)
+		return ;
+	len = ft_strlen(av[4]) - 1;
+	av[4][len] = '\0';
+	if (len + 1 > st->fm.year_block)
+		st->fm.year_block = len + 1;
+	f->date->year = av[4];
+	f->date->time = av[3];
+	f->date->mon = av[1];
+	f->date->date = av[2];
+	free(av[0]);
+}
+
 void			fill_data_for(t_file *f, char *path, t_main *sm)
 {
 	char			buff[1024];
@@ -120,7 +139,7 @@ void			fill_data_for(t_file *f, char *path, t_main *sm)
 	errno = 0;
 	if (!lstat(buff, &st))
 	{
-		f->ctime = ft_strdup(ctime((const time_t *)&st.st_mtime));
+		set_date(f, ctime(&st.st_mtime), sm);
 		f->last_d = (long long int)st.st_mtime;
 		f->byte_size = (long long int)st.st_size;
 		f->blocks = (long long int)st.st_blocks;

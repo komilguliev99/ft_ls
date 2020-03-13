@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:41:55 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/13 17:33:38 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/13 19:14:07 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,20 @@ static void			set_flags(t_main *st, char *arg)
 			st->flags[(int)*arg++] = 1;
 		else
 		{
-			ft_putstr_fd("/bin/ls: illegal option -- ", 2);
+			ft_putstr_fd("/bin/ls: illegal option -- ", 1);
 			ft_putchar_fd(*arg, 2);
 			ft_putstr_fd("\nusage: ls [-ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1] [file ...]\n", 2);
 			exit(EXIT_FAILURE);
 		}
+}
+
+void				print_err(char *s)
+{
+	ft_putstr_fd("ls: ", 2);
+	ft_putstr_fd(s, 2);
+	ft_putstr_fd(": ", 2);
+	ft_putstr_fd(strerror(errno), 2);
+	ft_putchar_fd('\n', 2);
 }
 
 void				parsing(t_main *st, char **av, int ac)
@@ -59,7 +68,7 @@ void				parsing(t_main *st, char **av, int ac)
 		ft_strsort(av + j, ac - j);
 	while (j < ac)
 	{
-		if (!lstat(av[j], &buff))
+		if (!stat(av[j], &buff) || !lstat(av[j], &buff))
 		{
 			file = create_file(av[j], S_ISDIR(buff.st_mode) ? 'd' : '-');
 			fill_data_for(file, NULL, st);
@@ -73,7 +82,7 @@ void				parsing(t_main *st, char **av, int ac)
 		{
 			if (av[j][0] =='\0')
 			{
-				ft_printf("ls: fts_open: %s\n", strerror(errno));
+				print_err("fts_open");
 				exit(EXIT_FAILURE);
 			}
 			add_lst(&st->not_exist, create_lst(av[j], 0));
@@ -87,7 +96,7 @@ void				parsing(t_main *st, char **av, int ac)
 	while (lst)
 	{
 		st->nall_arg++;
-		ft_printf("ls: %s: %s\n", lst->data, strerror(errno));
+		print_err(lst->data);
 		lst = lst->next;
 	}
 }

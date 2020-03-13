@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/13 16:32:26 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/13 19:04:34 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,17 @@ typedef struct				s_ff_size
 	int						blocks;
 	int						max_size;
 	int						max_nlink;
+	int						year_block;
 
 }							t_ff_size;
+
+typedef struct				s_date
+{
+	char					*year;
+	char					*mon;
+	char					*time;
+	char					*date;
+}							t_date;
 
 typedef struct				s_lst
 {
@@ -50,11 +59,11 @@ typedef struct				s_file
 	long long int			blocks;
 	char					*u_name;
 	char					*gr_name;
-	char					*ctime;
 	char					mode[10];
 	int						nlink;
 	char					attr;
 	long long int			last_d;
+	t_date					*date;
 	struct s_file			*next;
 	struct s_file			*prev;
 }							t_file;
@@ -107,5 +116,6 @@ t_lst						*create_lst(char *content, int allocate);
 void						add_lst(t_lst **lst, t_lst *new);
 void						push_lst(t_lst **lst, char *data);
 void						print_fullpath(char *s);
+void						print_err(char *s);
 
 #endif
