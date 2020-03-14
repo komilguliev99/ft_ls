@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 21:20:20 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/13 21:55:24 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 15:14:19 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ int					diff_time(time_t t1, time_t t2)
 {
 	long long int			res;
 
-	
 	res = (long long int)(t1 - t2);
 	if (res < 0 || res / 2629743 >= 6)
 		return (7);

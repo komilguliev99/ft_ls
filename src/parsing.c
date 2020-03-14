@@ -6,33 +6,11 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:41:55 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/13 23:30:55 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 15:19:11 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
-
-static int			is_lsflag(char c)
-{
-	if (c == 'l' || c == 'R' || c == 'a' || c == 'r' || c == 't' || c == '1'
-	|| c == 'd')
-		return (1);
-	return (0);
-}
-
-static void			set_flags(t_main *st, char *arg)
-{
-	while (*arg)
-		if (is_lsflag(*arg))
-			st->flags[(int)*arg++] = 1;
-		else
-		{
-			ft_putstr_fd("/bin/ls: illegal option -- ", 1);
-			ft_putchar_fd(*arg, 2);
-			ft_putstr_fd("\nusage: ls [-ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1] [file ...]\n", 2);
-			exit(EXIT_FAILURE);
-		}
-}
 
 void				print_err(char *s)
 {
@@ -43,46 +21,67 @@ void				print_err(char *s)
 	ft_putchar_fd('\n', 2);
 }
 
+static void			parse_flags(t_main *st, char **av, int ac, int *j)
+{
+	while (*j < ac && av[*j][0] == '-')
+	{
+		*j += 1;
+		if (!ft_strcmp(av[*j - 1], "--"))
+			break ;
+		else if (!ft_strcmp(av[*j - 1], "-"))
+		{
+			*j -= 1;
+			break ;
+		}
+		set_flags(st, av[*j - 1] + 1);
+	}
+	st->arg_cnt = 0;
+	if (ac - *j > 1)
+		ft_strsort(av + *j, ac - *j);
+}
+
+static void			parse_args(t_main *st, char *s, struct stat buff)
+{
+	t_file		*file;
+
+	file = create_file(s, S_ISDIR(buff.st_mode) ? 'd' : '-');
+	fill_data_for(file, NULL, st);
+	if (st->flags['d'] || (file->type != 'd'
+			&& !S_ISDIR(buff.st_mode)) ||
+		(file->type == 'l' && st->flags['l']))
+		add_file(&st->files, file);
+	else
+		add_file(&st->dirs, file);
+	st->arg_cnt++;
+}
+
+static void			handle_ls_errors(t_lst *lst, t_main *st)
+{
+	st->nall_arg = st->arg_cnt;
+	while (lst)
+	{
+		st->nall_arg++;
+		print_err(lst->data);
+		lst = lst->next;
+	}
+}
+
 void				parsing(t_main *st, char **av, int ac)
 {
 	int				j;
 	t_lst			*lst;
-	t_file			*file;
 	struct stat		buff;
 
 	j = 1;
-	while (j < ac && av[j][0] == '-')
-	{
-		j++;
-		if (!ft_strcmp(av[j - 1], "--"))
-			break ;
-		else if (!ft_strcmp(av[j - 1], "-"))
-		{
-			j--;
-			break ;
-		}
-		set_flags(st, av[j - 1] + 1);
-	}	
-	st->arg_cnt = 0;
 	lst = NULL;
-	if (ac - j > 1)
-		ft_strsort(av + j, ac - j);
+	parse_flags(st, av, ac, &j);
 	while (j < ac)
 	{
 		if (!stat(av[j], &buff) || !lstat(av[j], &buff))
-		{
-			file = create_file(av[j], S_ISDIR(buff.st_mode) ? 'd' : '-');
-			fill_data_for(file, NULL, st);
-			if (st->flags['d'] || (file->type !='d' && !S_ISDIR(buff.st_mode)) ||
-				(file->type == 'l' && st->flags['l']))
-				add_file(&st->files, file);
-			else
-				add_file(&st->dirs, file);
-			st->arg_cnt++;
-		}
+			parse_args(st, av[j], buff);
 		else
 		{
-			if (av[j][0] =='\0')
+			if (av[j][0] == '\0')
 			{
 				print_err("fts_open");
 				exit(EXIT_FAILURE);
@@ -93,12 +92,5 @@ void				parsing(t_main *st, char **av, int ac)
 	}
 	handle_lsflags(st, &st->dirs);
 	handle_lsflags(st, &st->files);
-	lst = st->not_exist;
-	st->nall_arg = st->arg_cnt;
-	while (lst)
-	{
-		st->nall_arg++;
-		print_err(lst->data);
-		lst = lst->next;
-	}
+	handle_ls_errors(st->not_exist, st);
 }

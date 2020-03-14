@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/13 21:41:01 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 15:16:58 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,8 @@ void						parsing(t_main *st, char **av, int ac);
 t_main						*create_main(void);
 void						handle_lsflags(t_main *st, t_file **f);
 void						reset_main(t_main *st);
-void						update_main(t_main *st, int blocks, int maxsz, int maxl);
+void						update_main(t_main *st, int blocks,
+								int maxsz, int maxl);
 void						update_main2(t_main *st, int user, int group);
 void						print_main(t_main *st);
 void						push_file(t_file **file, char *name, char type);
@@ -120,5 +121,9 @@ void						add_lst(t_lst **lst, t_lst *new);
 void						push_lst(t_lst **lst, char *data);
 void						print_fullpath(char *s);
 void						print_err(char *s);
+int							is_lsflag(char c);
+void						set_flags(t_main *st, char *arg);
+void						set_date(t_file *f, char *s, t_main *st);
+void						set_mode(size_t mode, char *buff);
 
 #endif

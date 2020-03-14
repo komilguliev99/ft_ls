@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 16:40:35 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/13 22:01:21 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 15:17:26 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,48 +85,6 @@ void			set_user_group(t_file *f, uid_t uid, gid_t gid)
 		f->gr_name = ft_itoa((long long int)gid);
 }
 
-static void	set_mode(size_t mode, char *buff)
-{
-	buff[0] = (mode & S_IRUSR) != 0 ? 'r' : '-';
-	buff[1] = (mode & S_IWUSR) != 0 ? 'w' : '-';
-	if ((mode & S_ISUID) != 0)
-		buff[2] = (mode & S_IXUSR) != 0 ? 's' : 'S';
-	else
-		buff[2] = (mode & S_IXUSR) != 0 ? 'x' : '-';
-	buff[3] = (mode & S_IRGRP) != 0 ? 'r' : '-';
-	buff[4] = (mode & S_IWGRP) != 0 ? 'w' : '-';
-	if ((mode & S_ISGID) != 0)
-		buff[5] = (mode & S_IXGRP) != 0 ? 's' : 'S';
-	else
-		buff[5] = (mode & S_IXGRP) != 0 ? 'x' : '-';
-	buff[6] = (mode & S_IROTH) != 0 ? 'r' : '-';
-	buff[7] = (mode & S_IWOTH) != 0 ? 'w' : '-';
-	if ((mode & S_ISVTX) != 0)
-		buff[8] = (mode & S_IXOTH) != 0 ? 't' : 'T';
-	else
-		buff[8] = (mode & S_IXOTH) != 0 ? 'x' : '-';
-	buff[9] = '\0';
-}
-
-static void		set_date(t_file *f, char *s, t_main *st)
-{
-	char		**av;
-	int			len;
-
-	av = ft_strsplit(s, ' ');
-	if (!av)
-		return ;
-	len = ft_strlen(av[4]) - 1;
-	av[4][len] = '\0';
-	if (len + 1 > st->fm.year_block)
-		st->fm.year_block = len + 1;
-	f->date->year = av[4];
-	f->date->time = av[3];
-	f->date->mon = av[1];
-	f->date->date = av[2];
-	free(av[0]);
-}
-
 void			fill_data_for(t_file *f, char *path, t_main *sm)
 {
 	char			buff[1024];
@@ -153,6 +111,4 @@ void			fill_data_for(t_file *f, char *path, t_main *sm)
 		update_main(sm, ft_strlen(f->name) + 3, f->byte_size, f->nlink);
 		update_main2(sm, ft_strlen(f->u_name) + 1, ft_strlen(f->gr_name) + 1);
 	}
-	else
-		ft_printf("ERROR: %s\n", strerror(errno));
 }

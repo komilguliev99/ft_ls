@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:04:54 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/13 22:01:03 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 15:13:50 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ void	read_last(t_file *f, char *path, t_main *st)
 	DIR		*dir;
 
 	buff[0] = '\0';
-	dir = NULL;
 	while (f)
 	{
 		dir = NULL;
@@ -51,8 +50,6 @@ void	read_last(t_file *f, char *path, t_main *st)
 		}
 		f = f->next;
 	}
-	if (f)
-		clear_files(&f);
 }
 
 int		read_dir(DIR *dir, char *path, t_main *st)
@@ -62,7 +59,7 @@ int		read_dir(DIR *dir, char *path, t_main *st)
 	t_file			*new;
 
 	file = NULL;
-	buff = NULL;	
+	buff = NULL;
 	update_main(st, -1, -1, -1);
 	update_main2(st, -1, -1);
 	while ((buff = readdir(dir)))
@@ -78,6 +75,8 @@ int		read_dir(DIR *dir, char *path, t_main *st)
 	closedir(dir);
 	if (st->flags['R'])
 		read_last(file, path, st);
+	if (file)
+		clear_files(&file);
 	return (1);
 }
 

@@ -6,54 +6,58 @@
 #    By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/21 11:31:41 by dcapers           #+#    #+#              #
-#    Updated: 2020/03/11 13:24:46 by dcapers          ###   ########.fr        #
+#    Updated: 2020/03/14 15:19:30 by dcapers          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-C = clang
-
 NAME = ft_ls
 
-FLAGS = -Wall -Wextra -Werror
-
-LIBFT = libft
-
-DIR_S = src
-
-DIR_O = objects
-
-HEADER = includes
-
-HEADERS = includes/*.h
-
-SOURCES = main.c create_state.c parsing.c ft_filesort.c create_file.c   	\
+LIST	=	 main.c create_state.c parsing.c ft_filesort.c create_file.c   	\
 			ft_strsort.c fill_data_for.c handle_lsflags.c sort_callbacks.c  \
 			time_cmp.c print_ls_format.c ft_strmode.c print_ff_format.c     \
-			create_lst.c
+			create_lst.c set_flags.c set_date.c set_mode.c
 
-SRCS = $(addprefix $(DIR_S)/,$(SOURCES))
+DIRS	=	src/
+SOURCE	=	$(addprefix $(DIRS), $(LIST))
+OBJ		=	$(patsubst %.c,%.o,$(SOURCE))
 
-OBJS = $(addprefix $(DIR_O)/,$(SOURCES:.c=.o))
+LIB		=	libft/libft.a
+LDIRS	=	libft/
 
-all: $(NAME)
+LIB_ALL		= $(addsuffix .all,$(LDIRS))
+LIB_CLEAN	= $(addsuffix .clean,$(LDIRS))
+LIB_FCLEAN	= $(addsuffix .fclean,$(LDIRS))
 
-$(NAME): $(OBJS) $(HEADERS)
-	make -C $(LIBFT)
-	cp libft/libft.a ./
-	gcc $(FLAGS) -I $(HEADER) $(OBJS) libft.a -o $(NAME)
+INCS		= includes/
+INCS_LIBFT	= $(addsuffix includes/,$(LDIRS))
 
-$(DIR_O)/%.o: $(DIR_S)/%.c
-	mkdir -p objects
-	gcc $(FLAGS) -I $(HEADER) -o $@ -c $<
+FLAGS ?= -Wall -Wextra -Werror
 
-clean:
-	rm -f $(OBJS)
-	rm -rf $(DIR_O)
-	make clean -C $(LIBFT)
+all: $(LIB_ALL) $(NAME)
 
-fclean: clean
+clean: $(LIB_CLEAN)
+	rm -f $(OBJ) $(wildcard $(addsuffix *.d,$(DIRS)))
+
+fclean: $(LIB_FCLEAN) clean
 	rm -f $(NAME)
-	rm -f libft.a
-	make fclean -C $(LIBFT)
 
-re: fclean all
+re:		fclean all
+
+%.o: %.c
+	gcc $(FLAGS) -c $< -o $@ -I$(INCS_LIBFT) -I$(INCS) -MD
+
+$(NAME): $(OBJ) $(LIB)
+	gcc $(FLAGS) $(OBJ) -o $(basename $(NAME)) $(LIB)
+
+%.all:
+	make -C $*
+
+%.clean:
+	make -C $* clean
+
+%.fclean:
+	rm -f $(addsuffix *.a,$*)
+
+include $(wildcard $(addsuffix *.d,$(DIRS)))
+
+.PHONY: all clean fclean re

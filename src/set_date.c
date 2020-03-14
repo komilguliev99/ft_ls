@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_ff_format.c                                  :+:      :+:    :+:   */
+/*   set_date.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/08 14:06:52 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/14 14:54:14 by dcapers          ###   ########.fr       */
+/*   Created: 2020/03/14 15:15:26 by dcapers           #+#    #+#             */
+/*   Updated: 2020/03/14 15:20:27 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-int		print_ff_format(t_main *st, char *f)
+void		set_date(t_file *f, char *s, t_main *st)
 {
-	t_file		*file;
+	char		**av;
+	int			len;
 
-	file = create_file(f, '-');
-	fill_data_for(file, NULL, st);
-	print_ls_format(st, file, 1);
-	return (1);
-}
-
-void	print_fullpath(char *s)
-{
-	if (!((s[0] == '.' && s[1] == '/') || s[0] == '/'))
-		ft_putstr("./");
-	ft_putstr(s);
-	ft_putstr(":\n");
+	av = ft_strsplit(s, ' ');
+	if (!av)
+		return ;
+	len = ft_strlen(av[4]) - 1;
+	av[4][len] = '\0';
+	if (len + 1 > st->fm.year_block)
+		st->fm.year_block = len + 1;
+	f->date->year = av[4];
+	f->date->time = av[3];
+	f->date->mon = av[1];
+	f->date->date = av[2];
+	free(av[0]);
 }

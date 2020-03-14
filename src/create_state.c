@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:46:17 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/13 21:37:56 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 14:53:59 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,4 +65,3 @@ t_main			*create_main(void)
 	reset_main(state);
 	return (state);
 }
-
