@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:04:54 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/14 18:04:17 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 19:29:03 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,9 +68,8 @@ int		read_dir(DIR *dir, char *path, t_main *st)
 			continue ;
 		new = create_file(buff->d_name, buff->d_type);
 		fill_data_for(new, path, st);
-		add_file(&file, new);
+		add_file(&file, new, st->cmp);
 	}
-	handle_lsflags(st, &file);
 	print_ls_format(st, file, 0);
 	closedir(dir);
 	if (st->flags['R'])
@@ -110,12 +109,8 @@ void	file_list(t_main *st)
 int		main(int ac, char **av)
 {
 	t_main			*st;
-	struct winsize	wins;
-	int				err;
 
 	st = create_main();
-	err = ioctl(1, TIOCGWINSZ, &wins);
-	st->width = wins.ws_col;
 	parsing(st, av, ac);
 	file_list(st);
 	clear_main(st);

@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:41:55 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/14 15:19:11 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 19:05:53 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,9 @@ static void			parse_args(t_main *st, char *s, struct stat buff)
 	if (st->flags['d'] || (file->type != 'd'
 			&& !S_ISDIR(buff.st_mode)) ||
 		(file->type == 'l' && st->flags['l']))
-		add_file(&st->files, file);
+		add_file(&st->files, file, st->cmp);
 	else
-		add_file(&st->dirs, file);
+		add_file(&st->dirs, file, st->cmp);
 	st->arg_cnt++;
 }
 
@@ -75,6 +75,7 @@ void				parsing(t_main *st, char **av, int ac)
 	j = 1;
 	lst = NULL;
 	parse_flags(st, av, ac, &j);
+	handle_lsflags(st);
 	while (j < ac)
 	{
 		if (!stat(av[j], &buff) || !lstat(av[j], &buff))
@@ -90,7 +91,5 @@ void				parsing(t_main *st, char **av, int ac)
 		}
 		j++;
 	}
-	handle_lsflags(st, &st->dirs);
-	handle_lsflags(st, &st->files);
 	handle_ls_errors(st->not_exist, st);
 }

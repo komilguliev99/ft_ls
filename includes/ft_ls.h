@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/14 17:58:37 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 19:27:19 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,22 +84,23 @@ typedef struct				s_main
 	long long int			blocks;
 	int						error;
 	int						width;
+	int						(*cmp)(t_file *, t_file *);
 	t_ff_size				fm;
 }							t_main;
 
 char						*ft_strmode(unsigned int mode);
 void						parsing(t_main *st, char **av, int ac);
 t_main						*create_main(void);
-void						handle_lsflags(t_main *st, t_file **f);
+void						handle_lsflags(t_main *st);
 void						reset_main(t_main *st);
 void						update_main(t_main *st, int blocks,
 								int maxsz, int maxl);
 void						update_main2(t_main *st, int user, int group);
 void						print_main(t_main *st);
-void						push_file(t_file **file, char *name, char type);
 void						print_files(t_file *file, int rev, int size);
 void						ft_strsort(char **args, int ac);
-void						add_file(t_file **file, t_file *new);
+void						add_file(t_file **file, t_file *new,
+								int (*cmp)(t_file *f1, t_file *f2));
 t_file						*create_file(char *name, char type);
 void						clear_files(t_file **f);
 int							read_dir(DIR *dir, char *path,

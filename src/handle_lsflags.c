@@ -6,13 +6,13 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 11:46:47 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/14 17:02:55 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 19:01:08 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ls.h"
 
-void		handle_lsflags(t_main *st, t_file **f)
+void		handle_lsflags(t_main *st)
 {
 	int		(*cmp)(t_file *f1, t_file *f2);
 
@@ -34,5 +34,5 @@ void		handle_lsflags(t_main *st, t_file **f)
 		cmp = &sort_desc_name;
 	else
 		cmp = &sort_asc_name;
-	ft_filesort(f, cmp);
+	st->cmp = cmp;
 }

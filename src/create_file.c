@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 15:41:10 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/14 18:48:09 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 19:30:07 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,68 +28,42 @@ t_file			*create_file(char *name, char type)
 	return (file);
 }
 
-void			add_file(t_file **file, t_file *new)
+static void		add_item(t_file **f, t_file *new,
+		int (*cmp)(t_file *f1, t_file *f2))
 {
-	if (*file && (*file)->prev)
+	t_file		*prev;
+	t_file		*file;
+
+	file = *f;
+	prev = NULL;
+	if (cmp(file, new))
+		prev = file;
+	while (prev && file->next && cmp(file->next, new))
 	{
-		(*file)->prev->next = new;
-		new->prev = (*file)->prev;
-		(*file)->prev = new;
+		prev = file->next;
+		file = file->next;
 	}
-	else if (*file)
+	if (prev)
 	{
-		(*file)->prev = new;
-		(*file)->next = new;
-		new->prev = (*file);
+		new->next = prev->next;
+		prev->next = new;
 	}
 	else
-		*file = new;
+	{
+		new->next = file;
+		*f = new;
+	}
 }
 
-void			push_file(t_file **file, char *name, char type)
+void			add_file(t_file **f, t_file *new,
+			int (*cmp)(t_file *f1, t_file *f2))
 {
-	t_file		*new;
-
-	if (!file || !name)
+	if (!f || !new)
 		return ;
-	new = create_file(name, type);
-	if (*file && (*file)->prev)
-	{
-		(*file)->prev->next = new;
-		new->prev = (*file)->prev;
-		(*file)->prev = new;
-	}
-	else if (*file)
-	{
-		(*file)->prev = new;
-		(*file)->next = new;
-		new->prev = (*file);
-	}
+	if (!*f)
+		*f = new;
 	else
-		*file = new;
-}
-
-void			print_files(t_file *file, int rev, int size)
-{
-	t_file		*first;
-
-	if (!rev)
-		while (file)
-		{
-			ft_printf("%*s  ", size, file->name);
-			file = file->next;
-		}
-	else
-	{
-		first = file;
-		while (file->prev != first)
-		{
-			ft_printf("%*s  ", size, file->name);
-			file = file->prev;
-		}
-		ft_printf("%*s  ", size, file->name);
-	}
-	ft_putchar('\n');
+		add_item(f, new, cmp);
 }
 
 void			clear_files(t_file **f)
