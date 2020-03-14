@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 16:40:35 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/14 15:17:26 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 17:22:05 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,11 +94,12 @@ void			fill_data_for(t_file *f, char *path, t_main *sm)
 	if (path)
 		fill_str(buff, path, 0);
 	fill_str(buff, f->name, -1);
-	errno = 0;
 	if (!lstat(buff, &st))
 	{
 		set_date(f, ctime(&st.st_mtime), sm);
 		f->last_d = (long long int)st.st_mtime;
+		f->tm_access = (long long int)st.st_atime;
+		f->tm_creat = (long long int)st.st_ctime;
 		f->byte_size = (long long int)st.st_size;
 		f->blocks = (long long int)st.st_blocks;
 		set_mode(st.st_mode, f->mode);

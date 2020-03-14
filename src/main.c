@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:04:54 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/14 15:13:50 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 18:04:17 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,8 +75,7 @@ int		read_dir(DIR *dir, char *path, t_main *st)
 	closedir(dir);
 	if (st->flags['R'])
 		read_last(file, path, st);
-	if (file)
-		clear_files(&file);
+	clear_files(&file);
 	return (1);
 }
 
@@ -119,5 +118,6 @@ int		main(int ac, char **av)
 	st->width = wins.ws_col;
 	parsing(st, av, ac);
 	file_list(st);
-	exit(0);
+	clear_main(st);
+	exit(EXIT_SUCCESS);
 }

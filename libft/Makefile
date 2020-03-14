@@ -6,7 +6,7 @@
 #    By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/08 15:33:43 by dcapers           #+#    #+#              #
-#    Updated: 2020/03/14 14:50:06 by dcapers          ###   ########.fr        #
+#    Updated: 2020/03/14 15:56:46 by dcapers          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,7 @@ FLAGS ?= -Wall -Wextra -Werror
 all: $(OBJ) $(NAME)
 
 %.o: %.c
-	gcc $(FLAGS) -I$(INCLUDES) -c $< -o $@ -MD
+	gcc $(FLAGS) -I $(INCLUDES) -c $< -o $@ -MD
 
 $(NAME): $(OBJ)
 	ar rc $(NAME) $?

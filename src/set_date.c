@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/14 15:15:26 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/14 15:20:27 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 16:29:12 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,20 @@ void		set_date(t_file *f, char *s, t_main *st)
 	f->date->mon = av[1];
 	f->date->date = av[2];
 	free(av[0]);
+	free(av);
+}
+
+void		clear_date(t_date *date)
+{
+	if (!date)
+		return ;
+	if (date->date)
+		free(date->date);
+	if (date->year)
+		free(date->year);
+	if (date->mon)
+		free(date->mon);
+	if (date->time)
+		free(date->time);
+	free(date);
 }

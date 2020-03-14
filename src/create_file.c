@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 15:41:10 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/13 18:27:04 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 18:48:09 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,8 @@ void			clear_files(t_file **f)
 {
 	t_file		*del;
 
+	if (!f || !*f)
+		return ;
 	while (*f)
 	{
 		del = *f;
@@ -106,6 +108,7 @@ void			clear_files(t_file **f)
 			free(del->u_name);
 		if (del->gr_name)
 			free(del->gr_name);
+		clear_date(del->date);
 		free(del);
 	}
 }

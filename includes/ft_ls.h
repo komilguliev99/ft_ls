@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/14 15:16:58 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 17:58:37 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ typedef struct				s_date
 typedef struct				s_lst
 {
 	char					*data;
+	char					allocate;
 	struct s_lst			*next;
 	struct s_lst			*prev;
 }							t_lst;
@@ -65,6 +66,8 @@ typedef struct				s_file
 	int						nlink;
 	char					attr;
 	long long int			last_d;
+	long long int			tm_creat;
+	long long int			tm_access;
 	t_date					*date;
 	struct s_file			*next;
 	struct s_file			*prev;
@@ -113,6 +116,11 @@ int							sort_asc_name(t_file *f1, t_file *f2);
 int							sort_desc_name(t_file *f1, t_file *f2);
 int							sort_ascn_time(t_file *f1, t_file *f2);
 int							sort_descn_time(t_file *f1, t_file *f2);
+int							sort_by_size(t_file *f1, t_file *f2);
+int							sort_ascn_creat(t_file *f1, t_file *f2);
+int							sort_descn_creat(t_file *f1, t_file *f2);
+int							sort_ascn_access(t_file *f1, t_file *f2);
+int							sort_descn_access(t_file *f1, t_file *f2);
 void						print_ls_format(t_main *st, t_file *file,
 									int file_flag);
 int							print_ff_format(t_main *st, char *f);
@@ -125,5 +133,8 @@ int							is_lsflag(char c);
 void						set_flags(t_main *st, char *arg);
 void						set_date(t_file *f, char *s, t_main *st);
 void						set_mode(size_t mode, char *buff);
+void						clear_date(t_date *date);
+void						clear_lst(t_lst **lst);
+void						clear_main(t_main *sm);
 
 #endif

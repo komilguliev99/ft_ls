@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/11 12:57:10 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/11 13:25:01 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 16:31:48 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ t_lst			*create_lst(char *content, int allocate)
 		lst->data = ft_strdup(content);
 	else
 		lst->data = content;
+	lst->allocate = allocate;
 	lst->next = NULL;
 	lst->prev = NULL;
 	return (lst);
@@ -66,4 +67,20 @@ void			push_lst(t_lst **lst, char *data)
 	}
 	else
 		*lst = new;
+}
+
+void			clear_lst(t_lst **lst)
+{
+	t_lst		*del;
+
+	if (!lst || !*lst)
+		return ;
+	while (*lst)
+	{
+		del = *lst;
+		*lst = (*lst)->next;
+		if (del->allocate && del->data)
+			free(del->data);
+		free(del);
+	}
 }
