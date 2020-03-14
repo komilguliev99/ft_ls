@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/01 17:05:59 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/14 19:27:19 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 22:33:40 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ typedef struct				s_file
 	long long int			last_d;
 	long long int			tm_creat;
 	long long int			tm_access;
+	char					ready;
 	t_date					*date;
 	struct s_file			*next;
 	struct s_file			*prev;
@@ -84,6 +85,7 @@ typedef struct				s_main
 	long long int			blocks;
 	int						error;
 	int						width;
+	int						cnt;
 	int						(*cmp)(t_file *, t_file *);
 	t_ff_size				fm;
 }							t_main;

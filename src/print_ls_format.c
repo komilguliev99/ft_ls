@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 21:20:20 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/14 15:14:19 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 22:11:14 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,11 +100,14 @@ void				print_ls_format(t_main *st, t_file *file,
 {
 	st->fm.max_size = ft_numcount(st->fm.max_size) - 1;
 	st->fm.max_nlink = ft_numcount(st->fm.max_nlink) - 1;
-	if (st->flags['l'] && !flag && file)
+	if (st->flags['l'] && !flag && file && st->cnt)
 		ft_printf("total %lld\n", st->blocks);
+	st->blocks = 0;
+	st->cnt = 0;
 	while (st->flags['l'] && file)
 	{
-		print_ff(file, &st->fm);
+		if (file->ready)
+			print_ff(file, &st->fm);
 		file = file->next;
 	}
 	if (!st->flags['l'] && st->flags['1'])

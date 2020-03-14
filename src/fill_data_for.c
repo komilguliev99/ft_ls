@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 16:40:35 by dcapers           #+#    #+#             */
-/*   Updated: 2020/03/14 17:22:05 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 22:23:28 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static void		reset_name(t_file *f, char *path)
 	}
 }
 
-void			set_attr(char *path, t_file *f, size_t mode)
+void			set_attr(char *path, t_file *f, size_t mode, int flag)
 {
 	char	attr[512];
 	void	*tmp;
@@ -68,6 +68,8 @@ void			set_attr(char *path, t_file *f, size_t mode)
 	}
 	else
 		f->attr = ' ';
+	if (f->type == 'l' && flag)
+		reset_name(f, path);
 }
 
 void			set_user_group(t_file *f, uid_t uid, gid_t gid)
@@ -106,10 +108,10 @@ void			fill_data_for(t_file *f, char *path, t_main *sm)
 		f->nlink = st.st_nlink;
 		set_user_group(f, st.st_uid, st.st_gid);
 		sm->blocks += st.st_blocks;
-		set_attr(buff, f, st.st_mode);
-		if (f->type == 'l' && sm->flags['l'])
-			reset_name(f, buff);
+		set_attr(buff, f, st.st_mode, sm->flags['l']);
 		update_main(sm, ft_strlen(f->name) + 3, f->byte_size, f->nlink);
 		update_main2(sm, ft_strlen(f->u_name) + 1, ft_strlen(f->gr_name) + 1);
+		f->ready = 1;
+		sm->cnt++;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: dcapers <dcapers@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/02 14:46:17 by ds107             #+#    #+#             */
-/*   Updated: 2020/03/14 17:58:58 by dcapers          ###   ########.fr       */
+/*   Updated: 2020/03/14 22:10:20 by dcapers          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void			reset_main(t_main *st)
 	st->fm.max_nlink = 0;
 	st->fm.max_size = 0;
 	st->fm.blocks = 0;
+	st->cnt = 0;
 	while (i < 125)
 		st->flags[i++] = 0;
 	st->flags['1'] = 1;
